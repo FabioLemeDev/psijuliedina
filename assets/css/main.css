@@ -764,7 +764,7 @@ section {
 }
 
 .carousel-item-container {
-  height: 380px !important;
+  height: 400px !important;
   overflow: hidden;
   display: flex;
   flex-direction: column;
