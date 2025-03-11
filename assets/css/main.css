@@ -608,7 +608,6 @@ section {
   color: var(--contrast-color);
   background: var(--primary-color);
   font-size: 18px;
-  font-weight: bold;
   padding: 8px 26px;
   margin: 8px 0px;
   border-radius: 4px;
@@ -796,10 +795,9 @@ section {
 }
 
 .cta {
-  color: var(--contrast-color);
-  background-color: var(--primary-color);
+  color: #FFFFFF;
+  background-color: #109D21;
   font-size: 18px;
-  font-weight: bold;
   padding: 8px 26px;
   margin: 8px 0px;
   border-radius: 4px;
