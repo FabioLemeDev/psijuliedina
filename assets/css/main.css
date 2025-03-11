@@ -798,6 +798,7 @@ section {
   color: var(--contrast-color);
   background-color: var(--primary-color);
   font-size: 18px;
+  font-weight: bold;
   padding: 8px 26px;
   margin: 8px 0px;
   border-radius: 4px;
