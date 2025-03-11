@@ -795,19 +795,20 @@ section {
 }
 
 .cta {
-  color: #FFFFFF;
-  background-color: #109D21;
+  color: #fff;
+  background-color: #00782e;
   font-size: 18px;
   padding: 8px 26px;
   margin: 8px 0px;
   border-radius: 4px;
   transition: 0.3s;
   text-decoration: none;
+  box-shadow: 5px 5px 10px grey;
 }
 
 .cta:hover {
-  color: var(--contrast-color);
-  background-color: var(--primary-color);
+  color: #fff;
+  background-color: #00A33F;
 }
 
 .fabs-container {
