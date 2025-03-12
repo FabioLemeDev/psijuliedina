@@ -1,2 +1,3 @@
 User-agent: *
 Disallow:
+Sitemap: https://psicologajuliedina.com.br/sitemap.xml
