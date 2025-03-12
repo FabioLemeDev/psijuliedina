@@ -710,6 +710,21 @@ section {
   font-size: 14px;
 }
 
+.image-container {
+  position: relative;
+  padding-top: 66.66%; /* Proporção 3:2 (600x400) - ajuste conforme a proporção da sua imagem */
+  overflow: hidden; /* Garante que a imagem não ultrapasse o contêiner */
+}
+
+.image-container img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Garante que a imagem cubra o espaço sem distorcer */
+}
+
 .faq .accordion-button {
   font-weight: 600;
   font-size: 18px;
