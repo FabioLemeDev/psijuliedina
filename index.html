@@ -168,15 +168,22 @@
 
   <style>
     .hero {
-      background-image: url('assets/img/perfil_landingpage.webp');
+      background-image: url('assets/img/profile.webp');
       background-size: cover;
-      background-position: right;
+      background-position: center 100%;
     }
 
     h1 {
       font-family: 'Montserrat', sans-serif;
       font-size: 52px;
       color: #fff;
+    }
+
+    @media (max-width: 768px) {
+      .hero .background-image {
+        background-image: url('../img/profile_mobile.webp');
+        background-position: center;
+      }
     }
   </style>
 
