@@ -831,8 +831,8 @@ section {
 
 .fabs-container {
   position: fixed;
-  visibility: hidden;
-  opacity: 0;
+  visibility: visible;
+  opacity: 1;
   right: 15px;
   bottom: 90px;
   transition: bottom 450ms ease;
