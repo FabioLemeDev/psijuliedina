@@ -860,5 +860,9 @@ section {
 }
 
 .fabs-container .fabm-whatsapp {
-  background-color: #25d366;
+  background-color: #25d366; 
+}
+
+.fabm-whatsapp img {
+  pointer-events: none; /* Faz o clique sempre atingir o <a> */
 }
