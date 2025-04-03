@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   /**
    * WhatsApp button
-
+  */
   let fabs = document.querySelector('.fabs-container');
 
   function toggleFabs() {
@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   window.addEventListener('load', toggleFabs);
   document.addEventListener('scroll', toggleFabs);
-   */
+
   /**
    * Apply .scrolled class to the body as the page is scrolled down
    */
