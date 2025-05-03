@@ -1,0 +1,876 @@
+/*--------------------------------------------------------------
+# Variáveis de Cores Globais (Root)
+--------------------------------------------------------------*/
+:root {
+    --background-color: #ffffff;
+    --background-color-rgb: 255, 255, 255;
+    --default-color: #212529;
+    --default-color-rgb: 33, 37, 41;
+    --primary-color: #e84545; /* Vermelho suave */
+    --primary-color-rgb: 232, 69, 69;
+    --secondary-color: #32353a; /* Cinza escuro */
+    --secondary-color-rgb: 50, 53, 58;
+    --contrast-color: #ffffff;
+    --contrast-color-rgb: 255, 255, 255;
+  
+    /* Variáveis de Cores do Menu */
+    --nav-color: #3a3939;
+    --nav-hover-color: #e84545;
+    --nav-dropdown-color: #3a3939;
+    --nav-dropdown-hover-color: #e84545;
+    --nav-dropdown-background-color: #ffffff;
+    --nav-mobile-background-color: #ffffff;
+  
+    /* Fontes (Exemplo com Google Fonts - importe no HTML ou aqui) */
+    --font-default: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --font-primary: "Montserrat", sans-serif; /* Fonte para títulos */
+    --font-secondary: "Roboto", sans-serif; /* Fonte para texto geral */
+  }
+  
+  /*--------------------------------------------------------------
+  # Estilos Gerais
+  --------------------------------------------------------------*/
+  body {
+    font-family: var(--font-default);
+    color: var(--default-color);
+    background-color: var(--background-color);
+  }
+  
+  a {
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: 0.3s;
+  }
+  
+  a:hover {
+    color: #f36a6a; /* Um tom mais claro do primário */
+    text-decoration: none;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-primary);
+  }
+  
+  /*--------------------------------------------------------------
+  # Seções Gerais e Cabeçalhos
+  --------------------------------------------------------------*/
+  section {
+    padding: 80px 0;
+    overflow: hidden; /* Evita barras de rolagem indesejadas de animações */
+  }
+  
+  .section-bg {
+    background-color: #f8f9fa; /* Um fundo levemente cinza para alternar */
+  }
+  
+  .section-header {
+    text-align: center;
+    padding-bottom: 40px;
+  }
+  
+  .section-header h2 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    position: relative;
+    font-family: var(--font-primary);
+    color: var(--secondary-color);
+  }
+  
+  .section-header h2:after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 50px;
+    height: 3px;
+    background: var(--primary-color);
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+  }
+  
+  .section-header p {
+    margin-bottom: 0;
+    color: #6c757d; /* Cinza mais suave para subtítulos */
+    font-family: var(--font-secondary);
+  }
+  
+  /*--------------------------------------------------------------
+  # Botão Scroll Top
+  --------------------------------------------------------------*/
+  .scroll-top {
+    position: fixed;
+    visibility: hidden;
+    opacity: 0;
+    right: 15px;
+    bottom: 15px;
+    z-index: 9999;
+    background: var(--primary-color);
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    transition: all 0.4s;
+    display: flex; /* Garante centralização do ícone */
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .scroll-top i {
+    font-size: 28px;
+    color: var(--contrast-color);
+    line-height: 0; /* Ajusta alinhamento vertical */
+  }
+  
+  .scroll-top:hover {
+    background: rgba(var(--primary-color-rgb), 0.85); /* Leve transparência no hover */
+    color: var(--contrast-color);
+  }
+  
+  .scroll-top.active {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  
+  /*--------------------------------------------------------------
+  # Header
+  --------------------------------------------------------------*/
+  .header {
+    height: 80px;
+    transition: all 0.5s;
+    z-index: 997;
+    background: transparent; /* Começa transparente */
+  }
+  
+  .header.scrolled {
+    background: var(--background-color);
+    height: 60px;
+    box-shadow: 0px 0px 30px rgba(var(--default-color-rgb), 0.1);
+  }
+  
+  .header .logo h1 {
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--contrast-color); /* Cor inicial do texto */
+    margin: 0;
+    font-family: var(--font-primary);
+  }
+  
+  .header.scrolled .logo h1 {
+   color: var(--nav-color); /* Cor do texto após rolar */
+  }
+  
+  .header .logo img {
+    max-height: 40px;
+    margin-right: 8px;
+  }
+  
+  /* Estilos dos links de contato no header */
+  .header .header-social-links a {
+    color: rgba(var(--contrast-color-rgb), 0.8);
+    margin-left: 15px;
+    display: inline-flex; /* Para alinhar ícone e texto */
+    align-items: center; /* Para alinhar ícone e texto */
+    font-size: 14px;
+    font-weight: 600;
+    padding: 8px 15px;
+    border: 1px solid rgba(var(--contrast-color-rgb), 0.5);
+    border-radius: 50px;
+    transition: 0.3s;
+  }
+  .header .header-social-links a i {
+    margin-right: 6px;
+    font-size: 16px;
+    line-height: 0;
+  }
+  
+  .header .header-social-links a:hover {
+     color: var(--contrast-color);
+     background-color: var(--primary-color);
+     border-color: var(--primary-color);
+  }
+  
+  .header.scrolled .header-social-links a {
+    color: var(--secondary-color);
+    border-color: var(--secondary-color);
+  }
+  .header.scrolled .header-social-links a:hover {
+    color: var(--contrast-color);
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+  }
+  
+  
+  /*--------------------------------------------------------------
+  # Navegação Desktop
+  --------------------------------------------------------------*/
+  .navbar {
+    padding: 0;
+  }
+  
+  .navbar ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style: none;
+    align-items: center;
+  }
+  
+  .navbar li {
+    position: relative;
+  }
+  
+  .navbar a,
+  .navbar a:focus {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 15px; /* Aumentado para melhor toque */
+    font-family: var(--font-secondary);
+    font-size: 16px;
+    font-weight: 500;
+    color: rgba(var(--contrast-color-rgb), 0.8); /* Cor inicial */
+    white-space: nowrap;
+    transition: 0.3s;
+  }
+  
+  .navbar a i,
+  .navbar a:focus i {
+    font-size: 12px;
+    line-height: 0;
+    margin-left: 5px;
+  }
+  
+  .navbar a:hover,
+  .navbar .active,
+  .navbar .active:focus,
+  .navbar li:hover>a {
+    color: var(--contrast-color); /* Cor hover/ativa inicial */
+  }
+  
+  /* Estilos da Navbar após rolagem */
+  .header.scrolled .navbar a,
+  .header.scrolled .navbar a:focus {
+    color: var(--nav-color);
+  }
+  
+  .header.scrolled .navbar a:hover,
+  .header.scrolled .navbar .active,
+  .header.scrolled .navbar .active:focus,
+  .header.scrolled .navbar li:hover>a {
+    color: var(--nav-hover-color);
+  }
+  
+  
+  /*--------------------------------------------------------------
+  # Navegação Mobile
+  --------------------------------------------------------------*/
+  .mobile-nav-toggle {
+    color: var(--contrast-color); /* Cor inicial do ícone mobile */
+    font-size: 28px;
+    cursor: pointer;
+    display: none;
+    line-height: 0;
+    transition: 0.5s;
+  }
+  .header.scrolled .mobile-nav-toggle {
+    color: var(--nav-color); /* Cor do ícone mobile após rolar */
+  }
+  
+  @media (max-width: 991px) { /* Ativado em telas menores que Large do Bootstrap */
+    .mobile-nav-toggle {
+      display: block;
+    }
+  
+    .navbar ul {
+      display: none; /* Esconde menu desktop */
+      position: absolute;
+      top: 55px; /* Ajustar baseado na altura do header */
+      right: 15px;
+      left: 15px;
+      bottom: 15px; /* Adicionado para teste */
+      padding: 10px 0;
+      border-radius: 8px;
+      background-color: var(--nav-mobile-background-color);
+      overflow-y: auto;
+      transition: 0.3s;
+      z-index: 9995;
+      box-shadow: 0px 0px 30px rgba(var(--default-color-rgb), 0.15);
+    }
+  
+   .navbar-mobile .mobile-nav-toggle { /* Estilo do botão X */
+       position: absolute;
+       top: 15px;
+       right: 15px;
+   }
+  
+   .navbar-mobile ul {
+       display: block; /* Mostra o menu quando navbar-mobile está ativa */
+   }
+  
+  
+    .navbar-mobile a,
+    .navbar-mobile a:focus {
+      padding: 10px 20px;
+      font-size: 16px; /* Tamanho bom para toque */
+      color: var(--nav-dropdown-color);
+    }
+  
+    .navbar-mobile a:hover,
+    .navbar-mobile .active,
+    .navbar-mobile li:hover>a {
+      color: var(--nav-dropdown-hover-color);
+      background-color: rgba(var(--primary-color-rgb), 0.05); /* Fundo leve no hover */
+    }
+  }
+  
+  /*--------------------------------------------------------------
+  # Hero Section
+  --------------------------------------------------------------*/
+  .hero {
+    width: 100%;
+    min-height: 100vh; /* Garante preenchimento da primeira dobra */
+    background-size: cover;
+    background-position: center 100%; /* Padrão para telas grandes */
+    position: relative;
+    padding: 0;
+    display: flex;
+    align-items: flex-end; /* Alinha conteúdo na parte inferior */
+    /* Imagem padrão (desktop) */
+    background-image: url('https://psijuliedina.com/assets/img/profile.webp');
+  }
+  
+  /* Media Query para telas pequenas (smartphones) */
+  @media (max-width: 767.98px) {
+    .hero {
+      background-image: url('https://psijuliedina.com/assets/img/profile_mobile.webp');
+      background-position: center center; /* Centraliza para mobile */
+      align-items: center; /* Pode centralizar verticalmente no mobile */
+      text-align: center; /* Centraliza texto no mobile */
+    }
+     .hero .container {
+        padding-bottom: 50px; /* Espaço extra no fundo */
+     }
+     .hero .d-flex {
+          justify-content: center !important; /* Força centralização dos botões */
+     }
+  }
+  
+  .hero:before {
+    content: "";
+    background-color: rgba(var(--secondary-color-rgb), 0.4); /* Overlay escuro com opacidade */
+    position: absolute;
+    inset: 0;
+  }
+  
+  .hero .container {
+    position: relative; /* Para que o z-index funcione */
+    z-index: 2;
+    padding-bottom: 80px; /* Espaço na base */
+  }
+  
+  .hero h1 {
+    margin: 0 0 10px 0;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 56px;
+    color: var(--contrast-color);
+    font-family: var(--font-primary);
+  }
+  
+  .hero p {
+    color: rgba(var(--contrast-color-rgb), 0.9);
+    margin: 0 0 30px 0;
+    font-size: 20px;
+    font-weight: 400;
+     font-family: var(--font-secondary);
+  }
+  
+  @media (max-width: 767.98px) {
+    .hero h1 {
+      font-size: 32px;
+      line-height: 40px;
+    }
+    .hero p {
+      font-size: 16px;
+    }
+  }
+  
+  /* Botões do Hero e CTA */
+  .btn-book-a-table, .cta-btn {
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 1px;
+    display: inline-flex; /* Para alinhar ícone e texto */
+    align-items: center;
+    padding: 12px 30px;
+    border-radius: 50px;
+    transition: 0.5s;
+    color: var(--contrast-color);
+    background: var(--primary-color);
+    box-shadow: 0 8px 28px rgba(var(--primary-color-rgb), 0.2);
+    text-transform: uppercase; /* Caixa alta como no exemplo */
+  }
+  .btn-book-a-table i, .cta-btn i {
+      margin-right: 8px;
+      font-size: 16px;
+      line-height: 0;
+  }
+  
+  .btn-book-a-table:hover, .cta-btn:hover {
+    background: rgba(var(--primary-color-rgb), 0.85);
+    box-shadow: 0 8px 28px rgba(var(--primary-color-rgb), 0.45);
+    color: var(--contrast-color);
+  }
+  
+  .cta-btn.cta-btn-secondary {
+      background: var(--secondary-color);
+      box-shadow: 0 8px 28px rgba(var(--secondary-color-rgb), 0.2);
+  }
+  .cta-btn.cta-btn-secondary:hover {
+      background: rgba(var(--secondary-color-rgb), 0.85);
+      box-shadow: 0 8px 28px rgba(var(--secondary-color-rgb), 0.45);
+  }
+  
+  
+  /*--------------------------------------------------------------
+  # Seção Informação
+  --------------------------------------------------------------*/
+  .informacao p {
+      line-height: 1.7;
+      text-align: center;
+      max-width: 800px; /* Limita largura para leitura */
+      margin-left: auto;
+      margin-right: auto;
+  }
+  
+  /*--------------------------------------------------------------
+  # Seção Serviços
+  --------------------------------------------------------------*/
+  .servicos .servico-item {
+    padding: 40px;
+    background: var(--background-color);
+    border-radius: 8px;
+    box-shadow: 0px 0px 25px rgba(var(--default-color-rgb), 0.08);
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+    height: 100%; /* Garante altura igual para cards na mesma linha */
+  }
+  
+  .servicos .servico-item .icon {
+    margin: 0 auto 30px auto;
+    width: 64px;
+    height: 64px;
+    background: var(--primary-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .servicos .servico-item .icon i {
+    color: var(--contrast-color);
+    font-size: 32px;
+    line-height: 0;
+  }
+  
+  .servicos .servico-item:hover .icon {
+    background: var(--contrast-color);
+    border: 2px solid var(--primary-color);
+  }
+  
+  .servicos .servico-item:hover .icon i {
+    color: var(--primary-color);
+  }
+  
+  .servicos .servico-item h3 {
+    color: var(--secondary-color);
+    font-weight: 700;
+    margin: 0 0 15px 0;
+    font-size: 22px;
+  }
+  
+  .servicos .servico-item p {
+    line-height: 1.6;
+    color: var(--default-color);
+    margin-bottom: 0;
+    font-size: 15px;
+  }
+  
+  .servicos .servico-item:hover {
+      transform: translateY(-10px);
+      box-shadow: 0px 0px 30px rgba(var(--default-color-rgb), 0.12);
+  }
+  
+  
+  /*--------------------------------------------------------------
+  # Seção Avaliações
+  --------------------------------------------------------------*/
+  .avaliacoes .avaliacao-card {
+    box-shadow: 0px 0 25px rgba(var(--default-color-rgb), 0.08);
+    border: 0;
+    border-radius: 8px;
+    height: 100%; /* Garante altura igual */
+    transition: transform 0.3s;
+  }
+  .avaliacoes .avaliacao-card:hover {
+      transform: translateY(-5px);
+  }
+  
+  .avaliacoes .avaliacao-card .card-body {
+    padding: 30px;
+  }
+  
+  .avaliacoes .stars {
+    color: #ffc107; /* Cor amarela para estrelas */
+  }
+  
+  .avaliacoes .stars i {
+    margin: 0 1px;
+  }
+  
+  .avaliacoes .quote-icon-left,
+  .avaliacoes .quote-icon-right {
+    display: inline-block;
+    position: relative;
+    font-size: 26px;
+    color: var(--primary-color);
+    opacity: 0.6;
+  }
+  
+  .avaliacoes .quote-icon-left {
+    margin-right: 10px;
+  }
+  
+  .avaliacoes .quote-icon-right {
+    margin-left: 10px;
+    top: 10px; /* Ajuste para alinhar com fim da citação */
+  }
+  
+  .avaliacoes .google-logo {
+    border-radius: 50%;
+    object-fit: cover; /* Evita distorção */
+  }
+  .avaliacoes .card-body strong {
+      display: block;
+      font-size: 16px;
+      color: var(--secondary-color);
+  }
+  .avaliacoes .card-body small {
+      font-size: 13px;
+      color: #6c757d;
+  }
+  .avaliacoes .card-body a small:hover {
+      color: var(--primary-color);
+  }
+  
+  
+  /*--------------------------------------------------------------
+  # Seção Sobre
+  --------------------------------------------------------------*/
+  .sobre .content ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .sobre .content ul li {
+    padding-bottom: 10px;
+    display: flex;
+    align-items: flex-start; /* Alinha ícone e texto no início */
+  }
+  
+  .sobre .content ul i {
+    font-size: 20px;
+    color: var(--primary-color);
+    margin-right: 8px;
+    flex-shrink: 0; /* Evita que o ícone encolha */
+    line-height: 1; /* Garante alinhamento */
+  }
+  
+  .sobre .content p:last-child {
+    margin-bottom: 0;
+  }
+  
+  .sobre .content .btn-verify-crp {
+      margin-top: 20px;
+      background-color: var(--primary-color);
+      border: 0;
+      padding: 10px 25px;
+      border-radius: 50px;
+      color: var(--contrast-color);
+      font-size: 15px;
+      font-weight: 500;
+      display: inline-flex;
+      align-items: center;
+  }
+  .sobre .content .btn-verify-crp i {
+      margin-right: 8px;
+      font-size: 18px;
+  }
+  .sobre .content .btn-verify-crp:hover {
+      background-color: rgba(var(--primary-color-rgb), 0.85);
+  }
+  
+  .sobre .about-img {
+      min-height: 400px; /* Garante espaço mesmo antes da imagem carregar */
+  }
+  .sobre .about-img img {
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  }
+  
+  
+  /*--------------------------------------------------------------
+  # Seção Local
+  --------------------------------------------------------------*/
+  .local iframe {
+    border: 0;
+    width: 100%;
+    height: 450px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  }
+  .local .address {
+      font-size: 18px;
+      color: var(--secondary-color);
+      font-weight: 500;
+  }
+  .local .address i {
+      color: var(--primary-color);
+      margin-right: 5px;
+  }
+  .local .btn-directions {
+      background-color: var(--primary-color);
+      border: 0;
+      padding: 10px 30px;
+      border-radius: 50px;
+      color: var(--contrast-color);
+      font-size: 15px;
+      font-weight: 500;
+      display: inline-flex;
+      align-items: center;
+  }
+  .local .btn-directions i {
+      margin-right: 8px;
+      font-size: 18px;
+  }
+  .local .btn-directions:hover {
+       background-color: rgba(var(--primary-color-rgb), 0.85);
+  }
+  
+  /*--------------------------------------------------------------
+  # Seção Dúvidas (Accordion)
+  --------------------------------------------------------------*/
+  .duvidas .accordion-item {
+    border: 0;
+    margin-bottom: 15px;
+    box-shadow: 0px 0px 20px rgba(var(--default-color-rgb), 0.07);
+    border-radius: 8px !important; /* Força borda arredondada */
+    overflow: hidden; /* Garante que o conteúdo não saia das bordas */
+  }
+  
+  .duvidas .accordion-button {
+    font-size: 18px;
+    font-weight: 600;
+    padding: 20px 25px;
+    color: var(--secondary-color);
+    text-align: left;
+    background: var(--background-color);
+    border: 0;
+    border-radius: 0; /* Remove borda do botão */
+  }
+  
+  .duvidas .accordion-button:focus {
+    box-shadow: none;
+  }
+  
+  .duvidas .accordion-button:not(.collapsed) {
+    color: var(--primary-color);
+    background-color: #fef5f5; /* Um fundo rosa muito claro quando aberto */
+    box-shadow: none;
+  }
+  
+  .duvidas .accordion-button:after { /* Estilo do ícone +/- */
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23e84545'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+    background-size: 1.2rem; /* Ajusta tamanho do ícone */
+    transition: transform 0.2s ease-in-out;
+  }
+  .duvidas .accordion-button:not(.collapsed):after {
+    filter: brightness(0.8); /* Escurece um pouco o ícone quando aberto */
+  }
+  
+  
+  .duvidas .accordion-body {
+    padding: 0 25px 25px 25px; /* Ajusta padding do corpo */
+    background: var(--background-color);
+    line-height: 1.7;
+    font-size: 15px;
+  }
+  
+  /*--------------------------------------------------------------
+  # Seção CTA (Call to Action)
+  --------------------------------------------------------------*/
+  .cta {
+    background-size: cover;
+    padding: 80px 0;
+  }
+  
+  .cta h3 {
+    color: var(--secondary-color);
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+  
+  .cta p {
+    color: var(--default-color);
+    margin-bottom: 25px;
+    line-height: 1.7;
+  }
+  
+  .cta .img img {
+    max-width: 100%;
+    height: auto;
+  }
+  @media (max-width: 768px) {
+      .cta .content {
+          text-align: center;
+      }
+      .cta .img {
+          text-align: center;
+          margin-bottom: 30px;
+      }
+      .cta .img img {
+          max-width: 70%; /* Reduz um pouco a imagem no mobile */
+      }
+  }
+  
+  /*--------------------------------------------------------------
+  # Footer
+  --------------------------------------------------------------*/
+  .footer {
+    font-size: 14px;
+    background-color: var(--secondary-color);
+    padding: 50px 0;
+    color: rgba(var(--contrast-color-rgb), 0.7);
+  }
+  
+  .footer .footer-info .logo {
+    line-height: 0;
+    margin-bottom: 25px;
+  }
+  
+  .footer .footer-info .logo span {
+    font-size: 26px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: var(--contrast-color);
+    font-family: var(--font-primary);
+  }
+  
+  .footer .footer-info p {
+    font-size: 14px;
+    font-family: var(--font-secondary);
+    margin-bottom: 0; /* Reset margin */
+  }
+  
+  .footer .social-links a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid rgba(var(--contrast-color-rgb), 0.2);
+    font-size: 16px;
+    color: rgba(var(--contrast-color-rgb), 0.7);
+    margin-right: 10px;
+    transition: 0.3s;
+  }
+  
+  .footer .social-links a:hover {
+    color: var(--contrast-color);
+    border-color: var(--primary-color);
+    background: var(--primary-color);
+  }
+  
+  .footer h4 {
+    font-size: 16px;
+    font-weight: bold;
+    position: relative;
+    padding-bottom: 10px;
+    color: var(--contrast-color);
+    font-family: var(--font-primary);
+    margin-bottom: 15px; /* Espaço abaixo do título */
+  }
+  
+  .footer .footer-links {
+    margin-bottom: 30px;
+  }
+  
+  .footer .footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .footer .footer-links ul li {
+    padding: 8px 0; /* Espaçamento entre links */
+    display: flex;
+    align-items: center;
+  }
+  
+  .footer .footer-links ul li:first-child {
+    padding-top: 0;
+  }
+  
+  .footer .footer-links ul a {
+    color: rgba(var(--contrast-color-rgb), 0.8);
+    transition: 0.3s;
+    display: inline-block;
+    line-height: 1;
+  }
+  
+  .footer .footer-links ul a:hover {
+    color: var(--primary-color);
+  }
+  
+  .footer .footer-contact p {
+    line-height: 1.8; /* Melhor espaçamento para endereço */
+  }
+  .footer .footer-contact a {
+       color: rgba(var(--contrast-color-rgb), 0.8);
+  }
+  .footer .footer-contact a:hover {
+      color: var(--primary-color);
+      text-decoration: underline;
+  }
+  
+  .footer .copyright {
+    text-align: center;
+    padding-top: 30px;
+    border-top: 1px solid rgba(var(--contrast-color-rgb), 0.15);
+  }
+  
+  .footer .credits {
+    padding-top: 4px;
+    text-align: center;
+    font-size: 13px;
+    color: rgba(var(--contrast-color-rgb), 0.7);
+  }
+  .footer .credits a {
+      color: var(--primary-color);
+      transition: 0.3s;
+  }
+  .footer .credits a:hover {
+      color: var(--contrast-color);
+  }
+  
+  
+  /*--------------------------------------------------------------
+  # Animate On Scroll Library (se usar)
+  --------------------------------------------------------------*/
+  /* Se usar AOS, pode adicionar estilos personalizados aqui */
+  /* Exemplo: [data-aos-delay='100'] { transition-delay: 0.1s; } */
