@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Psicóloga Juliedina - Atendimento psicológico presencial e online para adolescentes, jovens, adultos e idosos. Agende sua consulta.">
+    <title>Psicóloga Juliedina | Atendimento Psicológico em Leme/SP e Online</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        :root {
+            --background-color: #ffffff;
+            --background-color-rgb: 255, 255, 255;
+            --default-color: #212529;
+            --default-color-rgb: 33, 37, 41;
+            --primary-color: #e84545;
+            --primary-color-rgb: 232, 69, 69;
+            --secondary-color: #32353a;
+            --secondary-color-rgb: 50, 53, 58;
+            --contrast-color: #ffffff;
+            --contrast-color-rgb: 255, 255, 255;
+            --nav-color: #3a3939;
+            --nav-hover-color: #e84545;
+            --nav-dropdown-color: #3a3939;
+            --nav-dropdown-hover-color: #e84545;
+            --nav-dropdown-background-color: #ffffff;
+            --nav-mobile-background-color: #ffffff;
+        }
+        
+        body {
+            font-family: 'Montserrat', sans-serif;
+            color: var(--default-color);
+            background-color: var(--background-color);
+        }
+        
+        .header-scrolled {
+            background-color: var(--background-color) !important;
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+        }
+        
+        .header-scrolled .nav-link {
+            color: var(--default-color) !important;
+        }
+        
+        .header-scrolled .logo {
+            color: var(--default-color) !important;
+        }
+        
+        .hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('https://psijuliedina.com/assets/img/profile.webp') center 100%/cover no-repeat;
+            min-height: 100vh;
+        }
+        
+        @media (max-width: 768px) {
+            .hero {
+                background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('https://psijuliedina.com/assets/img/profile_mobile.webp') center/cover no-repeat;
+            }
+        }
+        
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+        
+        .review-card {
+            transition: all 0.3s ease;
+        }
+        
+        .review-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .accordion-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        
+        .accordion-content.active {
+            max-height: 500px;
+        }
+        
+        .whatsapp-btn {
+            background-color: #25D366;
+            transition: all 0.3s ease;
+        }
+        
+        .whatsapp-btn:hover {
+            background-color: #128C7E;
+        }
+        
+        .phone-btn {
+            transition: all 0.3s ease;
+        }
+        
+        .phone-btn:hover {
+            background-color: var(--secondary-color);
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header id="header" class="fixed w-full top-0 left-0 z-50 transition-all duration-300 bg-transparent">
+        <div class="container mx-auto px-4 py-3">
+            <div class="flex justify-between items-center">
+                <a href="#" class="logo text-2xl font-bold text-white">Psicologa Juliedina</a>
+                
+                <nav class="hidden md:block">
+                    <ul class="flex space-x-6">
+                        <li><a href="#inicio" class="nav-link text-white hover:text-red-400 transition">Início</a></li>
+                        <li><a href="#servicos" class="nav-link text-white hover:text-red-400 transition">Serviços</a></li>
+                        <li><a href="#avaliacoes" class="nav-link text-white hover:text-red-400 transition">Avaliações</a></li>
+                        <li><a href="#sobre" class="nav-link text-white hover:text-red-400 transition">Sobre</a></li>
+                        <li><a href="#local" class="nav-link text-white hover:text-red-400 transition">Local</a></li>
+                        <li><a href="#duvidas" class="nav-link text-white hover:text-red-400 transition">Dúvidas?</a></li>
+                    </ul>
+                </nav>
+                
+                <button class="md:hidden text-white text-2xl" id="mobile-menu-button">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white w-full absolute top-full left-0 shadow-lg">
+            <ul class="py-4">
+                <li><a href="#inicio" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Início</a></li>
+                <li><a href="#servicos" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Serviços</a></li>
+                <li><a href="#avaliacoes" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Avaliações</a></li>
+                <li><a href="#sobre" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Sobre</a></li>
+                <li><a href="#local" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Local</a></li>
+                <li><a href="#duvidas" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Dúvidas?</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero flex items-end pb-20 md:pb-32 px-4 md:px-0">
+        <div class="container mx-auto">
+            <div class="max-w-2xl text-white">
+                <h1 class="text-4xl md:text-5xl font-bold mb-4">Sua psicóloga em qualquer lugar.</h1>
+                <p class="text-xl md:text-2xl">Atendimento para adolescentes, jovens, adultos e idosos.</p>
+                <div class="mt-8 flex flex-wrap gap-4">
+                    <a href="https://wa.me/5519988452408" class="whatsapp-btn flex items-center justify-center px-6 py-3 rounded-full text-white font-medium">
+                        <i class="fab fa-whatsapp mr-2 text-xl"></i> Agendar pelo WhatsApp
+                    </a>
+                    <a href="tel:+5519988452508" class="phone-btn flex items-center justify-center px-6 py-3 rounded-full bg-primary-color text-white font-medium">
+                        <i class="fas fa-phone mr-2"></i> Ligar agora
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Info Section -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="max-w-3xl mx-auto text-center">
+                <h2 class="text-3xl font-bold mb-6">Como o tratamento psicológico pode me ajudar?</h2>
+                <p class="text-lg text-gray-700">
+                    A psicoterapia é um tratamento reconhecido mundialmente e no Brasil somente pode ser exercida por psicólogos credenciados ao órgão regulamentador, o CFP. Através da psicoterapia, você pode desenvolver autoconhecimento, lidar melhor com suas emoções, superar traumas e melhorar seus relacionamentos, alcançando uma melhor qualidade de vida e bem-estar emocional.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="servicos" class="py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Serviços</h2>
+            
+            <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <!-- Service Card 1 -->
+                <div class="service-card bg-white rounded-lg shadow-md p-6 transition duration-300">
+                    <div class="text-primary-color text-4xl mb-4">
+                        <i class="fas fa-user-friends"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Psicoterapia Individual</h3>
+                    <p class="text-gray-700">
+                        Tratamento destinado ao público adolescente, jovem, adulto e idoso para tratamento de transtornos mentais e comportamentais que comprometam a qualidade de vida, como: depressão, ansiedade, problemas no relacionamento, dificuldade financeira, conflitos familiares, traumas e outros.
+                    </p>
+                </div>
+                
+                <!-- Service Card 2 -->
+                <div class="service-card bg-white rounded-lg shadow-md p-6 transition duration-300">
+                    <div class="text-primary-color text-4xl mb-4">
+                        <i class="fas fa-clipboard-check"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Avaliação Psicológica</h3>
+                    <p class="text-gray-700">
+                        Serviço destinado ao público jovem, adulto e idoso para procedimentos médicos para certificar a ausência de transtornos mentais relacionados, como: cirurgia bariátrica, cirurgia plástica, vasectomia, doação de gametas para reprodução assistida e outros.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section id="avaliacoes" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Avaliações de Pacientes</h2>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Review 1 -->
+                <div class="review-card bg-white rounded-lg shadow p-6">
+                    <div class="flex mb-3 text-yellow-400">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-gray-700 mb-4">
+                        "Fui muito bem acolhida e me senti muito confortável com o atendimento, sou eternamente agradecida por isso, pois foi meu primeiro contato e tive uma experiência muito boa. Super indico ❤️✨"
+                    </p>
+                    <div class="flex items-center">
+                        <img src="https://via.placeholder.com/40" alt="Maytte Araujo" class="w-10 h-10 rounded-full mr-3">
+                        <div>
+                            <p class="font-bold">Maytte Araujo</p>
+                            <a href="https://g.co/kgs/2HHPzqq" class="text-sm text-primary-color hover:underline">Ver no Google</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Review 2 -->
+                <div class="review-card bg-white rounded-lg shadow p-6">
+                    <div class="flex mb-3 text-yellow-400">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-gray-700 mb-4">
+                        "Excelente profissional! Desde a primeira sessão, me senti muito à vontade e acolhida. A Ju é sempre atenciosa e me ajuda muito a enxergar as coisas de diferentes formas. Em pouco tempo, já sinto uma enorme evolução. Só tenho a parabenizar e agradecer pelo trabalho dela."
+                    </p>
+                    <div class="flex items-center">
+                        <img src="https://via.placeholder.com/40" alt="Jucicleide Silva" class="w-10 h-10 rounded-full mr-3">
+                        <div>
+                            <p class="font-bold">Jucicleide Silva</p>
+                            <a href="https://g.co/kgs/Uc31Qnh" class="text-sm text-primary-color hover:underline">Ver no Google</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Review 3 -->
+                <div class="review-card bg-white rounded-lg shadow p-6">
+                    <div class="flex mb-3 text-yellow-400">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-gray-700 mb-4">
+                        "A melhor profissional que eu pudesse escolher. Uma pessoa incrível. Não tenho arrependimento algum!!!"
+                    </p>
+                    <div class="flex items-center">
+                        <img src="https://via.placeholder.com/40" alt="Ingrid Orlandini" class="w-10 h-10 rounded-full mr-3">
+                        <div>
+                            <p class="font-bold">Ingrid Orlandini</p>
+                            <a href="https://g.co/kgs/oGkaZo5" class="text-sm text-primary-color hover:underline">Ver no Google</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Review 4 -->
+                <div class="review-card bg-white rounded-lg shadow p-6">
+                    <div class="flex mb-3 text-yellow-400">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-gray-700 mb-4">
+                        "Ótima profissional...pontual e prestativa, nos faz refletir e nos ajuda nos momentos de angústia. 5 estrelas para Juliédina."
+                    </p>
+                    <div class="flex items-center">
+                        <img src="https://via.placeholder.com/40" alt="Miriam Bergamasco" class="w-10 h-10 rounded-full mr-3">
+                        <div>
+                            <p class="font-bold">Miriam Bergamasco</p>
+                            <a href="https://g.co/kgs/8rybA1L" class="text-sm text-primary-color hover:underline">Ver no Google</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Review 5 -->
+                <div class="review-card bg-white rounded-lg shadow p-6">
+                    <div class="flex mb-3 text-yellow-400">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-gray-700 mb-4">
+                        "Estou muito satisfeito. Altamente profissional, competente, discreta, pontual e capacitada"
+                    </p>
+                    <div class="flex items-center">
+                        <img src="https://via.placeholder.com/40" alt="Alessandro Santos" class="w-10 h-10 rounded-full mr-3">
+                        <div>
+                            <p class="font-bold">Alessandro Santos</p>
+                            <a href="https://g.co/kgs/ssGTKa5" class="text-sm text-primary-color hover:underline">Ver no Google</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Review 6 -->
+                <div class="review-card bg-white rounded-lg shadow p-6">
+                    <div class="flex mb-3 text-yellow-400">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-gray-700 mb-4">
+                        "Super recomendo! Faz toda a diferença na minha vida!!"
+                    </p>
+                    <div class="flex items-center">
+                        <img src="https://via.placeholder.com/40" alt="Maria Gabriela Longo" class="w-10 h-10 rounded-full mr-3">
+                        <div>
+                            <p class="font-bold">Maria Gabriela Longo</p>
+                            <a href="https://g.co/kgs/EkhzmEz" class="text-sm text-primary-color hover:underline">Ver no Google</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="sobre" class="py-16">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-8 md:mb-0 md:pr-8">
+                    <img src="https://psijuliedina.com/assets/img/about.webp" alt="Psicóloga Juliedina" class="rounded-lg shadow-md w-full h-auto" width="500" height="500">
+                </div>
+                <div class="md:w-1/2">
+                    <h2 class="text-3xl font-bold mb-6">Sobre a Psicóloga</h2>
+                    <p class="text-gray-700 mb-6">
+                        Psicóloga clínica com experiência em ajudar pacientes a conquistarem mais qualidade de vida e equilíbrio emocional. No campo da Psicologia, tenho experiência organizacional e clínica, desde 2020 me dedico exclusivamente ao consultório, realizando avaliações e atendimentos, auxiliando pessoas a lidarem com suas questões emocionais e comportamentais. Ofereço um atendimento clínico ético, personalizado, acolhedor e profissional.
+                    </p>
+                    <a href="https://cadastro.cfp.org.br/visualizar.html?profissional=qRVh%2B581Y%2B%2FlDLotNCVoZ%2BPdKOc0k%2F8UcTuS0WFOyKI%3D" class="inline-block px-6 py-3 bg-primary-color text-white rounded-lg font-medium hover:bg-red-600 transition">
+                        Verificar CRP
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location Section -->
+    <section id="local" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-8">Localização</h2>
+            
+            <div class="flex flex-col md:flex-row">
+                <div class="md:w-1/2 mb-8 md:mb-0 md:pr-8">
+                    <div class="h-96 w-full rounded-lg overflow-hidden shadow-md">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3694.427285548147!2d-47.384842885124925!3d-22.18586238538316!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c80d05ec80e81d%3A0xdd6681cf41620c3c!2sPsic%C3%B3loga%20Juli%C3%A9dina%20Lopes%20Ramos%20-%20Leme%2C%20SP!5e0!3m2!1spt-BR!2sbr!4v1651454269956!5m2!1spt-BR!2sbr" 
+                            width="100%" 
+                            height="100%" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade"
+                            title="Localização do consultório da Psicóloga Juliedina"
+                        ></iframe>
+                    </div>
+                </div>
+                
+                <div class="md:w-1/2">
+                    <h3 class="text-2xl font-bold mb-4">Rua Professor Domingos Cambiaghi, 110, Centro - Leme/SP</h3>
+                    <p class="text-gray-700 mb-6">
+                        Meu consultório está localizado no centro de Leme/SP, com fácil acesso e estacionamento próximo. Ambiente acolhedor e privativo para garantir o conforto e sigilo durante as sessões.
+                    </p>
+                    <a href="https://www.google.com/maps/dir//Rua+Professor+Domingos+Cambiaghi,+110,+Centro+-+Leme%2FSP" class="inline-block px-6 py-3 bg-primary-color text-white rounded-lg font-medium hover:bg-red-600 transition">
+                        <i class="fas fa-directions mr-2"></i> Como chegar
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="duvidas" class="py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Dúvidas Frequentes</h2>
+            
+            <div class="max-w-3xl mx-auto">
+                <!-- FAQ Item 1 -->
+                <div class="mb-4 border-b border-gray-200 pb-4">
+                    <button class="accordion-button flex justify-between items-center w-full text-left font-medium text-lg">
+                        <span>Como funciona a psicoterapia online?</span>
+                        <i class="fas fa-chevron-down transition-transform duration-300"></i>
+                    </button>
+                    <div class="accordion-content mt-2 text-gray-700">
+                        <p>
+                            A psicoterapia online segue as mesmas diretrizes da modalidade presencial, onde são aplicados os mesmos métodos e técnicas psicológicas para atender as necessidades do paciente. Devido aos avanços tecnológicos, as pessoas podem desfrutar dos benefícios do tratamento psicológico sem saírem de casa. No Brasil, os atendimentos à distância foram efetivamente regulamentados pelo Conselho Federal de Psicologia, através da Resolução CFP Nº 11/2018 (<a href="https://e-psi.cfp.org.br/resolucao-cfp-no-11-2018/" class="text-primary-color hover:underline">https://e-psi.cfp.org.br/resolucao-cfp-no-11-2018/</a>).
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- FAQ Item 2 -->
+                <div class="mb-4 border-b border-gray-200 pb-4">
+                    <button class="accordion-button flex justify-between items-center w-full text-left font-medium text-lg">
+                        <span>Qual a frequência das sessões?</span>
+                        <i class="fas fa-chevron-down transition-transform duration-300"></i>
+                    </button>
+                    <div class="accordion-content mt-2 text-gray-700">
+                        <p>
+                            Normalmente, a psicoterapia é iniciada com sessões semanais, mas dependendo do caso do paciente, a medida que obter melhora dos sintomas, é possível que as sessões passem a ser quinzenais.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- FAQ Item 3 -->
+                <div class="mb-4 border-b border-gray-200 pb-4">
+                    <button class="accordion-button flex justify-between items-center w-full text-left font-medium text-lg">
+                        <span>É possível conseguir reembolso das sessões pelo plano de saúde ou convênio médico?</span>
+                        <i class="fas fa-chevron-down transition-transform duration-300"></i>
+                    </button>
+                    <div class="accordion-content mt-2 text-gray-700">
+                        <p>
+                            Sim, algumas categorias de contratos de plano de saúde e convênios médicos permitem a livre escolha de profissionais, como psicólogos, que não fazem parte da rede credenciada. Para saber se você tem este direito, entre em contato com a operadora de seu plano e verifique se seu contrato permite acesso a serviços de livre escolha de prestadores que não pertençam à rede credenciada e quais condições e procedimentos. As regras de valor e prazo para reembolso variam de acordo com a operadora e contrato. Nesta modalidade, o paciente faz o pagamento diretamente ao prestador, que emite o recibo e o paciente solicita seu reembolso ao plano de saúde. É comum que seja solicitado um encaminhamento ou pedido feito pelo médico assistente, que deve conter o CID (Classificação Internacional de Doenças) para liberação das sessões.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- FAQ Item 4 -->
+                <div class="mb-4 border-b border-gray-200 pb-4">
+                    <button class="accordion-button flex justify-between items-center w-full text-left font-medium text-lg">
+                        <span>É preciso de autorização para atendimento psicológico de adolescentes?</span>
+                        <i class="fas fa-chevron-down transition-transform duration-300"></i>
+                    </button>
+                    <div class="accordion-content mt-2 text-gray-700">
+                        <p>
+                            Sim, os pacientes menores de 18 anos devem obter autorização por escrito de, ao menos, um dos responsáveis legais, conforme Artigo 12, item I da Resolução CFP Nº 13/2022 (<a href="https://www.in.gov.br/en/web/dou/-/resolucao-n-13-de-15-de-junho-de-2022-408911936" class="text-primary-color hover:underline">https://www.in.gov.br/en/web/dou/-/resolucao-n-13-de-15-de-junho-de-2022-408911936</a>).
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- FAQ Item 5 -->
+                <div class="mb-4 border-b border-gray-200 pb-4">
+                    <button class="accordion-button flex justify-between items-center w-full text-left font-medium text-lg">
+                        <span>Como posso consultar se o CRP do profissional está ativo?</span>
+                        <i class="fas fa-chevron-down transition-transform duration-300"></i>
+                    </button>
+                    <div class="accordion-content mt-2 text-gray-700">
+                        <p>
+                            O Conselho Federal de Psicologia (CFP) fornece em seu site uma área para consulta de profissionais e você pode acessar minha inscrição pelo link CRP 06/153209 (<a href="https://cadastro.cfp.org.br/visualizar.html?profissional=qRVh%2B581Y%2B%2FlDLotNCVoZ%2BPdKOc0k%2F8UcTuS0WFOyKI%3D" class="text-primary-color hover:underline">https://cadastro.cfp.org.br/visualizar.html?profissional=qRVh%2B581Y%2B%2FlDLotNCVoZ%2BPdKOc0k%2F8UcTuS0WFOyKI%3D</a>).
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 bg-primary-color text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-6">Pronto para começar sua jornada de autoconhecimento?</h2>
+            <p class="text-xl mb-8 max-w-2xl mx-auto">
+                Agende sua consulta agora mesmo e dê o primeiro passo para uma vida mais equilibrada e feliz.
+            </p>
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href="https://wa.me/5519988452408" class="whatsapp-btn flex items-center justify-center px-6 py-3 rounded-full text-white font-medium">
+                    <i class="fab fa-whatsapp mr-2 text-xl"></i> Agendar pelo WhatsApp
+                </a>
+                <a href="tel:+5519988452508" class="phone-btn flex items-center justify-center px-6 py-3 rounded-full bg-secondary-color text-white font-medium">
+                    <i class="fas fa-phone mr-2"></i> Ligar agora
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-secondary-color text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Psicologa Juliedina</h3>
+                    <p>
+                        Psicóloga clínica com experiência em ajudar pacientes a conquistarem mais qualidade de vida e equilíbrio emocional.
+                    </p>
+                </div>
+                
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Mapa do Site</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#inicio" class="hover:text-primary-color transition">Início</a></li>
+                        <li><a href="#servicos" class="hover:text-primary-color transition">Serviços</a></li>
+                        <li><a href="#avaliacoes" class="hover:text-primary-color transition">Avaliações</a></li>
+                        <li><a href="#sobre" class="hover:text-primary-color transition">Sobre</a></li>
+                        <li><a href="#local" class="hover:text-primary-color transition">Local</a></li>
+                        <li><a href="#duvidas" class="hover:text-primary-color transition">Dúvidas?</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Redes Sociais</h3>
+                    <div class="flex space-x-4">
+                        <a href="https://www.facebook.com/psi.juliedina" class="text-2xl hover:text-primary-color transition" aria-label="Facebook">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="https://www.instagram.com/psi.juliedina" class="text-2xl hover:text-primary-color transition" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/juli%C3%A9dina-lopes-ramos-868933276" class="text-2xl hover:text-primary-color transition" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Links Úteis</h3>
+                    <ul class="space-y-2">
+                        <li><a href="https://www.crpsp.org/" class="hover:text-primary-color transition">CRP-SP</a></li>
+                        <li><a href="https://site.cfp.org.br/" class="hover:text-primary-color transition">CFP</a></li>
+                        <li><a href="https://cvv.org.br/" class="hover:text-primary-color transition">CVV</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center">
+                <p>&copy; 2025 Psicologa Juliedina Lopes Ramos. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+        // Mobile Menu Toggle
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+
+        // Header Scroll Effect
+        window.addEventListener('scroll', function() {
+            const header = document.getElementById('header');
+            if (window.scrollY > 100) {
+                header.classList.add('header-scrolled');
+            } else {
+                header.classList.remove('header-scrolled');
+            }
+        });
+
+        // Accordion Functionality
+        document.querySelectorAll('.accordion-button').forEach(button => {
+            button.addEventListener('click', () => {
+                const content = button.nextElementSibling;
+                const icon = button.querySelector('i');
+                
+                button.classList.toggle('active');
+                content.classList.toggle('active');
+                
+                if (content.classList.contains('active')) {
+                    icon.classList.remove('fa-chevron-down');
+                    icon.classList.add('fa-chevron-up');
+                } else {
+                    icon.classList.remove('fa-chevron-up');
+                    icon.classList.add('fa-chevron-down');
+                }
+            });
+        });
+
+        // Smooth Scrolling for Anchor Links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                    
+                    // Close mobile menu if open
+                    const mobileMenu = document.getElementById('mobile-menu');
+                    if (!mobileMenu.classList.contains('hidden')) {
+                        mobileMenu.classList.add('hidden');
+                    }
+                }
+            });
+        });
+
+        // Defer loading of non-critical resources
+        window.addEventListener('load', function() {
+            // Load Font Awesome if not already loaded
+            if (!document.querySelector('.fa-brands')) {
+                const faScript = document.createElement('script');
+                faScript.src = 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js';
+                faScript.defer = true;
+                document.head.appendChild(faScript);
+            }
+        });
+    </script>
+</body>
+</html>
