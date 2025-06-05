@@ -1,0 +1,856 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Psicóloga Juliedina - Atendimento Psicológico Online e Presencial</title>
+    <meta name="description" content="Psicóloga Juliedina oferece psicoterapia individual e avaliação psicológica para adolescentes, jovens, adultos e idosos. Agende sua consulta e transforme sua vida.">
+    <meta name="keywords" content="psicologa, psicoterapia, terapia online, avaliação psicológica, Juliedina, Leme SP, saúde mental, bem-estar emocional">
+    <meta name="author" content="Psicóloga Juliedina">
+
+    <meta property="og:title" content="Psicóloga Juliedina - Atendimento Psicológico">
+    <meta property="og:description" content="Sua psicóloga em qualquer lugar. Atendimento para adolescentes, jovens, adultos e idosos.">
+    <meta property="og:image" content="https://psijuliedina.com/assets/img/profile.webp">
+    <meta property="og:url" content="https://psijuliedina.com"> {/* Substitua pela URL final do site */}
+    <meta property="og:type" content="website">
+
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        /* Reset básico e configurações globais */
+        :root {
+            --primary-color: #e84545;
+            --secondary-color: #f4f4f4;
+            --text-dark: #333;
+            --text-light: #fff;
+            --text-gray: #555;
+            --font-main: 'Arial', sans-serif; /* Escolha uma fonte moderna */
+            --spacing-unit: 1rem; /* 16px */
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: var(--font-main);
+            line-height: 1.6;
+            color: var(--text-dark);
+            background-color: var(--text-light);
+        }
+
+        img {
+            max-width: 100%;
+            height: auto; /* Mantém proporção, a menos que width e height sejam definidos intencionalmente */
+            display: block;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            margin-bottom: calc(var(--spacing-unit) * 0.75);
+            line-height: 1.3;
+        }
+
+        h1 { font-size: 2.8rem; }
+        h2 { font-size: 2.2rem; }
+        h3 { font-size: 1.8rem; }
+        p { margin-bottom: var(--spacing-unit); }
+
+        .container {
+            width: 90%;
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: calc(var(--spacing-unit) * 2) 0;
+        }
+
+        .text-center { text-align: center; }
+        .primary-text { color: var(--primary-color); }
+
+        /* Header */
+        .site-header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            padding: var(--spacing-unit) calc(var(--spacing-unit) * 2);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+            background-color: transparent;
+            color: var(--text-light);
+        }
+
+        .site-header.scrolled {
+            background-color: var(--text-light);
+            color: var(--text-dark);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .site-header .logo-text {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: inherit; /* Herda a cor do pai (.site-header) */
+            text-decoration: none;
+        }
+        .site-header.scrolled .logo-text {
+            color: var(--text-dark);
+        }
+
+
+        .site-header nav ul {
+            list-style: none;
+            display: flex;
+        }
+
+        .site-header nav ul li {
+            margin-left: calc(var(--spacing-unit) * 1.5);
+        }
+
+        .site-header nav ul li a {
+            text-decoration: none;
+            font-weight: bold;
+            color: inherit; /* Herda a cor do pai (.site-header) */
+            transition: color 0.3s ease;
+            padding-bottom: 5px;
+        }
+        .site-header.scrolled nav ul li a {
+            color: var(--text-dark);
+        }
+
+        .site-header nav ul li a:hover,
+        .site-header nav ul li a:focus {
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--primary-color);
+        }
+        
+        /* Menu Mobile (Hamburger) */
+        .menu-toggle {
+            display: none;
+            font-size: 1.8rem;
+            background: none;
+            border: none;
+            color: inherit; /* Herda a cor do pai (.site-header) */
+            cursor: pointer;
+        }
+        .site-header.scrolled .menu-toggle {
+            color: var(--text-dark);
+        }
+
+
+        /* Hero Section */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: flex-end; /* Alinha conteúdo na parte inferior */
+            justify-content: flex-start; /* Alinha conteúdo à esquerda */
+            padding: calc(var(--spacing-unit) * 3) calc(var(--spacing-unit) * 2);
+            color: var(--text-light);
+            position: relative;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .hero::before { /* Overlay */
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.4);
+            z-index: 1;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            max-width: 700px;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: calc(var(--spacing-unit) * 0.5);
+            font-weight: bold;
+        }
+
+        .hero p {
+            font-size: 1.3rem;
+            margin-bottom: 0;
+        }
+
+        /* Estilos para background da Hero */
+        @media (min-width: 769px) {
+            .hero {
+                background-image: url('https://psijuliedina.com/assets/img/profile.webp');
+                background-position: center 100%;
+            }
+        }
+        @media (max-width: 768px) {
+            .hero {
+                background-image: url('https://psijuliedina.com/assets/img/profile_mobile.webp');
+                background-position: center;
+            }
+            .hero h1 { font-size: 2.2rem; }
+            .hero p { font-size: 1.1rem; }
+        }
+
+
+        /* Seções Genéricas */
+        section {
+            padding: calc(var(--spacing-unit) * 3) 0;
+        }
+        section:nth-child(even) { /* Para alternar cores de fundo, se desejado */
+             /* background-color: var(--secondary-color); */
+        }
+        section h2 {
+            text-align: center;
+            margin-bottom: calc(var(--spacing-unit) * 2.5);
+            font-weight: bold;
+        }
+
+        /* Cards */
+        .cards-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: calc(var(--spacing-unit) * 1.5);
+        }
+
+        .card {
+            background-color: var(--text-light);
+            padding: calc(var(--spacing-unit) * 1.5);
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+        }
+        .card h3 {
+            color: var(--primary-color);
+            margin-bottom: var(--spacing-unit);
+        }
+        .card p {
+            color: var(--text-gray);
+            font-size: 0.95rem;
+        }
+
+        /* Botões */
+        .btn {
+            display: inline-block;
+            padding: calc(var(--spacing-unit) * 0.75) calc(var(--spacing-unit) * 1.5);
+            background-color: var(--primary-color);
+            color: var(--text-light);
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            text-align: center;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            border: 2px solid var(--primary-color);
+            min-width: 44px; /* Acessibilidade */
+            min-height: 44px; /* Acessibilidade */
+            line-height: normal; /* Para alinhar texto verticalmente se padding nao for suficiente */
+            cursor: pointer;
+        }
+        .btn:hover, .btn:focus {
+            background-color: #d13232; /* Tom mais escuro do primário */
+            border-color: #d13232;
+            transform: translateY(-2px);
+            color: var(--text-light);
+        }
+        .btn-outline {
+            background-color: transparent;
+            color: var(--primary-color);
+            border: 2px solid var(--primary-color);
+        }
+        .btn-outline:hover, .btn-outline:focus {
+            background-color: var(--primary-color);
+            color: var(--text-light);
+        }
+        .btn i { margin-right: 8px; }
+
+        /* Seção Serviços */
+        #servicos .card {
+            border-left: 5px solid var(--primary-color);
+        }
+        #servicos .card h3 { color: var(--text-dark); } /* Diferenciar dos cards de informação */
+        #servicos .btn { margin-top: var(--spacing-unit); }
+
+        /* Seção Avaliações */
+        #avaliacoes .card {
+            display: flex;
+            flex-direction: column;
+        }
+        #avaliacoes .card-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: var(--spacing-unit);
+        }
+        #avaliacoes .google-icon {
+            width: 24px;
+            height: 24px;
+            margin-right: 10px;
+        }
+        #avaliacoes .stars { color: #FFD700; /* Cor de estrela */ }
+        #avaliacoes .patient-name {
+            font-weight: bold;
+            margin-top: auto; /* Empurra para baixo */
+            padding-top: var(--spacing-unit);
+            color: var(--text-dark);
+        }
+         #avaliacoes .patient-name a {
+            text-decoration: none;
+            color: var(--primary-color);
+        }
+        #avaliacoes .patient-name a:hover {
+            text-decoration: underline;
+        }
+
+        /* Seção Sobre */
+        #sobre .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: calc(var(--spacing-unit) * 2);
+            align-items: center;
+        }
+        #sobre img {
+            width: 100%;
+            max-width: 400px; /* Limita o tamanho da imagem */
+            height: auto;
+            border-radius: 8px;
+            margin: 0 auto; /* Centraliza se a coluna for maior */
+        }
+        #sobre .btn { margin-top: var(--spacing-unit); }
+
+        /* Seção Local */
+        #local .local-card {
+            background-color: var(--secondary-color);
+            padding: calc(var(--spacing-unit) * 2);
+            border-radius: 8px;
+            max-width: 600px;
+            margin: 0 auto calc(var(--spacing-unit) * 2) auto;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+        }
+        #local .local-card p { margin-bottom: calc(var(--spacing-unit) * 0.5); }
+        #local .local-card strong { color: var(--primary-color); }
+        #local .map-container {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+            height: 0;
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+        }
+        #local .map-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+
+        /* Seção Dúvidas (FAQ) */
+        .faq-item details {
+            background-color: var(--secondary-color);
+            margin-bottom: var(--spacing-unit);
+            border-radius: 5px;
+            border: 1px solid #ddd;
+        }
+        .faq-item summary {
+            padding: var(--spacing-unit);
+            font-weight: bold;
+            cursor: pointer;
+            outline: none; /* Remover outline padrão em alguns navegadores */
+            position: relative;
+            color: var(--text-dark);
+        }
+        .faq-item summary::marker, /* Chrome, Edge, Safari */
+        .faq-item summary::-webkit-details-marker /* Safari */ {
+            display: none; /* Esconde marcador padrão */
+        }
+        .faq-item summary::after { /* Custom marker */
+            content: '\f078'; /* Font Awesome down arrow */
+            font-family: 'Font Awesome 6 Free';
+            font-weight: 900;
+            position: absolute;
+            right: var(--spacing-unit);
+            top: 50%;
+            transform: translateY(-50%);
+            transition: transform 0.2s ease-in-out;
+        }
+        .faq-item details[open] summary::after {
+            transform: translateY(-50%) rotate(180deg);
+        }
+        .faq-item div { /* Conteúdo da resposta */
+            padding: 0 var(--spacing-unit) var(--spacing-unit) var(--spacing-unit);
+            border-top: 1px solid #ddd;
+        }
+        .faq-item div p { font-size: 0.95rem; color: var(--text-gray); }
+        .faq-item div p a { color: var(--primary-color); text-decoration: none; }
+        .faq-item div p a:hover { text-decoration: underline; }
+
+
+        /* Seção CTA */
+        .cta-final {
+            background-color: var(--primary-color);
+            color: var(--text-light);
+            padding: calc(var(--spacing-unit) * 3) 0;
+        }
+        .cta-final h2 {
+            color: var(--text-light);
+            font-size: 2rem;
+            margin-bottom: var(--spacing-unit);
+        }
+        .cta-final p {
+            font-size: 1.1rem;
+            margin-bottom: calc(var(--spacing-unit) * 1.5);
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .cta-buttons {
+            display: flex;
+            justify-content: center;
+            gap: var(--spacing-unit);
+            flex-wrap: wrap; /* Para quebrar em telas menores */
+        }
+        .cta-buttons .btn {
+            background-color: var(--text-light);
+            color: var(--primary-color);
+            border-color: var(--text-light);
+            padding: calc(var(--spacing-unit) * 0.9) calc(var(--spacing-unit) * 1.8); /* Botões maiores */
+            font-size: 1.1rem;
+        }
+        .cta-buttons .btn:hover, .cta-buttons .btn:focus {
+            background-color: #f0f0f0;
+            border-color: #f0f0f0;
+            color: #c73030; /* Tom mais escuro do primário */
+        }
+
+        /* Footer */
+        .site-footer {
+            background-color: #2b2b2b;
+            color: #ccc;
+            padding: calc(var(--spacing-unit) * 2.5) 0;
+            text-align: center;
+        }
+        .site-footer .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: calc(var(--spacing-unit) * 2);
+            margin-bottom: calc(var(--spacing-unit) * 2);
+            text-align: left;
+        }
+        .site-footer h4 {
+            color: var(--text-light);
+            margin-bottom: var(--spacing-unit);
+            font-size: 1.2rem;
+        }
+        .site-footer ul {
+            list-style: none;
+        }
+        .site-footer ul li {
+            margin-bottom: calc(var(--spacing-unit) * 0.5);
+        }
+        .site-footer ul li a {
+            color: #ccc;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        .site-footer ul li a:hover, .site-footer ul li a:focus {
+            color: var(--primary-color);
+        }
+        .social-links a {
+            font-size: 1.5rem;
+            margin-right: var(--spacing-unit);
+            color: #ccc;
+        }
+        .social-links a:hover, .social-links a:focus {
+            color: var(--primary-color);
+        }
+        .copyright {
+            font-size: 0.9rem;
+            border-top: 1px solid #444;
+            padding-top: calc(var(--spacing-unit) * 1.5);
+            margin-top: calc(var(--spacing-unit) * 1.5);
+        }
+
+        /* Responsividade */
+        @media (max-width: 768px) {
+            .site-header nav {
+                display: none; /* Esconde navegação normal */
+                position: absolute;
+                top: 100%; /* Abaixo do header */
+                left: 0;
+                width: 100%;
+                background-color: var(--text-light); /* Fundo branco quando aberto */
+                box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            }
+            .site-header nav.active {
+                display: block; /* Mostra quando ativo */
+            }
+            .site-header nav ul {
+                flex-direction: column;
+                align-items: center;
+                padding: var(--spacing-unit) 0;
+            }
+            .site-header nav ul li {
+                margin: calc(var(--spacing-unit) * 0.5) 0;
+                width: 100%;
+                text-align: center;
+            }
+            .site-header nav ul li a {
+                 color: var(--text-dark); /* Texto escuro no menu mobile */
+                 padding: var(--spacing-unit) 0;
+                 display: block; /* Ocupar toda a largura */
+                 width: 100%;
+            }
+            .site-header nav ul li a:hover,
+            .site-header nav ul li a:focus {
+                background-color: var(--secondary-color);
+                color: var(--primary-color);
+                border-bottom: none;
+            }
+
+            .menu-toggle {
+                display: block; /* Mostra botão hamburger */
+            }
+            .site-header.scrolled nav ul li a {
+                color: var(--text-dark);
+            }
+            .site-header.scrolled nav ul li a:hover,
+            .site-header.scrolled nav ul li a:focus {
+                color: var(--primary-color);
+            }
+
+            h1 { font-size: 2.2rem; }
+            h2 { font-size: 1.8rem; }
+            h3 { font-size: 1.5rem; }
+
+            #sobre .container {
+                grid-template-columns: 1fr; /* Stack em telas menores */
+                text-align: center;
+            }
+            #sobre img { margin-bottom: var(--spacing-unit); }
+
+            .footer-content {
+                grid-template-columns: 1fr; /* Stack footer items */
+                text-align: center;
+            }
+            .footer-content div {
+                 margin-bottom: calc(var(--spacing-unit) * 1.5);
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <header class="site-header" id="site-header">
+        <a href="#inicio" class="logo-text" aria-label="Ir para o início da página">Psicologa Juliedina</a>
+        <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menu de navegação" aria-expanded="false" aria-controls="main-nav">
+            <i class="fas fa-bars"></i>
+        </button>
+        <nav id="main-nav" aria-label="Navegação principal">
+            <ul>
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#avaliacoes">Avaliações</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#local">Local</a></li>
+                <li><a href="#duvidas">Dúvidas?</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="inicio" class="hero">
+            <div class="hero-content">
+                <h1>Sua psicóloga em qualquer lugar.</h1>
+                <p>Atendimento para adolescentes, jovens, adultos e idosos.</p>
+            </div>
+        </section>
+
+        <section id="informacao" class="container">
+            <h2>Por que escolher a Psicóloga Juliedina?</h2>
+            <div class="cards-container">
+                <article class="card">
+                    <h3>Flexibilidade de Horários</h3>
+                    <p>Agendamentos flexíveis para se adequar à sua rotina, incluindo opções de atendimento online e presencial.</p>
+                </article>
+                <article class="card">
+                    <h3>Profissional Qualificada</h3>
+                    <p>Formação sólida e constante atualização para oferecer o melhor suporte terapêutico baseado em evidências.</p>
+                </article>
+                <article class="card">
+                    <h3>Experiente</h3>
+                    <p>Há mais de 5 anos prestando atendimento clínico, com reconhecimento e satisfação dos pacientes.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="servicos" class="container">
+            <h2>Serviços Oferecidos</h2>
+            <div class="cards-container">
+                <article class="card">
+                    <h3>Psicoterapia Individual</h3>
+                    <p>Atendimento personalizado para adolescentes, jovens, adultos e idosos, focado em promover autoconhecimento, desenvolvimento pessoal e bem-estar emocional. Ofereço tratamento para: Depressão, Ansiedade, Problemas no relacionamento, Dificuldade financeira, Conflitos familiares, Traumas.</p>
+                    <a href="https://wa.me/5519988452408?text=Olá,%20gostaria%20de%20agendar%20uma%20sessão%20de%20psicoterapia." target="_blank" class="btn" aria-label="Agendar sessão de psicoterapia via WhatsApp">
+                        <i class="fab fa-whatsapp"></i>Agendar sessão
+                    </a>
+                </article>
+                <article class="card">
+                    <h3>Avaliação Psicológica</h3>
+                    <p>Serviço destinado ao público jovem, adulto e idoso para procedimentos médicos para certificar a ausência de transtornos mentais relacionados, como: Cirurgia bariátrica, Cirurgia plástica, Laqueadura ou Vasectomia, Doação de gametas para reprodução assistida, Doação de órgãos entre vivos.</p>
+                    <a href="https://wa.me/5519988452408?text=Olá,%20gostaria%20de%20solicitar%20uma%20avaliação%20psicológica." target="_blank" class="btn" aria-label="Solicitar avaliação psicológica via WhatsApp">
+                        <i class="fab fa-whatsapp"></i>Solicitar avaliação
+                    </a>
+                </article>
+            </div>
+        </section>
+
+        <section id="avaliacoes" class="container">
+            <h2>Avaliações de Pacientes</h2>
+            <div class="cards-container">
+                <article class="card">
+                    <div class="card-header">
+                        <img src="https://psijuliedina.com/assets/img/icon-google-multicolor.svg" alt="Logo Google" class="google-icon" width="24" height="24">
+                        <span class="stars">★★★★★</span>
+                    </div>
+                    <p>"Fui muito bem acolhida e me senti muito confortável com o atendimento, sou eternamente agradecida por isso, pois foi meu primeiro contato e tive uma experiência muito boa. Super indico ❤️✨"</p>
+                    <p class="patient-name"><a href="https://g.co/kgs/2HHPzqq" target="_blank" rel="noopener noreferrer" aria-label="Ver avaliação de Maytte Araujo no Google">Maytte Araujo</a></p>
+                </article>
+                <article class="card">
+                    <div class="card-header">
+                        <img src="https://psijuliedina.com/assets/img/icon-google-multicolor.svg" alt="Logo Google" class="google-icon" width="24" height="24">
+                        <span class="stars">★★★★★</span>
+                    </div>
+                    <p>"Excelente profissional! Desde a primeira sessão, me senti muito à vontade e acolhida. A Ju é sempre atenciosa e me ajuda muito a enxergar as coisas de diferentes formas. Em pouco tempo, já sinto uma enorme evolução. Só tenho a parabenizar e agradecer pelo trabalho dela. Indico a todos, seu único arrependimento vai ser não ter conhecido ela antes rs ❤️"</p>
+                    <p class="patient-name"><a href="https://g.co/kgs/Uc31Qnh" target="_blank" rel="noopener noreferrer" aria-label="Ver avaliação de Jucicleide Silva no Google">Jucicleide Silva</a></p>
+                </article>
+                <article class="card">
+                    <div class="card-header">
+                        <img src="https://psijuliedina.com/assets/img/icon-google-multicolor.svg" alt="Logo Google" class="google-icon" width="24" height="24">
+                        <span class="stars">★★★★★</span>
+                    </div>
+                    <p>"A melhor profissional que eu pudesse escolher. Uma pessoa incrível. Não tenho arrependimento algum!!!"</p>
+                    <p class="patient-name"><a href="https://g.co/kgs/oGkaZo5" target="_blank" rel="noopener noreferrer" aria-label="Ver avaliação de Ingrid Orlandini no Google">Ingrid Orlandini</a></p>
+                </article>
+                <article class="card">
+                    <div class="card-header">
+                        <img src="https://psijuliedina.com/assets/img/icon-google-multicolor.svg" alt="Logo Google" class="google-icon" width="24" height="24">
+                        <span class="stars">★★★★★</span>
+                    </div>
+                    <p>"Ótima profissional...pontual e prestativa, nos faz refletir e nos ajuda nos momentos de angústia. 5 estrelas para Juliédina."</p>
+                    <p class="patient-name"><a href="https://g.co/kgs/8rybA1L" target="_blank" rel="noopener noreferrer" aria-label="Ver avaliação de Miriam Bergamasco no Google">Miriam Bergamasco</a></p>
+                </article>
+                <article class="card">
+                    <div class="card-header">
+                        <img src="https://psijuliedina.com/assets/img/icon-google-multicolor.svg" alt="Logo Google" class="google-icon" width="24" height="24">
+                        <span class="stars">★★★★★</span>
+                    </div>
+                    <p>"Estou muito satisfeito. Altamente profissional, competente, discreta, pontual e capacitada"</p>
+                    <p class="patient-name"><a href="https://g.co/kgs/ssGTKa5" target="_blank" rel="noopener noreferrer" aria-label="Ver avaliação de Alessandro Santos no Google">Alessandro Santos</a></p>
+                </article>
+                <article class="card">
+                    <div class="card-header">
+                        <img src="https://psijuliedina.com/assets/img/icon-google-multicolor.svg" alt="Logo Google" class="google-icon" width="24" height="24">
+                        <span class="stars">★★★★★</span>
+                    </div>
+                    <p>"Super recomendo! Faz toda a diferença na minha vida!!"</p>
+                    <p class="patient-name"><a href="https://g.co/kgs/EkhzmEz" target="_blank" rel="noopener noreferrer" aria-label="Ver avaliação de Maria Gabriela Longo no Google">Maria Gabriela Longo</a></p>
+                </article>
+            </div>
+        </section>
+
+        <section id="sobre" class="container">
+            <div>
+                <h2>Sobre Mim</h2>
+                <p>Psicóloga clínica com experiência em ajudar pacientes a conquistarem mais qualidade de vida e equilíbrio emocional.</p>
+                <p>No campo da Psicologia, tenho experiência organizacional e clínica, desde 2020 me dedico exclusivamente ao consultório, realizando avaliações e atendimentos, auxiliando pessoas a lidarem com suas questões emocionais e comportamentais.</p>
+                <p>Ofereço um atendimento clínico ético, personalizado, acolhedor e profissional.</p>
+                <a href="https://cadastro.cfp.org.br/visualizar.html?profissional=qRVh%2B581Y%2B%2FlDLotNCVoZ%2BPdKOc0k%2F8UcTuS0WFOyKI%3D" target="_blank" rel="noopener noreferrer" class="btn" aria-label="Verificar registro CRP de Juliedina">Verificar CRP</a>
+            </div>
+            <div>
+                <img src="https://psijuliedina.com/assets/img/about.webp" alt="Foto da Psicóloga Juliedina em seu consultório" loading="lazy" width="500" height="500"> {/* Adicione width e height reais da imagem */}
+            </div>
+        </section>
+
+        <section id="local" class="container">
+            <h2>Localização e Horários</h2>
+            <div class="local-card">
+                <p><strong>Endereço:</strong> Rua Professor Domingos Cambiaghi, 110, Centro - Leme/SP</p>
+                <p><strong>Horário de Atendimento:</strong></p>
+                <p>Segunda a Sexta: 8h às 20h</p>
+                <p>Sábado: 8h às 12h</p>
+                <a href="https://www.google.com/maps/search/?api=1&query=Rua+Professor+Domingos+Cambiaghi,+110,+Centro,+Leme+SP" target="_blank" class="btn" aria-label="Ver como chegar ao consultório no Google Maps">
+                    <i class="fas fa-map-marker-alt"></i>Como chegar
+                </a>
+            </div>
+            <div class="map-container">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3693.801925966055!2d-47.38577862563652!3d-22.19625651473662!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c80b0057f79709%3A0xdd87c3fe4625c023!2sR.%20Prof.%20Domingos%20Cambiaghi%2C%20110%20-%20Centro%2C%20Leme%20-%20SP%2C%2013610-210!5e0!3m2!1spt-BR!2sbr!4v1717550000000!5m2!1spt-BR!2sbr" 
+                    width="600" 
+                    height="450" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade"
+                    title="Mapa mostrando a localização do consultório da Psicóloga Juliedina">
+                </iframe>
+            </div>
+        </section>
+
+        <section id="duvidas" class="container">
+            <h2>Dúvidas Frequentes</h2>
+            <div class="faq-item">
+                <details>
+                    <summary>Como funciona a psicoterapia online?</summary>
+                    <div>
+                        <p>A psicoterapia online segue as mesmas diretrizes da modalidade presencial, onde são aplicados os mesmos métodos e técnicas psicológicas para atender as necessidades do paciente. Devido aos avanços tecnológicos, as pessoas podem desfrutar dos benefícios do tratamento psicológico sem saírem de casa. No Brasil, os atendimentos à distância foram efetivamente regulamentados pelo Conselho Federal de Psicologia, através da <a href="https://e-psi.cfp.org.br/resolucao-cfp-no-11-2018/" target="_blank" rel="noopener noreferrer" aria-label="Consultar Resolução CFP Nº 11/2018">Resolução CFP Nº 11/2018</a>.</p>
+                    </div>
+                </details>
+            </div>
+            <div class="faq-item">
+                <details>
+                    <summary>Qual a frequência das sessões?</summary>
+                    <div>
+                        <p>Normalmente, a psicoterapia é iniciada com sessões semanais, mas dependendo do caso do paciente, a medida que obter melhora dos sintomas, é possível que as sessões passem a ser quinzenais.</p>
+                    </div>
+                </details>
+            </div>
+            <div class="faq-item">
+                <details>
+                    <summary>É possível conseguir reembolso das sessões pelo plano de saúde ou convênio médico?</summary>
+                    <div>
+                        <p>Sim, algumas categorias de contratos de plano de saúde e convênios médicos permitem a livre escolha de profissionais, como psicólogos, que não fazem parte da rede credenciada. Para saber se você tem este direito, entre em contato com a operadora de seu plano e verifique se seu contrato permite acesso a serviços de livre escolha de prestadores que não pertençam à rede credenciada e quais condições e procedimentos. As regras de valor e prazo para reembolso variam de acordo com a operadora e contrato. Nesta modalidade, o paciente faz o pagamento diretamente ao prestador, que emite o recibo e o paciente solicita seu reembolso ao plano de saúde. É comum que seja solicitado um encaminhamento ou pedido feito pelo médico assistente, que deve conter o CID (Classificação Internacional de Doenças) para liberação das sessões.</p>
+                    </div>
+                </details>
+            </div>
+            <div class="faq-item">
+                <details>
+                    <summary>É preciso de autorização para atendimento psicológico de adolescentes?</summary>
+                    <div>
+                        <p>Sim, os pacientes menores de 18 anos devem obter autorização por escrito de, ao menos, um dos responsáveis legais, conforme Artigo 12, item I da <a href="https://www.in.gov.br/en/web/dou/-/resolucao-n-13-de-15-de-junho-de-2022-408911936" target="_blank" rel="noopener noreferrer" aria-label="Consultar Resolução CFP Nº 13/2022">Resolução CFP Nº 13/2022</a>.</p>
+                    </div>
+                </details>
+            </div>
+            <div class="faq-item">
+                <details>
+                    <summary>Como posso consultar se o CRP do profissional está ativo?</summary>
+                    <div>
+                        <p>O Conselho Federal de Psicologia (CFP) fornece em seu site uma área para consulta de profissionais e você pode acessar minha inscrição pelo link <a href="https://cadastro.cfp.org.br/visualizar.html?profissional=qRVh%2B581Y%2B%2FlDLotNCVoZ%2BPdKOc0k%2F8UcTuS0WFOyKI%3D" target="_blank" rel="noopener noreferrer" aria-label="Consultar CRP 06/153209 no site do CFP">CRP 06/153209</a>.</p>
+                    </div>
+                </details>
+            </div>
+        </section>
+
+        <section id="cta" class="cta-final text-center">
+            <div class="container">
+                <h2>Pronto para começar sua jornada de transformação?</h2>
+                <p>Agende sua consulta hoje mesmo e dê o primeiro passo rumo ao seu bem-estar emocional.</p>
+                <div class="cta-buttons">
+                    <a href="https://wa.me/5519988452408?text=Olá!%20Gostaria%20de%20agendar%20uma%20consulta." target="_blank" class="btn" aria-label="Agendar consulta via WhatsApp">
+                        <i class="fab fa-whatsapp"></i> Agendar por WhatsApp
+                    </a>
+                    <a href="tel:+5519988452508" class="btn" aria-label="Ligar para agendar consulta">
+                        <i class="fas fa-phone"></i> Ligar (19) 98845-2508
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-content">
+            <div>
+                <h4>Mapa do Site</h4>
+                <ul>
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#servicos">Serviços</a></li>
+                    <li><a href="#avaliacoes">Avaliações</a></li>
+                    <li><a href="#sobre">Sobre Mim</a></li>
+                    <li><a href="#local">Localização</a></li>
+                    <li><a href="#duvidas">Dúvidas Frequentes</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Redes Sociais</h4>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/psi.juliedina" target="_blank" rel="noopener noreferrer" aria-label="Facebook da Psicóloga Juliedina"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/psi.juliedina" target="_blank" rel="noopener noreferrer" aria-label="Instagram da Psicóloga Juliedina"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/juli%C3%A9dina-lopes-ramos-868933276" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn de Juliédina Lopes Ramos"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div>
+                <h4>Links Úteis</h4>
+                <ul>
+                    <li><a href="https://www.crpsp.org/" target="_blank" rel="noopener noreferrer" aria-label="Site do Conselho Regional de Psicologia de São Paulo">CRPSP</a></li>
+                    <li><a href="https://site.cfp.org.br/" target="_blank" rel="noopener noreferrer" aria-label="Site do Conselho Federal de Psicologia">CFP</a></li>
+                    <li><a href="https://cvv.org.br/" target="_blank" rel="noopener noreferrer" aria-label="Site do Centro de Valorização da Vida">CVV (Apoio Emocional)</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="container copyright">
+            <p>&copy; <span id="current-year"></span> Psicologa Juliedina Lopes Ramos. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Script para efeito do header ao rolar
+        const header = document.getElementById('site-header');
+        window.addEventListener('scroll', function() {
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+
+        // Script para menu hamburger
+        const menuToggle = document.getElementById('menu-toggle');
+        const mainNav = document.getElementById('main-nav');
+        if (menuToggle && mainNav) {
+            menuToggle.addEventListener('click', function() {
+                const isExpanded = menuToggle.getAttribute('aria-expanded') === 'true' || false;
+                menuToggle.setAttribute('aria-expanded', !isExpanded);
+                mainNav.classList.toggle('active');
+                // Altera ícone do hamburger
+                const icon = menuToggle.querySelector('i');
+                if (mainNav.classList.contains('active')) {
+                    icon.classList.remove('fa-bars');
+                    icon.classList.add('fa-times');
+                    // Opcional: travar scroll do body quando menu aberto
+                    // document.body.style.overflow = 'hidden';
+                } else {
+                    icon.classList.remove('fa-times');
+                    icon.classList.add('fa-bars');
+                    // document.body.style.overflow = '';
+                }
+            });
+
+            // Fechar menu ao clicar em um link (para SPAs ou páginas com smooth scroll)
+            const navLinks = mainNav.querySelectorAll('a');
+            navLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    if (mainNav.classList.contains('active')) {
+                        menuToggle.click(); // Simula o clique no botão para fechar
+                    }
+                });
+            });
+        }
+        
+        // Atualizar ano no rodapé
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+
+    </script>
+</body>
+</html>
