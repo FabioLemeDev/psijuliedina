@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Psicóloga Juliedina - Atendimento psicológico em Leme e online</title>
+    <meta name="description" content="Psicóloga Juliedina - Atendimento psicológico presencial e online para adolescentes, jovens, adultos e idosos. Agende sua consulta.">
+    <meta name="keywords" content="psicólogo, psicoterapia, terapia, saúde mental, ansiedade, depressão, avaliação psicológica, Leme">
+    <meta name="author" content="Psicóloga Juliedina Lopes Ramos">
+    <meta property="og:title" content="Psicóloga Juliedina - Atendimento Psicológico">
+    <meta property="og:description" content="Sua psicóloga em qualquer lugar. Atendimento para adolescentes, jovens, adultos e idosos.">
+    <meta property="og:image" content="https://psijuliedina.com/assets/img/profile.webp">
+    <meta property="og:url" content="https://psijuliedina.com">
+    <meta property="og:type" content="website">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #e84545;
+            --secondary-color: #f4f4f4;
+            --text-dark: #212529;
+            --text-light: #fff;
+            --text-gray: #555;
+            --font-main: 'Montserrat', Arial, sans-serif;
+            --spacing-unit: 1rem;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; scroll-behavior: smooth; }
+        body {
+            font-family: var(--font-main);
+            color: var(--text-dark);
+            background: var(--text-light);
+            line-height: 1.6;
+        }
+        img { max-width: 100%; height: auto; display: block; }
+        h1, h2, h3, h4, h5, h6 { margin-bottom: .75em; line-height: 1.3; }
+        h1 { font-size: 2.8rem; }
+        h2 { font-size: 2.2rem; }
+        h3 { font-size: 1.5rem; }
+        p { margin-bottom: 1em; }
+        .container {
+            width: 90%;
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 2rem 0;
+        }
+        .text-center { text-align: center; }
+        /* Header */
+        .site-header {
+            position: fixed; top: 0; left: 0; width: 100%; z-index: 1000;
+            padding: 1rem 2rem; display: flex; justify-content: space-between; align-items: center;
+            background: transparent; color: var(--text-light);
+            transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
+        }
+        .site-header.scrolled {
+            background: var(--text-light); color: var(--text-dark); box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .logo-text {
+            font-size: 1.5rem; font-weight: bold; color: inherit; text-decoration: none;
+        }
+        .site-header.scrolled .logo-text { color: var(--text-dark); }
+        .site-header nav ul {
+            list-style: none; display: flex;
+        }
+        .site-header nav ul li { margin-left: 1.5rem; }
+        .site-header nav ul li a {
+            text-decoration: none; font-weight: 500; color: inherit; transition: color 0.3s; padding-bottom: 5px;
+        }
+        .site-header nav ul li a:hover, .site-header nav ul li a:focus {
+            color: var(--primary-color); border-bottom: 2px solid var(--primary-color);
+        }
+        .menu-toggle {
+            display: none; font-size: 1.8rem; background: none; border: none; color: inherit; cursor: pointer;
+        }
+        @media (max-width: 768px) {
+            .site-header nav { display: none; position: absolute; top: 100%; left: 0; width: 100%; background: var(--text-light); box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+            .site-header nav.active { display: block; }
+            .site-header nav ul { flex-direction: column; align-items: center; padding: 1rem 0; }
+            .site-header nav ul li { margin: .5rem 0; width: 100%; text-align: center; }
+            .site-header nav ul li a { color: var(--text-dark); padding: 1rem 0; display: block; width: 100%; }
+            .menu-toggle { display: block; }
+        }
+        /* Hero */
+        .hero {
+            min-height: 100vh; display: flex; align-items: flex-end; justify-content: flex-start;
+            padding: 3rem 2rem; color: var(--text-light); position: relative; background-size: cover; background-repeat: no-repeat;
+        }
+        .hero::before {
+            content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.4); z-index: 1;
+        }
+        .hero-content { position: relative; z-index: 2; max-width: 700px; }
+        .hero h1 { font-size: 3rem; margin-bottom: .5em; font-weight: bold; }
+        .hero p { font-size: 1.3rem; margin-bottom: 0; }
+        @media (min-width: 769px) {
+            .hero { background-image: url('https://psijuliedina.com/assets/img/profile.webp'); background-position: center 100%; }
+        }
+        @media (max-width: 768px) {
+            .hero { background-image: url('https://psijuliedina.com/assets/img/profile_mobile.webp'); background-position: center; }
+            .hero h1 { font-size: 2.2rem; }
+            .hero p { font-size: 1.1rem; }
+        }
+        /* Cards */
+        .cards-container {
+            display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem;
+        }
+        .card {
+            background: var(--text-light); padding: 1.5rem; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .card:hover { transform: translateY(-5px); box-shadow: 0 6px 20px rgba(0,0,0,0.12); }
+        .card h3 { color: var(--primary-color); margin-bottom: 1rem; }
+        .card p { color: var(--text-gray); font-size: 1rem; }
+        /* Botões */
+        .btn {
+            display: inline-block; padding: .75rem 1.5rem; background: var(--primary-color); color: var(--text-light);
+            text-decoration: none; border-radius: 5px; font-weight: bold; text-align: center; transition: background 0.3s, transform 0.2s;
+            border: 2px solid var(--primary-color); min-width: 44px; min-height: 44px; line-height: normal; cursor: pointer;
+        }
+        .btn:hover, .btn:focus { background: #d13232; border-color: #d13232; transform: translateY(-2px); color: var(--text-light); }
+        .btn-outline { background: transparent; color: var(--primary-color); border: 2px solid var(--primary-color); }
+        .btn-outline:hover, .btn-outline:focus { background: var(--primary-color); color: var(--text-light); }
+        .btn i { margin-right: 8px; }
+        /* Seção Sobre */
+        #sobre .container { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; align-items: center; }
+        #sobre img { width: 100%; max-width: 400px; border-radius: 8px; margin: 0 auto; }
+        #sobre .btn { margin-top: 1rem; }
+        @media (max-width: 768px) {
+            #sobre .container { grid-template-columns: 1fr; text-align: center; }
+            #sobre img { margin-bottom: 1rem; }
+        }
+        /* Seção Local */
+        #local .local-card {
+            background: var(--secondary-color); padding: 2rem; border-radius: 8px; max-width: 600px; margin: 0 auto 2rem auto; box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+        }
+        #local .map-container {
+            position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+        }
+        #local .map-container iframe {
+            position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;
+        }
+        /* FAQ */
+        .faq-item details {
+            background: var(--secondary-color); margin-bottom: 1rem; border-radius: 5px; border: 1px solid #ddd;
+        }
+        .faq-item summary {
+            padding: 1rem; font-weight: bold; cursor: pointer; position: relative; color: var(--text-dark);
+        }
+        .faq-item summary::after {
+            content: '\f078'; font-family: 'Font Awesome 6 Free'; font-weight: 900; position: absolute; right: 1rem; top: 50%; transform: translateY(-50%); transition: transform 0.2s;
+        }
+        .faq-item details[open] summary::after { transform: translateY(-50%) rotate(180deg); }
+        .faq-item div { padding: 0 1rem 1rem 1rem; border-top: 1px solid #ddd; }
+        .faq-item div p { font-size: 1rem; color: var(--text-gray); }
+        /* CTA */
+        .cta-final {
+            background: var(--primary-color); color: var(--text-light); padding: 3rem 0;
+        }
+        .cta-final h2 { color: var(--text-light); font-size: 2rem; margin-bottom: 1rem; }
+        .cta-final p { font-size: 1.1rem; margin-bottom: 1.5rem; max-width: 600px; margin-left: auto; margin-right: auto; }
+        .cta-buttons { display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap; }
+        .cta-buttons .btn { background: var(--text-light); color: var(--primary-color); border-color: var(--text-light); font-size: 1.1rem; }
+        .cta-buttons .btn:hover, .cta-buttons .btn:focus { background: #f0f0f0; border-color: #f0f0f0; color: #c73030; }
+        /* Footer */
+        .site-footer { background: #2b2b2b; color: #ccc; padding: 2.5rem 0; text-align: center; }
+        .site-footer .footer-content { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin-bottom: 2rem; text-align: left; }
+        .site-footer h4 { color: var(--text-light); margin-bottom: 1rem; font-size: 1.2rem; }
+        .site-footer ul { list-style: none; }
+        .site-footer ul li { margin-bottom: .5rem; }
+        .site-footer ul li a { color: #ccc; text-decoration: none; transition: color 0.3s; }
+        .site-footer ul li a:hover, .site-footer ul li a:focus { color: var(--primary-color); }
+        .social-links a { font-size: 1.5rem; margin-right: 1rem; color: #ccc; }
+        .social-links a:hover, .social-links a:focus { color: var(--primary-color); }
+        .copyright { font-size: 0.9rem; border-top: 1px solid #444; padding-top: 1.5rem; margin-top: 1.5rem; }
+        @media (max-width: 768px) {
+            .footer-content { grid-template-columns: 1fr; text-align: center; }
+            .footer-content div { margin-bottom: 1.5rem; }
+        }
+    </style>
+</head>
+<body>
+    <header class="site-header" id="site-header">
+        <a href="#inicio" class="logo-text" aria-label="Ir para o início da página">Psicologa Juliedina</a>
+        <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menu de navegação" aria-expanded="false" aria-controls="main-nav">
+            <i class="fas fa-bars"></i>
+        </button>
+        <nav id="main-nav" aria-label="Navegação principal">
+            <ul>
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#avaliacoes">Avaliações</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#local">Local</a></li>
+                <li><a href="#duvidas">Dúvidas?</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="inicio" class="hero">
+            <div class="hero-content">
+                <h1>Sua psicóloga em qualquer lugar.</h1>
+                <p>Atendimento para adolescentes, jovens, adultos e idosos.</p>
+                <div style="margin-top:2rem;display:flex;gap:1rem;flex-wrap:wrap;">
+                    <a href="https://wa.me/5519988452408" class="btn" aria-label="Agendar pelo WhatsApp"><i class="fab fa-whatsapp"></i>Agendar pelo WhatsApp</a>
+                    <a href="tel:+5519988452508" class="btn btn-outline" aria-label="Ligar agora"><i class="fas fa-phone"></i>Ligar agora</a>
+                </div>
+            </div>
+        </section>
+        <section class="container text-center">
+            <h2>Como o tratamento psicológico pode me ajudar?</h2>
+            <p class="text-gray-700">A psicoterapia é um tratamento reconhecido mundialmente e somente pode ser exercida por psicólogos credenciados ao órgão regulamentador, o CFP. Através da terapia, você pode desenvolver autoconhecimento, lidar melhor com suas emoções, superar traumas e melhorar seus relacionamentos.</p>
+        </section>
+        <section id="servicos" class="container">
+            <h2>Serviços</h2>
+            <div class="cards-container">
+                <article class="card">
+                    <h3><i class="fas fa-heart"></i> Psicoterapia Individual</h3>
+                    <p>Tratamento destinado ao público adolescente, jovem, adulto e idoso para tratamento de transtornos mentais e comportamentais que comprometam a qualidade de vida, como: depressão, ansiedade, problemas no relacionamento, dificuldade financeira, conflitos familiares, traumas e outros.</p>
+                </article>
+                <article class="card">
+                    <h3><i class="fas fa-clipboard-check"></i> Avaliação Psicológica</h3>
+                    <p>Serviço destinado ao público jovem, adulto e idoso para procedimentos médicos para certificar a ausência de transtornos mentais relacionados, como: cirurgia bariátrica, cirurgia plástica, vasectomia, doação de gametas para reprodução assistida e outros.</p>
+                </article>
+            </div>
+        </section>
+        <section id="avaliacoes" class="container">
+            <h2>Avaliações de Pacientes</h2>
+            <div class="cards-container">
+                <article class="card"><p>"A terapia com a Juliedina mudou minha vida. Finalmente consegui lidar com minha ansiedade e hoje me sinto muito mais confiante."</p></article>
+                <article class="card"><p>"Excelente profissional! Me ajudou a superar um período difícil após a perda do meu emprego. Recomendo muito!"</p></article>
+                <article class="card"><p>"Atendimento online superou minhas expectativas. A Juliedina é muito atenciosa e me fez sentir confortável desde a primeira sessão."</p></article>
+                <article class="card"><p>"Fiz a avaliação psicológica para cirurgia bariátrica e foi uma experiência muito tranquila. Profissional extremamente competente."</p></article>
+                <article class="card"><p>"Minha filha adolescente está fazendo terapia e já notamos uma grande melhora no comportamento dela. A Juliedina tem uma abordagem excelente com jovens."</p></article>
+                <article class="card"><p>"Como idoso, estava relutante em procurar terapia, mas a Juliedina me fez sentir acolhido e respeitado. Hoje recomendo a todos meus amigos."</p></article>
+            </div>
+        </section>
+        <section id="sobre" class="container">
+            <div>
+                <h2>Sobre a Psicóloga</h2>
+                <p>Psicóloga clínica com experiência em ajudar pacientes a conquistarem mais qualidade de vida e equilíbrio emocional. No campo da Psicologia, tenho experiência organizacional e clínica, desde 2020 me dedico exclusivamente ao consultório, realizando avaliações e atendimentos, auxiliando pessoas a lidarem com suas questões emocionais e comportamentais. Ofereço um atendimento clínico ético, personalizado, acolhedor e profissional.</p>
+                <a href="https://cadastro.cfp.org.br/visualizar.html?profissional=qRVh%2B581Y%2B%2FlDLotNCVoZ%2BPdKOc0k%2F8UcTuS0WFOyKI%3D" class="btn" target="_blank" rel="noopener noreferrer"><i class="fas fa-id-card"></i>Verificar CRP</a>
+            </div>
+            <div>
+                <img src="https://psijuliedina.com/assets/img/about.webp" alt="Psicóloga Juliedina" loading="lazy" width="400" height="400">
+            </div>
+        </section>
+        <section id="local" class="container">
+            <h2>Localização</h2>
+            <div class="local-card">
+                <p><strong>Endereço:</strong> Rua Professor Domingos Cambiaghi, 110, Centro - Leme/SP</p>
+                <a href="https://www.google.com/maps/dir//Rua+Professor+Domingos+Cambiaghi,+110,+Centro+-+Leme%2FSP/@-22.1858624,-47.3848429,17z/data=!4m8!4m7!1m0!1m5!1m1!1s0x94c80d05ec80e81d:0xdd6681cf41620c3c!2m2!1d-47.382268!2d-22.1858575" class="btn btn-outline" target="_blank" rel="noopener noreferrer"><i class="fas fa-map-marker-alt"></i>Ver no Google Maps</a>
+            </div>
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3694.427285548147!2d-47.384842885124925!3d-22.18586238538316!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c80d05ec80e81d%3A0xdd6681cf41620c3c!2sPsic%C3%B3loga%20Juli%C3%A9dina%20Lopes%20Ramos%20-%20Leme%2FSP!5e0!3m2!1spt-BR!2sbr!4v1651454269956!5m2!1spt-BR!2sbr" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+        <section id="duvidas" class="container">
+            <h2>Dúvidas Frequentes</h2>
+            <div class="faq-item"><details><summary>Como funciona a psicoterapia online?</summary><div><p>A psicoterapia online é realizada por videochamada, garantindo sigilo, ética e conforto. Você pode participar das sessões de onde estiver, desde que tenha um ambiente reservado e acesso à internet.</p></div></details></div>
+            <div class="faq-item"><details><summary>Qual a frequência das sessões?</summary><div><p>Normalmente, as sessões são semanais, mas a frequência pode ser ajustada conforme a necessidade e disponibilidade do paciente.</p></div></details></div>
+            <div class="faq-item"><details><summary>É possível conseguir reembolso das sessões pelo plano de saúde ou convênio médico?</summary><div><p>Sim, muitos planos de saúde oferecem reembolso para sessões de psicoterapia. Consulte seu convênio para saber as regras e solicite recibo após as sessões.</p></div></details></div>
+            <div class="faq-item"><details><summary>É preciso de autorização para atendimento psicológico de adolescentes?</summary><div><p>Sim, para atendimento de menores de 18 anos é necessária autorização dos responsáveis legais.</p></div></details></div>
+            <div class="faq-item"><details><summary>Como posso consultar se o CRP do profissional está ativo?</summary><div><p>Você pode consultar o registro profissional no site do <a href="https://cadastro.cfp.org.br/" target="_blank" rel="noopener noreferrer">CFP</a> informando o número do CRP.</p></div></details></div>
+        </section>
+        <section id="cta" class="cta-final text-center">
+            <div class="container">
+                <h2>Pronto para cuidar da sua saúde mental?</h2>
+                <p>Agende sua consulta hoje mesmo e dê o primeiro passo para uma vida mais equilibrada e feliz.</p>
+                <div class="cta-buttons">
+                    <a href="https://wa.me/5519988452408" class="btn btn-outline" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i>WhatsApp</a>
+                    <a href="tel:+5519988452508" class="btn" aria-label="Ligar agora"><i class="fas fa-phone"></i>Ligar agora</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="site-footer">
+        <div class="container footer-content">
+            <div>
+                <h4>Psicóloga Juliedina</h4>
+                <ul>
+                    <li>CRP 06/153209</li>
+                    <li>Atendimento presencial e online</li>
+                </ul>
+            </div>
+            <div>
+                <h4>Mapa do Site</h4>
+                <ul>
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#servicos">Serviços</a></li>
+                    <li><a href="#avaliacoes">Avaliações</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#local">Local</a></li>
+                    <li><a href="#duvidas">Dúvidas?</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Redes Sociais</h4>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/psi.juliedina" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/psi.juliedina" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/juli%C3%A9dina-lopes-ramos-868933276" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+            <div>
+                <h4>Links Úteis</h4>
+                <ul>
+                    <li><a href="https://cadastro.cfp.org.br/" target="_blank" rel="noopener">Consulta CRP</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="container copyright">
+            <p>&copy; <span id="current-year"></span> Psicologa Juliedina Lopes Ramos. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+    <script>
+        // Header scroll effect
+        const header = document.getElementById('site-header');
+        window.addEventListener('scroll', function() {
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+        // Menu hamburger
+        const menuToggle = document.getElementById('menu-toggle');
+        const mainNav = document.getElementById('main-nav');
+        if (menuToggle && mainNav) {
+            menuToggle.addEventListener('click', function() {
+                const isExpanded = menuToggle.getAttribute('aria-expanded') === 'true' || false;
+                menuToggle.setAttribute('aria-expanded', !isExpanded);
+                mainNav.classList.toggle('active');
+            });
+            // Fechar menu ao clicar em um link
+            const navLinks = mainNav.querySelectorAll('a');
+            navLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    mainNav.classList.remove('active');
+                    menuToggle.setAttribute('aria-expanded', false);
+                });
+            });
+        }
+        // Atualizar ano no rodapé
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
