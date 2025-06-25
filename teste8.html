@@ -19,7 +19,8 @@
     <style>
         :root {
             --primary-color: #e84545;
-            --secondary-color: #f4f4f4;
+            --secondary-color: #32353a;
+            --background-color: #fff;
             --text-dark: #212529;
             --text-light: #fff;
             --text-gray: #555;
@@ -30,7 +31,7 @@
         body {
             font-family: var(--font-main);
             color: var(--text-dark);
-            background: var(--text-light);
+            background: var(--background-color);
             line-height: 1.6;
         }
         img { max-width: 100%; height: auto; display: block; }
@@ -54,7 +55,7 @@
             transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
         }
         .site-header.scrolled {
-            background: var(--text-light); color: var(--text-dark); box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            background: var(--background-color); color: var(--text-dark); box-shadow: 0 2px 10px rgba(0,0,0,0.1);
         }
         .logo-text {
             font-size: 1.5rem; font-weight: bold; color: inherit; text-decoration: none;
@@ -74,7 +75,7 @@
             display: none; font-size: 1.8rem; background: none; border: none; color: inherit; cursor: pointer;
         }
         @media (max-width: 768px) {
-            .site-header nav { display: none; position: absolute; top: 100%; left: 0; width: 100%; background: var(--text-light); box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+            .site-header nav { display: none; position: absolute; top: 100%; left: 0; width: 100%; background: var(--background-color); box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
             .site-header nav.active { display: block; }
             .site-header nav ul { flex-direction: column; align-items: center; padding: 1rem 0; }
             .site-header nav ul li { margin: .5rem 0; width: 100%; text-align: center; }
@@ -93,10 +94,10 @@
         .hero h1 { font-size: 3rem; margin-bottom: .5em; font-weight: bold; }
         .hero p { font-size: 1.3rem; margin-bottom: 0; }
         @media (min-width: 769px) {
-            .hero { background-image: url('https://psijuliedina.com/assets/img/profile.webp'); background-position: center 100%; }
+            .hero { background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('https://psijuliedina.com/assets/img/profile.webp'); background-position: center 100%; }
         }
         @media (max-width: 768px) {
-            .hero { background-image: url('https://psijuliedina.com/assets/img/profile_mobile.webp'); background-position: center; }
+            .hero { background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('https://psijuliedina.com/assets/img/profile_mobile.webp'); background-position: center; }
             .hero h1 { font-size: 2.2rem; }
             .hero p { font-size: 1.1rem; }
         }
@@ -131,7 +132,7 @@
         }
         /* Seção Local */
         #local .local-card {
-            background: var(--secondary-color); padding: 2rem; border-radius: 8px; max-width: 600px; margin: 0 auto 2rem auto; box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+            background: var(--background-color); padding: 2rem; border-radius: 8px; max-width: 600px; margin: 0 auto 2rem auto; box-shadow: 0 4px 15px rgba(0,0,0,0.08);
         }
         #local .map-container {
             position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.08);
@@ -141,7 +142,7 @@
         }
         /* FAQ */
         .faq-item details {
-            background: var(--secondary-color); margin-bottom: 1rem; border-radius: 5px; border: 1px solid #ddd;
+            background: var(--background-color); margin-bottom: 1rem; border-radius: 5px; border: 1px solid #ddd;
         }
         .faq-item summary {
             padding: 1rem; font-weight: bold; cursor: pointer; position: relative; color: var(--text-dark);
@@ -195,7 +196,8 @@
             </ul>
         </nav>
     </header>
-    <main>
+    <main style="padding-top: 80px;">
+        <!-- Hero Section -->
         <section id="inicio" class="hero">
             <div class="hero-content">
                 <h1>Sua psicóloga em qualquer lugar.</h1>
@@ -206,10 +208,12 @@
                 </div>
             </div>
         </section>
+        <!-- Info Section -->
         <section class="container text-center">
             <h2>Como o tratamento psicológico pode me ajudar?</h2>
             <p class="text-gray-700">A psicoterapia é um tratamento reconhecido mundialmente e somente pode ser exercida por psicólogos credenciados ao órgão regulamentador, o CFP. Através da terapia, você pode desenvolver autoconhecimento, lidar melhor com suas emoções, superar traumas e melhorar seus relacionamentos.</p>
         </section>
+        <!-- Serviços -->
         <section id="servicos" class="container">
             <h2>Serviços</h2>
             <div class="cards-container">
@@ -223,17 +227,61 @@
                 </article>
             </div>
         </section>
+        <!-- Avaliações -->
         <section id="avaliacoes" class="container">
             <h2>Avaliações de Pacientes</h2>
             <div class="cards-container">
-                <article class="card"><p>"A terapia com a Juliedina mudou minha vida. Finalmente consegui lidar com minha ansiedade e hoje me sinto muito mais confiante."</p></article>
-                <article class="card"><p>"Excelente profissional! Me ajudou a superar um período difícil após a perda do meu emprego. Recomendo muito!"</p></article>
-                <article class="card"><p>"Atendimento online superou minhas expectativas. A Juliedina é muito atenciosa e me fez sentir confortável desde a primeira sessão."</p></article>
-                <article class="card"><p>"Fiz a avaliação psicológica para cirurgia bariátrica e foi uma experiência muito tranquila. Profissional extremamente competente."</p></article>
-                <article class="card"><p>"Minha filha adolescente está fazendo terapia e já notamos uma grande melhora no comportamento dela. A Juliedina tem uma abordagem excelente com jovens."</p></article>
-                <article class="card"><p>"Como idoso, estava relutante em procurar terapia, mas a Juliedina me fez sentir acolhido e respeitado. Hoje recomendo a todos meus amigos."</p></article>
+                <article class="card">
+                    <div class="card-header">
+                        <img src="https://via.placeholder.com/50" alt="Cliente" class="google-icon" width="50" height="50">
+                        <span class="stars">★★★★★</span>
+                        <span class="patient-name">Ana Carolina</span>
+                    </div>
+                    <p>"A terapia com a Juliedina mudou minha vida. Finalmente consegui lidar com minha ansiedade e hoje me sinto muito mais confiante."</p>
+                </article>
+                <article class="card">
+                    <div class="card-header">
+                        <img src="https://via.placeholder.com/50" alt="Cliente" class="google-icon" width="50" height="50">
+                        <span class="stars">★★★★★</span>
+                        <span class="patient-name">Roberto Silva</span>
+                    </div>
+                    <p>"Excelente profissional! Me ajudou a superar um período difícil após a perda do meu emprego. Recomendo muito!"</p>
+                </article>
+                <article class="card">
+                    <div class="card-header">
+                        <img src="https://via.placeholder.com/50" alt="Cliente" class="google-icon" width="50" height="50">
+                        <span class="stars">★★★★★</span>
+                        <span class="patient-name">Mariana Oliveira</span>
+                    </div>
+                    <p>"Atendimento online superou minhas expectativas. A Juliedina é muito atenciosa e me fez sentir confortável desde a primeira sessão."</p>
+                </article>
+                <article class="card">
+                    <div class="card-header">
+                        <img src="https://via.placeholder.com/50" alt="Cliente" class="google-icon" width="50" height="50">
+                        <span class="stars">★★★★★</span>
+                        <span class="patient-name">Carlos Eduardo</span>
+                    </div>
+                    <p>"Fiz a avaliação psicológica para cirurgia bariátrica e foi uma experiência muito tranquila. Profissional extremamente competente."</p>
+                </article>
+                <article class="card">
+                    <div class="card-header">
+                        <img src="https://via.placeholder.com/50" alt="Cliente" class="google-icon" width="50" height="50">
+                        <span class="stars">★★★★★</span>
+                        <span class="patient-name">Fernanda Costa</span>
+                    </div>
+                    <p>"Minha filha adolescente está fazendo terapia e já notamos uma grande melhora no comportamento dela. A Juliedina tem uma abordagem excelente com jovens."</p>
+                </article>
+                <article class="card">
+                    <div class="card-header">
+                        <img src="https://via.placeholder.com/50" alt="Cliente" class="google-icon" width="50" height="50">
+                        <span class="stars">★★★★★</span>
+                        <span class="patient-name">José Augusto</span>
+                    </div>
+                    <p>"Como idoso, estava relutante em procurar terapia, mas a Juliedina me fez sentir acolhido e respeitado. Hoje recomendo a todos meus amigos."</p>
+                </article>
             </div>
         </section>
+        <!-- Sobre -->
         <section id="sobre" class="container">
             <div>
                 <h2>Sobre a Psicóloga</h2>
@@ -244,6 +292,7 @@
                 <img src="https://psijuliedina.com/assets/img/about.webp" alt="Psicóloga Juliedina" loading="lazy" width="400" height="400">
             </div>
         </section>
+        <!-- Localização -->
         <section id="local" class="container">
             <h2>Localização</h2>
             <div class="local-card">
@@ -254,14 +303,16 @@
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3694.427285548147!2d-47.384842885124925!3d-22.18586238538316!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c80d05ec80e81d%3A0xdd6681cf41620c3c!2sPsic%C3%B3loga%20Juli%C3%A9dina%20Lopes%20Ramos%20-%20Leme%2FSP!5e0!3m2!1spt-BR!2sbr!4v1651454269956!5m2!1spt-BR!2sbr" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </section>
+        <!-- FAQ -->
         <section id="duvidas" class="container">
             <h2>Dúvidas Frequentes</h2>
-            <div class="faq-item"><details><summary>Como funciona a psicoterapia online?</summary><div><p>A psicoterapia online é realizada por videochamada, garantindo sigilo, ética e conforto. Você pode participar das sessões de onde estiver, desde que tenha um ambiente reservado e acesso à internet.</p></div></details></div>
-            <div class="faq-item"><details><summary>Qual a frequência das sessões?</summary><div><p>Normalmente, as sessões são semanais, mas a frequência pode ser ajustada conforme a necessidade e disponibilidade do paciente.</p></div></details></div>
-            <div class="faq-item"><details><summary>É possível conseguir reembolso das sessões pelo plano de saúde ou convênio médico?</summary><div><p>Sim, muitos planos de saúde oferecem reembolso para sessões de psicoterapia. Consulte seu convênio para saber as regras e solicite recibo após as sessões.</p></div></details></div>
-            <div class="faq-item"><details><summary>É preciso de autorização para atendimento psicológico de adolescentes?</summary><div><p>Sim, para atendimento de menores de 18 anos é necessária autorização dos responsáveis legais.</p></div></details></div>
-            <div class="faq-item"><details><summary>Como posso consultar se o CRP do profissional está ativo?</summary><div><p>Você pode consultar o registro profissional no site do <a href="https://cadastro.cfp.org.br/" target="_blank" rel="noopener noreferrer">CFP</a> informando o número do CRP.</p></div></details></div>
+            <div class="faq-item"><details><summary>Como funciona a psicoterapia online?</summary><div><p>A psicoterapia online segue as mesmas diretrizes da modalidade presencial, onde são aplicados os mesmos métodos e técnicas psicológicas para atender as necessidades do paciente. Devido aos avanços tecnológicos, as pessoas podem desfrutar dos benefícios do tratamento psicológico sem saírem de casa. No Brasil, os atendimentos à distância foram efetivamente regulamentados pelo Conselho Federal de Psicologia, através da <a href="https://e-psi.cfp.org.br/resolucao-cfp-no-11-2018/" target="_blank" rel="noopener noreferrer">Resolução CFP Nº 11/2018</a>.</p></div></details></div>
+            <div class="faq-item"><details><summary>Qual a frequência das sessões?</summary><div><p>Normalmente, a psicoterapia é iniciada com sessões semanais, mas dependendo do caso do paciente, a medida que obter melhora dos sintomas, é possível que as sessões passem a ser quinzenais.</p></div></details></div>
+            <div class="faq-item"><details><summary>É possível conseguir reembolso das sessões pelo plano de saúde ou convênio médico?</summary><div><p>Sim, algumas categorias de contratos de plano de saúde e convênios médicos permitem a livre escolha de profissionais, como psicólogos, que não fazem parte da rede credenciada. Para saber se você tem este direito, entre em contato com a operadora de seu plano e verifique se seu contrato permite acesso a serviços de livre escolha de prestadores que não pertençam à rede credenciada e quais condições e procedimentos. As regras de valor e prazo para reembolso variam de acordo com a operadora e contrato. Nesta modalidade, o paciente faz o pagamento diretamente ao prestador, que emite o recibo e o paciente solicita seu reembolso ao plano de saúde. É comum que seja solicitado um encaminhamento ou pedido feito pelo médico assistente, que deve conter o CID (Classificação Internacional de Doenças) para liberação das sessões.</p></div></details></div>
+            <div class="faq-item"><details><summary>É preciso de autorização para atendimento psicológico de adolescentes?</summary><div><p>Sim, os pacientes menores de 18 anos devem obter autorização por escrito de, ao menos, um dos responsáveis legais, conforme Artigo 12, item I da <a href="https://www.in.gov.br/en/web/dou/-/resolucao-n-13-de-15-de-junho-de-2022-408911936" target="_blank" rel="noopener noreferrer">Resolução CFP Nº 13/2022</a>.</p></div></details></div>
+            <div class="faq-item"><details><summary>Como posso consultar se o CRP do profissional está ativo?</summary><div><p>O Conselho Federal de Psicologia (CFP) fornece em seu site uma área para consulta de profissionais e você pode acessar minha inscrição pelo link <a href="https://cadastro.cfp.org.br/visualizar.html?profissional=qRVh%2B581Y%2B%2FlDLotNCVoZ%2BPdKOc0k%2F8UcTuS0WFOyKI%3D" target="_blank" rel="noopener noreferrer">CRP 06/153209</a>.</p></div></details></div>
         </section>
+        <!-- CTA -->
         <section id="cta" class="cta-final text-center">
             <div class="container">
                 <h2>Pronto para cuidar da sua saúde mental?</h2>
