@@ -87,11 +87,11 @@
             transform: rotate(90deg);
         }
         .hero {
-            min-height: 100vh;
+            min-height: calc(100vh - 72px);
             display: flex;
-            align-items: center;
+            align-items: flex-end;
             justify-content: flex-start;
-            padding: 0 2rem 3rem 2rem;
+            padding: 3rem 2rem 2rem 2rem;
             color: var(--text-light);
             position: relative;
             background-size: cover;
@@ -112,7 +112,8 @@
                 padding: 0.5rem 0.5rem;
             }
             .hero {
-                padding: 0 1rem 2rem 1rem;
+                min-height: calc(100vh - 64px);
+                padding: 2rem 1rem 1.5rem 1rem;
                 align-items: center;
                 background-image: url('https://psijuliedina.com/assets/img/profile_mobile.webp'); background-position: center;
             }
