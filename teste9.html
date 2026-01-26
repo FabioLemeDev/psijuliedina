@@ -163,6 +163,38 @@
             .footer-content { grid-template-columns: 1fr; text-align: center; }
             .footer-content div { margin-bottom: 1.5rem; }
         }
+        /* Localização: layout responsivo para mapa e informações */
+        .local-grid { display:flex; flex-direction:column; gap:1.5rem; }
+        .local-info { background: var(--text-light); padding:1.5rem; border-radius:8px; box-shadow: 0 4px 15px rgba(0,0,0,0.06); }
+        .local-info h2 { margin-top:0; margin-bottom:1rem; font-size:1.6rem; }
+        .local-item { display:flex; gap:0.75rem; align-items:flex-start; }
+        /* ícones inline SVG: ajusta tamanho e cor via `color` */
+        .local-item svg { width:28px; height:28px; flex:0 0 28px; color:var(--primary-color); }
+        .local-cta svg { width:20px; height:20px; color:var(--text-light); }
+        .local-item h3 { margin:0 0 0.25rem 0; font-size:1rem; }
+        .local-item p { margin:0; color:var(--text-gray); }
+        .local-cta { display:inline-flex; align-items:center; gap:0.75rem; margin-top:1rem; padding:0.6rem 1rem; background:var(--primary-color); color:var(--text-light); border-radius:10px; text-decoration:none; font-weight:700; box-shadow:none; border:2px solid var(--primary-color); }
+        .local-cta img { width:20px; height:20px; }
+        .local-map { border-radius:8px; overflow:hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.08); display:flex; }
+        .local-map > div { position:relative; height:100%; width:100%; }
+        @media (min-width: 769px) {
+            .local-grid { flex-direction:row; align-items:stretch; }
+            .local-info, .local-map { flex:1 1 50%; }
+            .local-info { padding:2rem; }
+        }
+        /* Sobre: imagem à esquerda em desktop, empilhado em mobile */
+        .about-grid { display:flex; flex-direction:column; gap:2rem; align-items:center; }
+        .about-img img { width:100%; height:auto; border-radius:8px; box-shadow: 0 10px 30px rgba(0,0,0,0.08); display:block; }
+        .about-text h2 { margin-top:0; margin-bottom:1rem; font-size:1.9rem; color:var(--text-dark); }
+        .about-text p { margin-bottom:1rem; color:var(--text-gray); }
+        @media (min-width: 769px) {
+            .about-grid { flex-direction:row; align-items:center; }
+            .about-img, .about-text { flex:1 1 50%; }
+            .about-img { max-width:560px; }
+        }
+        /* FAQ chevron icon rotation */
+        #duvidas details summary svg { transition: transform 0.25s ease; color: var(--primary-color); }
+        #duvidas details[open] summary svg { transform: rotate(180deg); }
     </style>
 </head>
 <body>
@@ -214,7 +246,7 @@
                         <svg class="icon-svg" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="7"></circle><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline></svg>
                         <h3>Profissional Qualificada</h3>
                     </div>
-                    <p>Formação sólida e constante atualização para oferecer o melhor suporte terapêutico baseado em evidências.</p>
+                    <p>Formação sólida e constante atualização para oferecer o melhor suporte terapêutico baseado em evidências. Pós-graduada em Terapia Cognitivo-Comportamental.</p>
                 </article>
                 <article class="card">
                     <div style="display:flex;align-items:center;gap:1rem;">
@@ -258,63 +290,200 @@
             </div>
         </section>
         <section id="avaliacoes" class="container">
-            <h2>Avaliações de Pacientes</h2>
+            <h2 style="text-align:center;margin-bottom:1.5rem;">Avaliações dos Pacientes</h2>
             <div class="cards-container">
                 <article class="card">
-                    <p>"A terapia com a Juliédina mudou minha vida. Finalmente consegui lidar com minha ansiedade e hoje me sinto muito mais confiante."</p>
+                    <div style="display:flex;align-items:center;gap:0.5rem;margin-bottom:0.75rem;">
+                        <img src="assets/img/icon-google-multicolor.svg" alt="Google" style="width:60px;height:auto;flex:0 0 60px;">
+                        <div style="display:flex;gap:4px;align-items:center;">
+                            <svg viewBox="3 3 18 18" width="18" height="18" aria-hidden="true" focusable="false" style="fill:#fbbc04"><path d="M14.782 8.676 12 2.145l-2.78 6.53-7.086.625 5.364 4.663-1.595 6.918L12 17.228l6.097 3.653-1.596-6.919L21.867 9.3z"></path></svg>
+                            <svg viewBox="3 3 18 18" width="18" height="18" aria-hidden="true" focusable="false" style="fill:#fbbc04"><path d="M14.782 8.676 12 2.145l-2.78 6.53-7.086.625 5.364 4.663-1.595 6.918L12 17.228l6.097 3.653-1.596-6.919L21.867 9.3z"></path></svg>
+                            <svg viewBox="3 3 18 18" width="18" height="18" aria-hidden="true" focusable="false" style="fill:#fbbc04"><path d="M14.782 8.676 12 2.145l-2.78 6.53-7.086.625 5.364 4.663-1.595 6.918L12 17.228l6.097 3.653-1.596-6.919L21.867 9.3z"></path></svg>
+                            <svg viewBox="3 3 18 18" width="18" height="18" aria-hidden="true" focusable="false" style="fill:#fbbc04"><path d="M14.782 8.676 12 2.145l-2.78 6.53-7.086.625 5.364 4.663-1.595 6.918L12 17.228l6.097 3.653-1.596-6.919L21.867 9.3z"></path></svg>
+                            <svg viewBox="3 3 18 18" width="18" height="18" aria-hidden="true" focusable="false" style="fill:#fbbc04"><path d="M14.782 8.676 12 2.145l-2.78 6.53-7.086.625 5.364 4.663-1.595 6.918L12 17.228l6.097 3.653-1.596-6.919L21.867 9.3z"></path></svg>
+                        </div>
+                    </div>
+                    <p>"Fui muito bem acolhida e me senti muito confortável com o atendimento, sou eternamente agradecida por isso, pois foi meu primeiro contato e tive uma experiência muito boa. Super indico ❤️✨"</p>
+                    <p style="margin-top:1rem;font-weight:700;">Maytte Araujo</p>
+                    <a href="https://g.co/kgs/2HHPzqq" style="color:var(--primary-color);text-decoration:none;" target="_blank" rel="noopener">Ver avaliação no Google</a>
                 </article>
                 <article class="card">
-                    <p>"Excelente profissional! Me ajudou a superar um período difícil após a perda do meu emprego. Recomendo muito!"</p>
+                    <div style="display:flex;align-items:center;gap:0.5rem;margin-bottom:0.75rem;">
+                        <img src="assets/img/icon-google-multicolor.svg" alt="Google" style="width:60px;height:auto;flex:0 0 60px;">
+                        <div style="display:flex;gap:4px;align-items:center;">
+                            <img src="assets/img/review-star.svg" alt="estrela" style="width:18px;height:18px;">
+                            <img src="assets/img/review-star.svg" alt="estrela" style="width:18px;height:18px;">
+                            <img src="assets/img/review-star.svg" alt="estrela" style="width:18px;height:18px;">
+                            <img src="assets/img/review-star.svg" alt="estrela" style="width:18px;height:18px;">
+                            <img src="assets/img/review-star.svg" alt="estrela" style="width:18px;height:18px;">
+                        </div>
+                    </div>
+                    <p>"Excelente profissional! Desde a primeira sessão, me senti muito à vontade e acolhida. A Ju é sempre atenciosa e me ajuda muito a enxergar as coisas de diferentes formas. Em pouco tempo, já sinto uma enorme evolução. Só tenho a parabenizar e agradecer pelo trabalho dela. Indico a todos, seu único arrependimento vai ser não ter conhecido ela antes rs ❤️"</p>
+                    <p style="margin-top:1rem;font-weight:700;">Jucicleide Silva</p>
+                    <a href="https://g.co/kgs/Uc31Qnh" style="color:var(--primary-color);text-decoration:none;" target="_blank" rel="noopener">Ver avaliação no Google</a>
                 </article>
                 <article class="card">
-                    <p>"Atendimento online superou minhas expectativas. A Juliédina é muito atenciosa e me fez sentir confortável desde a primeira sessão."</p>
+                    <div style="display:flex;align-items:center;gap:0.5rem;margin-bottom:0.75rem;">
+                        <img src="assets/img/icon-google-multicolor.svg" alt="Google" style="width:60px;height:auto;flex:0 0 60px;">
+                        <div style="display:flex;gap:4px;align-items:center;">
+                            <img src="assets/img/review-star.svg" alt="estrela" style="width:18px;height:18px;">
+                            <img src="assets/img/review-star.svg" alt="estrela" style="width:18px;height:18px;">
+                            <img src="assets/img/review-star.svg" alt="estrela" style="width:18px;height:18px;">
+                            <img src="assets/img/review-star.svg" alt="estrela" style="width:18px;height:18px;">
+                            <img src="assets/img/review-star.svg" alt="estrela" style="width:18px;height:18px;">
+                        </div>
+                    </div>
+                    <p>"A melhor profissional que eu pudesse escolher. Uma pessoa incrível. Não tenho arrependimento algum!!!"</p>
+                    <p style="margin-top:1rem;font-weight:700;">Ingrid Orlandini</p>
+                    <a href="https://g.co/kgs/oGkaZo5" style="color:var(--primary-color);text-decoration:none;" target="_blank" rel="noopener">Ver avaliação no Google</a>
                 </article>
                 <article class="card">
-                    <p>"Fiz a avaliação psicológica para cirurgia bariátrica e foi uma experiência muito tranquila. Profissional extremamente competente."</p>
+                    <div style="display:flex;align-items:center;gap:0.5rem;margin-bottom:0.75rem;">
+                        <img src="assets/img/icon-google-multicolor.svg" alt="Google" style="width:60px;height:auto;flex:0 0 60px;">
+                        <div style="display:flex;gap:4px;align-items:center;">
+                            <img src="assets/img/review-star.svg" alt="estrela" style="width:18px;height:18px;">
+                            <img src="assets/img/review-star.svg" alt="estrela" style="width:18px;height:18px;">
+                            <img src="assets/img/review-star.svg" alt="estrela" style="width:18px;height:18px;">
+                            <img src="assets/img/review-star.svg" alt="estrela" style="width:18px;height:18px;">
+                            <img src="assets/img/review-star.svg" alt="estrela" style="width:18px;height:18px;">
+                        </div>
+                    </div>
+                    <p>"Ótima profissional...pontual e prestativa, nos faz refletir e nos ajuda nos momentos de angústia. 5 estrelas para Juliédina."</p>
+                    <p style="margin-top:1rem;font-weight:700;">Miriam Bergamasco</p>
+                    <a href="https://g.co/kgs/8rybA1L" style="color:var(--primary-color);text-decoration:none;" target="_blank" rel="noopener">Ver avaliação no Google</a>
                 </article>
                 <article class="card">
-                    <p>"Minha filha adolescente está fazendo terapia e já notamos uma grande melhora no comportamento dela. A Juliédina tem uma abordagem excelente com jovens."</p>
+                    <div style="display:flex;align-items:center;gap:0.5rem;margin-bottom:0.75rem;">
+                        <img src="assets/img/icon-google-multicolor.svg" alt="Google" style="width:60px;height:auto;flex:0 0 60px;">
+                        <div style="display:flex;gap:4px;align-items:center;">
+                            <img src="assets/img/review-star.svg" alt="estrela" style="width:18px;height:18px;">
+                            <img src="assets/img/review-star.svg" alt="estrela" style="width:18px;height:18px;">
+                            <img src="assets/img/review-star.svg" alt="estrela" style="width:18px;height:18px;">
+                            <img src="assets/img/review-star.svg" alt="estrela" style="width:18px;height:18px;">
+                            <img src="assets/img/review-star.svg" alt="estrela" style="width:18px;height:18px;">
+                        </div>
+                    </div>
+                    <p>"Estou muito satisfeito. Altamente profissional, competente, discreta, pontual e capacitada"</p>
+                    <p style="margin-top:1rem;font-weight:700;">Alessandro Santos</p>
+                    <a href="https://g.co/kgs/ssGTKa5" style="color:var(--primary-color);text-decoration:none;" target="_blank" rel="noopener">Ver avaliação no Google</a>
                 </article>
                 <article class="card">
-                    <p>"Como idoso, estava relutante em procurar terapia, mas a Juliédina me fez sentir acolhido e respeitado. Hoje recomendo a todos meus amigos."</p>
+                    <div style="display:flex;align-items:center;gap:0.5rem;margin-bottom:0.75rem;">
+                        <img src="assets/img/icon-google-multicolor.svg" alt="Google" style="width:60px;height:auto;flex:0 0 60px;">
+                        <div style="display:flex;gap:4px;align-items:center;">
+                            <img src="assets/img/review-star.svg" alt="estrela" style="width:18px;height:18px;">
+                            <img src="assets/img/review-star.svg" alt="estrela" style="width:18px;height:18px;">
+                            <img src="assets/img/review-star.svg" alt="estrela" style="width:18px;height:18px;">
+                            <img src="assets/img/review-star.svg" alt="estrela" style="width:18px;height:18px;">
+                            <img src="assets/img/review-star.svg" alt="estrela" style="width:18px;height:18px;">
+                        </div>
+                    </div>
+                    <p>"Super recomendo! Faz toda a diferença na minha vida!!"</p>
+                    <p style="margin-top:1rem;font-weight:700;">Maria Gabriela Longo</p>
+                    <a href="https://g.co/kgs/EkhzmEz" style="color:var(--primary-color);text-decoration:none;" target="_blank" rel="noopener">Ver avaliação no Google</a>
                 </article>
             </div>
         </section>
         <section id="sobre" class="container">
-            <div style="display:grid;grid-template-columns:1fr 1fr;gap:2rem;align-items:center;">
-                <div>
-                    <h2>Sobre Mim</h2>
+            <div class="about-grid">
+                <div class="about-img">
+                    <img src="https://psijuliedina.com/assets/img/about.webp" alt="Psicóloga Juliedina" loading="lazy" width="600" height="400">
+                </div>
+                <div class="about-text">
+                    <h2>Sobre a Psicóloga Juliédina</h2>
                     <p>Psicóloga clínica com experiência em ajudar pacientes a conquistarem mais qualidade de vida e equilíbrio emocional.</p>
                     <p>No campo da Psicologia, tenho experiência organizacional e clínica, desde 2020 me dedico exclusivamente ao consultório, realizando avaliações e atendimentos, auxiliando pessoas a lidarem com suas questões emocionais e comportamentais.</p>
                     <p>Ofereço um atendimento clínico ético, personalizado, acolhedor e profissional.</p>
-                    <a href="https://cadastro.cfp.org.br/visualizar.html?profissional=qRVh%2B581Y%2B%2FlDLotNCVoZ%2BPdKOc0k%2F8UcTuS0WFOyKI%3D" target="_blank" rel="noopener noreferrer" class="btn" aria-label="Verificar registro CRP de Juliédina">Verificar CRP</a>
-                </div>
-                <div>
-                    <img src="https://psijuliedina.com/assets/img/about.webp" alt="Foto da Psicóloga Juliédina em seu consultório" loading="lazy" width="400" height="400">
+                    <a href="https://cadastro.cfp.org.br/visualizar.html?profissional=qRVh%2B581Y%2B%2FlDLotNCVoZ%2BPdKOc0k%2F8UcTuS0WFOyKI%3D" target="_blank" rel="noopener noreferrer" class="btn" aria-label="Verificar registro CRP de Juliédina">Verificar CRP
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="18" height="18" aria-hidden="true" focusable="false" style="margin-left:0.5rem;vertical-align:middle;fill:currentColor;">
+                            <path d="M 40.960938 4.9804688 A 2.0002 2.0002 0 0 0 40.740234 5 L 28 5 A 2.0002 2.0002 0 1 0 28 9 L 36.171875 9 L 22.585938 22.585938 A 2.0002 2.0002 0 1 0 25.414062 25.414062 L 39 11.828125 L 39 20 A 2.0002 2.0002 0 1 0 43 20 L 43 7.2460938 A 2.0002 2.0002 0 0 0 40.960938 4.9804688 z M 12.5 8 C 8.3826878 8 5 11.382688 5 15.5 L 5 35.5 C 5 39.617312 8.3826878 43 12.5 43 L 32.5 43 C 36.617312 43 40 39.617312 40 35.5 L 40 26 A 2.0002 2.0002 0 1 0 36 26 L 36 35.5 C 36 37.446688 34.446688 39 32.5 39 L 12.5 39 C 10.553312 39 9 37.446688 9 35.5 L 9 15.5 C 9 13.553312 10.553312 12 12.5 12 L 22 12 A 2.0002 2.0002 0 1 0 22 8 L 12.5 8 z"></path>
+                        </svg>
+                    </a>
                 </div>
             </div>
         </section>
         <section id="local" class="container">
-            <h2>Localização e Horários</h2>
-            <div class="card" style="max-width:600px;margin:0 auto 2rem auto;">
-                <p><strong>Endereço:</strong> Rua Albano Viêira Sardinha, 264, Jardim Amália - Leme/SP</p>
-                <p><strong>Horário de Atendimento:</strong></p>
-                <p>Segunda a Sexta: 8h às 20h</p>
-                <p>Sábado: 8h às 12h</p>
-                <a href="https://www.google.com/maps/search/?api=1&query=Rua+Professor+Domingos+Cambiaghi,+110,+Centro,+Leme+SP" target="_blank" class="btn" aria-label="Ver como chegar ao consultório no Google Maps">Ver no Google Maps</a>
-            </div>
-            <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;border-radius:8px;box-shadow:0 4px 15px rgba(0,0,0,0.08);">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3694.427285548147!2d-47.384842885124925!3d-22.18586238538316!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c80d05ec80e81d%3A0xdd6681cf41620c3c!2sPsic%C3%B3loga%20Juli%C3%A9dina%20Lopes%20Ramos%20-%20Leme%2FSP!5e0!3m2!1spt-BR!2sbr!4v1651454269956!5m2!1spt-BR!2sbr" width="100%" height="100%" style="border:0;position:absolute;top:0;left:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="local-grid">
+                <div class="local-info">
+                    <h2>Localização</h2>
+                    <div style="display:flex;flex-direction:column;gap:1rem;">
+                        <div class="local-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                            <div>
+                                <h3>Endereço</h3>
+                                <p>Rua Albano Viêira Sardinha, 264, Jardim Amália - Leme/SP</p>
+                            </div>
+                        </div>
+                        <div class="local-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                            <div>
+                                <h3>Horário de Funcinamento</h3>
+                                <p>Segunda a Sexta: 8h às 20h</p>
+                                <p>Sábado: 8h às 12h</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="https://www.google.com/maps/place/Psic%C3%B3loga+Juli%C3%A9dina+Lopes+Ramos+-+Leme,+SP/@-22.1858624,-47.3848429,17z/data=!3m1!4b1!4m6!3m5!1s0x94c80d05ec80e81d:0xdd6681cf41620c3c!8m2!3d-22.1858624!4d-47.382268!16s%2Fg%2F11sx7v4q1w" class="local-cta" target="_blank" rel="noopener" aria-label="Como chegar no Google Maps">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="1 6 1 22 8 18 16 22 23 18 23 2 16 6 8 2 1 6"></polygon><line x1="8" y1="2" x2="8" y2="18"></line><line x1="16" y1="6" x2="16" y2="22"></line></svg> Como chegar
+                    </a>
+                </div>
+                <div class="local-map">
+                    <div style="position:relative;height:100%;overflow:hidden;">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3694.427285548147!2d-47.384842885124925!3d-22.18586238538316!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c80d05ec80e81d%3A0xdd6681cf41620c3c!2sPsic%C3%B3loga%20Juli%C3%A9dina%20Lopes%20Ramos%20-%20Leme%2FSP!5e0!3m2!1spt-BR!2sbr!4v1651454269956!5m2!1spt-BR!2sbr" style="border:0;position:absolute;inset:0;width:100%;height:100%;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Mapa do consultório da Psicóloga Juliedina"></iframe>
+                    </div>
+                </div>
             </div>
         </section>
-        <section id="duvidas" class="container">
-            <h2>Dúvidas Frequentes</h2>
-            <div class="cards-container">
-                <details class="card"><summary>Como funciona a psicoterapia online?</summary><div><p>As sessões são realizadas por videochamada, com sigilo e ética profissional, no conforto da sua casa.</p></div></details>
-                <details class="card"><summary>Qual a frequência das sessões?</summary><div><p>Normalmente semanais, mas pode ser ajustada conforme necessidade e objetivo do paciente.</p></div></details>
-                <details class="card"><summary>É possível conseguir reembolso das sessões pelo plano de saúde?</summary><div><p>Sim, muitos planos oferecem reembolso. Consulte seu convênio para saber as condições.</p></div></details>
-                <details class="card"><summary>É preciso de autorização para atendimento psicológico de adolescentes?</summary><div><p>Sim, é necessário consentimento dos responsáveis legais para menores de 18 anos.</p></div></details>
-                <details class="card"><summary>Como posso consultar se o CRP do profissional está ativo?</summary><div><p>Basta acessar o <a href="https://cadastro.cfp.org.br/" target="_blank" rel="noopener">site do CFP</a> e pesquisar pelo nome ou número do CRP.</p></div></details>
+        <section id="duvidas" class="py-20">
+            <div class="container mx-auto px-6" style="max-width:1100px;">
+                <h2 style="text-align:center;font-size:1.8rem;margin-bottom:1.5rem;">Dúvidas Frequentes</h2>
+                <div style="display:flex;flex-direction:column;gap:1rem;">
+                    <details class="card" style="background:var(--text-light);padding:1.25rem;border-radius:8px;box-shadow:0 6px 18px rgba(0,0,0,0.06);">
+                        <summary style="display:flex;justify-content:space-between;align-items:center;cursor:pointer;list-style:none;">
+                            <h3 style="margin:0;font-size:1.05rem;font-weight:700;color:var(--text-dark);">Como funciona a psicoterapia online?</h3>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                        </summary>
+                        <div style="padding-top:0.75rem;color:var(--text-gray);">
+                            <p>A psicoterapia online segue as mesmas diretrizes da modalidade presencial, onde são aplicados os mesmos métodos e técnicas psicológicas para atender as necessidades do paciente. Devido aos avanços tecnológicos, as pessoas podem desfrutar dos benefícios do tratamento psicológico sem saírem de casa. No Brasil, os atendimentos à distância foram efetivamente regulamentados pelo Conselho Federal de Psicologia, através da <a href="https://e-psi.cfp.org.br/resolucao-cfp-no-11-2018/" target="_blank" rel="noopener" style="color:var(--primary-color);text-decoration:underline;">Resolução CFP Nº 11/2018</a>.</p>
+                        </div>
+                    </details>
+                    <details class="card" style="background:var(--text-light);padding:1.25rem;border-radius:8px;box-shadow:0 6px 18px rgba(0,0,0,0.06);">
+                        <summary style="display:flex;justify-content:space-between;align-items:center;cursor:pointer;list-style:none;">
+                            <h3 style="margin:0;font-size:1.05rem;font-weight:700;color:var(--text-dark);">Qual a frequência das sessões?</h3>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                        </summary>
+                        <div style="padding-top:0.75rem;color:var(--text-gray);">
+                            <p>Normalmente, a psicoterapia é iniciada com sessões semanais, mas dependendo do caso do paciente, à medida que houver melhora dos sintomas, é possível que as sessões passem a ser quinzenais.</p>
+                        </div>
+                    </details>
+                    <details class="card" style="background:var(--text-light);padding:1.25rem;border-radius:8px;box-shadow:0 6px 18px rgba(0,0,0,0.06);">
+                        <summary style="display:flex;justify-content:space-between;align-items:center;cursor:pointer;list-style:none;">
+                            <h3 style="margin:0;font-size:1.05rem;font-weight:700;color:var(--text-dark);">É possível conseguir reembolso das sessões pelo plano de saúde ou convênio médico?</h3>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                        </summary>
+                        <div style="padding-top:0.75rem;color:var(--text-gray);">
+                            <p>Sim, algumas categorias de contratos de plano de saúde e convênios médicos permitem a livre escolha de profissionais, como psicólogos, que não fazem parte da rede credenciada. Para saber se você tem este direito, entre em contato com a operadora de seu plano e verifique se seu contrato permite acesso a serviços de livre escolha de prestadores que não pertençam à rede credenciada e quais condições e procedimentos. As regras de valor e prazo para reembolso variam de acordo com a operadora e contrato. Nesta modalidade, o paciente faz o pagamento diretamente ao prestador, que emite o recibo e o paciente solicita seu reembolso ao plano de saúde. É comum que seja solicitado um encaminhamento ou pedido feito pelo médico assistente, que deve conter o CID (Classificação Internacional de Doenças) para liberação das sessões.</p>
+                        </div>
+                    </details>
+                    <details class="card" style="background:var(--text-light);padding:1.25rem;border-radius:8px;box-shadow:0 6px 18px rgba(0,0,0,0.06);">
+                        <summary style="display:flex;justify-content:space-between;align-items:center;cursor:pointer;list-style:none;">
+                            <h3 style="margin:0;font-size:1.05rem;font-weight:700;color:var(--text-dark);">É preciso de autorização para atendimento psicológico de adolescentes?</h3>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                        </summary>
+                        <div style="padding-top:0.75rem;color:var(--text-gray);">
+                            <p>Sim, os pacientes menores de 18 anos devem obter autorização por escrito de, ao menos, um dos responsáveis legais, conforme Artigo 12, item I da <a href="https://www.in.gov.br/en/web/dou/-/resolucao-n-13-de-15-de-junho-de-2022-408911936" target="_blank" rel="noopener" style="color:var(--primary-color);text-decoration:underline;">Resolução CFP Nº 13/2022</a>.</p>
+                        </div>
+                    </details>
+                    <details class="card" style="background:var(--text-light);padding:1.25rem;border-radius:8px;box-shadow:0 6px 18px rgba(0,0,0,0.06);">
+                        <summary style="display:flex;justify-content:space-between;align-items:center;cursor:pointer;list-style:none;">
+                            <h3 style="margin:0;font-size:1.05rem;font-weight:700;color:var(--text-dark);">Como posso consultar se o CRP do profissional está ativo?</h3>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                        </summary>
+                        <div style="padding-top:0.75rem;color:var(--text-gray);">
+                            <p>O Conselho Federal de Psicologia (CFP) fornece em seu site uma área para consulta de profissionais e você pode acessar minha inscrição pelo link <a href="https://cadastro.cfp.org.br/visualizar.html?profissional=qRVh%2B581Y%2B%2FlDLotNCVoZ%2BPdKOc0k%2F8UcTuS0WFOyKI%3D" target="_blank" rel="noopener" style="color:var(--primary-color);text-decoration:underline;">CRP 06/153209</a>.</p>
+                        </div>
+                    </details>
+                </div>
             </div>
         </section>
         <section id="cta" class="cta-final text-center" style="background:var(--primary-color);color:var(--text-light);padding:3rem 0;">
