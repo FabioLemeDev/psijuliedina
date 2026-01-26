@@ -1,236 +1,704 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Psicóloga Juliédina - Atendimento psicológico presencial e online para adolescentes, jovens, adultos e idosos. Agende sua consulta.">
-    <meta name="keywords" content="psicólogo, psicoterapia, terapia, saúde mental, ansiedade, depressão, avaliação psicológica, Leme">
-    <meta name="author" content="Psicóloga Juliédina Lopes Ramos">
-    <title>Psicóloga Juliédina - Atendimento psicológico em Leme e online</title>
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <link rel="apple-touch-icon" href="apple-touch-icon.png">
-    <style>
-        :root {
-            --primary-color: #e84545;
-            --secondary-color: #f4f4f4;
-            --text-dark: #333;
-            --text-light: #fff;
-            --text-gray: #555;
-            --font-main: Arial, Helvetica, sans-serif;
-            --spacing-unit: 1rem;
-        }
-        html, body {
-            height: 100%;
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        html { scroll-behavior: smooth; }
-        body {
-            font-family: var(--font-main);
-            color: var(--text-dark);
-            background: var(--text-light);
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            overflow-x: hidden;
-        }
-        img { max-width: 100%; height: auto; display: block; }
-        h1, h2, h3, h4, h5, h6 { margin-bottom: 0.75rem; line-height: 1.3; }
-        h1 { font-size: 2.2rem; }
-        h2 { font-size: 1.8rem; }
-        h3 { font-size: 1.5rem; }
-        p { margin-bottom: 1rem; }
-        .container { width: 90%; max-width: 1100px; margin: 0 auto; padding: 2rem 0; }
-        .text-center { text-align: center; }
-        .primary-text { color: var(--primary-color); }
-        .site-header {
-            position: fixed; top: 0; left: 0; width: 100%; z-index: 1000;
-            height: 72px;
-            padding: 1rem 0.5rem; display: flex; flex-direction: row; justify-content: space-between; align-items: center;
-            background: transparent !important; color: var(--text-light); transition: background 0.3s, color 0.3s, box-shadow 0.3s;
-            box-sizing: border-box;
-        }
-        main {
-            padding-top: 0;
-        }
-        .site-header.scrolled {
-            background: var(--text-light) !important; color: var(--text-dark); box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-        }
-        .site-header .logo-text { font-size: 1.5rem; font-weight: bold; color: inherit; text-decoration: none; }
-        .site-header nav {
-            display: flex;
-            align-items: center;
-        }
-        .site-header nav ul {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            margin: 0;
-            padding: 0;
-            list-style: none;
-        }
-        .site-header nav ul li { margin-left: 1.5rem; }
-        .site-header nav ul li a { text-decoration: none; font-weight: bold; color: inherit; transition: color 0.3s; padding-bottom: 5px; }
-        .site-header nav ul li a:hover, .site-header nav ul li a:focus { color: var(--primary-color); border-bottom: 2px solid var(--primary-color); }
-        .menu-toggle {
-            display: none;
-            font-size: 1.8rem;
-            background: none;
-            border: none;
-            color: inherit;
-            cursor: pointer;
-            transition: transform 0.3s;
-        }
-        .menu-toggle.open {
-            transform: rotate(90deg);
-        }
-        .hero {
-            /* restaura imagem de fundo original */
-            min-height: calc(100vh - 72px);
-            display: flex;
-            align-items: flex-end;
-            justify-content: flex-start;
-            padding: 3rem 2rem 2rem 2rem;
-            color: var(--text-light);
-            position: relative;
-            background-size: cover;
-            background-repeat: no-repeat;
-            overflow: hidden;
-        }
-        .hero::before {
-            content: "";
-            position: absolute;
-            inset: 0;
-            background: rgba(0,0,0,0.40); /* camada escura sobre a imagem */
-            pointer-events: none;
-            z-index: 1;
-        }
-        .hero .hero-content {
-            position: relative;
-            z-index: 2;
-        }
-        @media (min-width: 769px) {
-            .hero { background-image: url('https://psijuliedina.com/assets/img/profile.webp'); background-position: center 100%; }
-        }
-        @media (max-width: 768px) {
-            .hero {
-                min-height: calc(100vh - 64px);
-                padding: 2rem 1rem 1.5rem 1rem;
-                align-items: flex-end;
-                background-image: url('https://psijuliedina.com/assets/img/profile_mobile.webp');
-                background-position: center;
-                background-size: cover;
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Psicóloga Juliédina - Atendimento psicológico presencial e online para adolescentes, jovens, adultos e idosos. Agende sua consulta.">
+        <meta name="keywords" content="psicólogo, psicoterapia, terapia, saúde mental, ansiedade, depressão, avaliação psicológica, Leme">
+        <meta name="author" content="Psicóloga Juliédina Lopes Ramos">
+        <title>Psicóloga Juliédina - Atendimento psicológico em Leme e online</title>
+        <link rel="icon" href="favicon.ico" type="image/x-icon">
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <style>
+            :root {
+                --primary-color: #e84545;
+                --secondary-color: #f4f4f4;
+                --text-dark: #333;
+                --text-light: #fff;
+                --text-gray: #555;
+                --font-main: Arial, Helvetica, sans-serif;
+                --spacing-unit: 1rem;
             }
-        }
-        section { padding: 3rem 0; }
-        .cards-container { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; }
-        .card { background: var(--text-light); padding: 1.5rem; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.08); transition: transform 0.3s, box-shadow 0.3s; }
-        .card:hover { transform: translateY(-5px); box-shadow: 0 6px 20px rgba(0,0,0,0.12); }
-        .card h3 { color: var(--primary-color); margin-bottom: 1rem; }
-        /* Seção de informações: inverter cor entre ícone (SVG) e título H3 */
-        #info .card h3 { color: var(--text-dark); }
-        #info .card .icon-svg { color: var(--primary-color); width:48px; height:48px; flex:0 0 48px; }
-        .card p { color: var(--text-gray); font-size: 0.95rem; }
-        .btn { display: inline-block; padding: 0.75rem 1.5rem; background: var(--primary-color); color: var(--text-light); text-decoration: none; border-radius: 5px; font-weight: bold; text-align: center; transition: background 0.3s, transform 0.2s; border: 2px solid var(--primary-color); min-width: 44px; min-height: 44px; line-height: normal; cursor: pointer; }
-        .btn:hover, .btn:focus { background: #d13232; border-color: #d13232; transform: translateY(-2px); color: var(--text-light); }
-        .btn-phone { background:#fff; color:#0b1220; border:none; display:inline-flex; align-items:center; gap:0.5rem; padding:0.5rem 1rem; height:48px; border-radius:10px; text-decoration:none; font-weight:bold; cursor:pointer; }
-        .btn-phone svg { width:20px; height:20px; flex:0 0 20px; color:inherit; }
-        .btn-phone:hover, .btn-phone:focus { background:#f4f4f4; }
-        .btn-outline { background: transparent; color: var(--primary-color); border: 2px solid var(--primary-color); }
-        .btn-outline:hover, .btn-outline:focus { background: var(--primary-color); color: var(--text-light); }
-        .site-footer { background: #2b2b2b; color: #ccc; padding: 2.5rem 0; text-align: center; }
-        .site-footer .footer-content { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin-bottom: 2rem; text-align: left; }
-        .site-footer h4 { color: var(--text-light); margin-bottom: 1rem; font-size: 1.2rem; }
-        .site-footer ul { list-style: none; }
-        .site-footer ul li { margin-bottom: 0.5rem; }
-        .site-footer ul li a { color: #ccc; text-decoration: none; transition: color 0.3s; }
-        .site-footer ul li a:hover, .site-footer ul li a:focus { color: var(--primary-color); }
-        .social-links a { font-size: 1.5rem; margin-right: 1rem; color: #ccc; }
-        .social-links a:hover, .social-links a:focus { color: var(--primary-color); }
-        .copyright { font-size: 0.9rem; border-top: 1px solid #444; padding-top: 1.5rem; margin-top: 1.5rem; }
-        @media (max-width: 768px) {
+
+            html,
+            body {
+                height: 100%;
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            html {
+                scroll-behavior: smooth;
+            }
+
+            body {
+                font-family: var(--font-main);
+                color: var(--text-dark);
+                background: var(--text-light);
+                line-height: 1.6;
+                overflow-x: hidden;
+            }
+
+            img {
+                max-width: 100%;
+                height: auto;
+                display: block;
+            }
+
+            h1,
+            h2,
+            h3,
+            h4,
+            h5,
+            h6 {
+                margin-bottom: 0.75rem;
+                line-height: 1.3;
+            }
+
+            h1 {
+                font-size: 2.2rem;
+            }
+
+            h2 {
+                font-size: 1.8rem;
+            }
+
+            h3 {
+                font-size: 1.5rem;
+            }
+
+            p {
+                margin-bottom: 1rem;
+            }
+
+            .container {
+                width: 90%;
+                max-width: 1100px;
+                margin: 0 auto;
+                padding: 2rem 0;
+            }
+
+            .text-center {
+                text-align: center;
+            }
+
+            .primary-text {
+                color: var(--primary-color);
+            }
+
+            .site-header {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                z-index: 1000;
+                height: 72px;
+                padding: 1rem 0.5rem;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                background: transparent !important;
+                color: var(--text-light);
+                transition: background 0.3s, color 0.3s, box-shadow 0.3s;
+                box-sizing: border-box;
+            }
+
+            main {
+                padding-top: 0;
+            }
+
+            .site-header.scrolled {
+                background: var(--text-light) !important;
+                color: var(--text-dark);
+                box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            }
+
+            .site-header .logo-text {
+                font-size: 1.5rem;
+                font-weight: bold;
+                color: inherit;
+                text-decoration: none;
+            }
+
             .site-header nav {
-                display: none; position: absolute; top: 100%; left: 0; width: 100%; background: var(--text-light); box-shadow: 0 2px 5px rgba(0,0,0,0.1); right: 0;
+                display: flex;
+                align-items: center;
             }
-            .site-header nav.active { display: block; }
-            .site-header nav ul { flex-direction: column; align-items: center; padding: 1rem 0; }
-            .site-header nav ul li { margin: 0.5rem 0; width: 100%; text-align: center; }
-            .site-header nav ul li a { color: var(--text-dark); padding: 1rem 0; display: block; width: 100%; }
-            .site-header nav ul li a:hover, .site-header nav ul li a:focus { background: var(--secondary-color); color: var(--primary-color); border-bottom: none; }
-            .menu-toggle { display: block; }
-            .footer-content { grid-template-columns: 1fr; text-align: center; }
-            .footer-content div { margin-bottom: 1.5rem; }
-        }
-        /* Localização: layout responsivo para mapa e informações */
-        .local-grid { display:flex; flex-direction:column; gap:1.5rem; }
-        .local-info { background: var(--text-light); padding:1.5rem; border-radius:8px; box-shadow: 0 4px 15px rgba(0,0,0,0.06); }
-        .local-info h2 { margin-top:0; margin-bottom:1rem; font-size:1.6rem; }
-        .local-item { display:flex; gap:0.75rem; align-items:flex-start; }
-        /* ícones inline SVG: ajusta tamanho e cor via `color` */
-        .local-item svg { width:28px; height:28px; flex:0 0 28px; color:var(--primary-color); }
-        .local-cta svg { width:20px; height:20px; color:var(--text-light); }
-        .local-item h3 { margin:0 0 0.25rem 0; font-size:1rem; }
-        .local-item p { margin:0; color:var(--text-gray); }
-        .local-cta { display:inline-flex; align-items:center; gap:0.75rem; margin-top:1rem; padding:0.6rem 1rem; background:var(--primary-color); color:var(--text-light); border-radius:10px; text-decoration:none; font-weight:700; box-shadow:none; border:2px solid var(--primary-color); }
-        .local-cta img { width:20px; height:20px; }
-        .local-map { border-radius:8px; overflow:hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.08); display:flex; }
-        .local-map > div { position:relative; height:100%; width:100%; }
-        @media (min-width: 769px) {
-            .local-grid { flex-direction:row; align-items:stretch; }
-            .local-info, .local-map { flex:1 1 50%; }
-            .local-info { padding:2rem; }
-        }
-        /* Sobre: imagem à esquerda em desktop, empilhado em mobile */
-        .about-grid { display:flex; flex-direction:column; gap:2rem; align-items:center; }
-        .about-img img { width:100%; height:auto; border-radius:8px; box-shadow: 0 10px 30px rgba(0,0,0,0.08); display:block; }
-        .about-text h2 { margin-top:0; margin-bottom:1rem; font-size:1.9rem; color:var(--text-dark); }
-        .about-text p { margin-bottom:1rem; color:var(--text-gray); }
-        @media (min-width: 769px) {
-            .about-grid { flex-direction:row; align-items:center; }
-            .about-img, .about-text { flex:1 1 50%; }
-            .about-img { max-width:560px; }
-        }
-        /* FAQ chevron icon rotation */
-        #duvidas details summary svg { transition: transform 0.25s ease; color: var(--primary-color); }
-        #duvidas details[open] summary svg { transform: rotate(180deg); }
-    </style>
-</head>
-<body>
-    <header class="site-header" id="site-header">
-        <a href="#inicio" class="logo-text" aria-label="Ir para o início da página">Psicóloga Juliédina</a>
-        <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menu de navegação" aria-expanded="false" aria-controls="main-nav">☰</button>
-        <nav id="main-nav" aria-label="Navegação principal">
-            <ul>
-                <li><a href="#inicio">Início</a></li>
-                <li><a href="#servicos">Serviços</a></li>
-                <li><a href="#avaliacoes">Avaliações</a></li>
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#local">Local</a></li>
-                <li><a href="#duvidas">Dúvidas?</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section id="inicio" class="hero">
-            <div class="hero-content">
-                <h1>Sua psicóloga em qualquer lugar.</h1>
-                <p>Atendimento para adolescentes, jovens, adultos e idosos.</p>
-                <div style="margin-top:2rem;display:flex;gap:1rem;flex-wrap:wrap;">
-                    <a href="https://wa.me/5519988452408" class="btn" aria-label="Agendar sessão de psicoterapia via WhatsApp" style="display:inline-flex;align-items:center;gap:.5rem;padding:0.5rem 1rem;height:48px;">
-                        <span style="display:inline-flex;align-items:center;justify-content:center;width:36px;height:36px;border-radius:50%;overflow:hidden;background:var(--primary-color);">
-                            <img src="assets/img/icon-whatsapp-white-o.svg" alt="WhatsApp" width="20" height="20" style="display:block;">
-                        </span>
-                        <span>WhatsApp</span>
-                    </a>
-                    <a href="tel:+5519988452508" class="btn-phone" aria-label="Ligar agora">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
-                        <span>Ligar agora</span>
-                    </a>
+
+            .site-header nav ul {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                margin: 0;
+                padding: 0;
+                list-style: none;
+            }
+
+            .site-header nav ul li {
+                margin-left: 1.5rem;
+            }
+
+            .site-header nav ul li a {
+                text-decoration: none;
+                font-weight: bold;
+                color: inherit;
+                transition: color 0.3s;
+                padding-bottom: 5px;
+            }
+
+            .site-header nav ul li a:hover,
+            .site-header nav ul li a:focus {
+                color: var(--primary-color);
+                border-bottom: 2px solid var(--primary-color);
+            }
+
+            .menu-toggle {
+                display: none;
+                font-size: 1.8rem;
+                background: none;
+                border: none;
+                color: inherit;
+                cursor: pointer;
+                transition: transform 0.3s;
+            }
+
+            .menu-toggle.open {
+                transform: rotate(90deg);
+            }
+
+            .hero {
+                min-height: calc(100vh - 72px);
+                display: flex;
+                align-items: flex-end;
+                justify-content: flex-start;
+                padding: 3rem 2rem 2rem 2rem;
+                color: var(--text-light);
+                position: relative;
+                background-size: cover;
+                background-repeat: no-repeat;
+                overflow: hidden;
+            }
+
+            .hero::before {
+                content: "";
+                position: absolute;
+                inset: 0;
+                background: rgba(0, 0, 0, 0.4);
+                pointer-events: none;
+                z-index: 1;
+            }
+
+            .hero .hero-content {
+                position: relative;
+                z-index: 2;
+            }
+
+            @media (min-width: 769px) {
+                .hero {
+                    background-image: url('https://psijuliedina.com/assets/img/profile.webp');
+                    background-position: center 100%;
+                }
+            }
+
+            @media (max-width: 768px) {
+                .hero {
+                    min-height: calc(100vh - 64px);
+                    padding: 2rem 1rem 1.5rem 1rem;
+                    align-items: flex-end;
+                    background-image: url('https://psijuliedina.com/assets/img/profile_mobile.webp');
+                    background-position: center;
+                    background-size: cover;
+                }
+            }
+
+            section {
+                padding: 3rem 0;
+            }
+
+            .cards-container {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+                gap: 1.5rem;
+            }
+
+            .card {
+                background: var(--text-light);
+                padding: 1.5rem;
+                border-radius: 8px;
+                box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+                transition: transform 0.3s, box-shadow 0.3s;
+            }
+
+            .card:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+            }
+
+            .card h3 {
+                color: var(--primary-color);
+                margin-bottom: 1rem;
+            }
+
+            /* Seção de informações: inverter cor entre ícone (SVG) e título H3 */
+            #info .card h3 {
+                color: var(--text-dark);
+            }
+
+            #info .card .icon-svg {
+                color: var(--primary-color);
+                width: 48px;
+                height: 48px;
+                flex: 0 0 48px;
+            }
+
+            .card p {
+                color: var(--text-gray);
+                font-size: 0.95rem;
+            }
+
+            .btn {
+                display: inline-flex;
+                align-items: center;
+                gap: 0.75rem;
+                padding: 0 1.25rem;
+                height: 48px;
+                min-height: 48px;
+                background: var(--primary-color);
+                color: var(--text-light);
+                text-decoration: none;
+                border-radius: 999px;
+                font-weight: 700;
+                transition: background 0.2s, transform 0.12s;
+                border: 2px solid var(--primary-color);
+                line-height: normal;
+                cursor: pointer;
+            }
+
+            .btn:hover,
+            .btn:focus {
+                background: #d13232;
+                border-color: #d13232;
+                transform: translateY(-2px);
+                color: var(--text-light);
+            }
+
+            .btn svg {
+                width: 18px;
+                height: 18px;
+                flex: 0 0 18px;
+                color: inherit;
+                fill: currentColor;
+            }
+
+            .btn-phone {
+                display: inline-flex;
+                align-items: center;
+                gap: 0.75rem;
+                padding: 0 1.25rem;
+                height: 48px;
+                min-height: 48px;
+                border-radius: 999px;
+                background: #fff;
+                color: #0b1220;
+                border: 2px solid transparent;
+                text-decoration: none;
+                font-weight: 700;
+                cursor: pointer;
+            }
+
+            .btn-phone svg {
+                width: 18px;
+                height: 18px;
+                flex: 0 0 18px;
+                color: inherit;
+                fill: currentColor;
+            }
+
+            .btn-phone:hover,
+            .btn-phone:focus {
+                background: #f4f4f4;
+            }
+
+            #cta .btn-phone {
+                transition: background 0.2s, transform 0.12s;
+            }
+
+            #cta .btn-phone:hover,
+            #cta .btn-phone:focus {
+                transform: translateY(-2px);
+            }
+
+            .hero .btn-phone {
+                transition: background 0.2s, transform 0.12s;
+            }
+
+            .hero .btn-phone:hover,
+            .hero .btn-phone:focus {
+                transform: translateY(-2px);
+            }
+
+            /* Seção serviços: desativar transições/efeitos nos botões para que não animem ao passar o mouse */
+            #servicos .btn,
+            #servicos .btn-outline,
+            #servicos .btn-phone {
+                transition: none !important;
+            }
+
+            #servicos .btn:hover,
+            #servicos .btn:focus,
+            #servicos .btn-outline:hover,
+            #servicos .btn-outline:focus,
+            #servicos .btn-phone:hover,
+            #servicos .btn-phone:focus {
+                transform: none !important;
+            }
+
+            #servicos .card a.btn,
+            #servicos .card a.btn-outline,
+            #servicos .card a.btn-phone {
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                margin: 0 auto;
+                height: 48px !important;
+                min-height: 48px !important;
+                padding: 0 1.25rem !important;
+                gap: 0.5rem;
+                transition: none !important;
+            }
+
+            .btn-outline {
+                display: inline-flex;
+                align-items: center;
+                gap: 0.75rem;
+                padding: 0 1.25rem;
+                height: 48px;
+                min-height: 48px;
+                border-radius: 999px;
+                background: transparent;
+                color: var(--primary-color);
+                border: 2px solid var(--primary-color);
+                font-weight: 700;
+                text-decoration: none;
+            }
+
+            .btn-outline:hover,
+            .btn-outline:focus {
+                background: var(--primary-color);
+                color: var(--text-light);
+            }
+
+            .btn-cta-white {
+                display: inline-flex;
+                align-items: center;
+                gap: 0.75rem;
+                padding: 0 1.25rem;
+                height: 48px;
+                min-height: 48px;
+                border-radius: 999px;
+                background: transparent;
+                color: var(--text-light);
+                border: 2px solid var(--text-light);
+                font-weight: 700;
+                text-decoration: none;
+            }
+
+            .btn-cta-white svg {
+                width: 18px;
+                height: 18px;
+                flex: 0 0 18px;
+                color: inherit;
+                fill: currentColor;
+            }
+
+            .btn-cta-white:hover,
+            .btn-cta-white:focus {
+                background: transparent;
+                color: var(--text-light);
+                border-color: var(--text-light);
+                transform: none;
+            }
+
+            .btn-cta-dark {
+                display: inline-flex;
+                align-items: center;
+                gap: 0.75rem;
+                padding: 0 1.25rem;
+                height: 48px;
+                min-height: 48px;
+                border-radius: 999px;
+                background: #32353a;
+                color: #ffffff;
+                border: 0;
+                font-weight: 700;
+                text-decoration: none;
+                transition: background 0.2s, transform 0.12s;
+            }
+
+            .btn-cta-dark svg {
+                width: 18px;
+                height: 18px;
+                flex: 0 0 18px;
+                color: inherit;
+                fill: currentColor;
+            }
+
+            .btn-cta-dark:hover,
+            .btn-cta-dark:focus {
+                background: #27292d;
+                transform: translateY(-2px);
+            }
+
+            .site-footer {
+                background: #2b2b2b;
+                color: #ccc;
+                padding: 2.5rem 0;
+                text-align: center;
+            }
+
+            .site-footer .footer-content {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+                gap: 2rem;
+                margin-bottom: 2rem;
+                text-align: left;
+            }
+
+            .site-footer h4 {
+                color: var(--text-light);
+                margin-bottom: 1rem;
+                font-size: 1.2rem;
+            }
+
+            .site-footer ul {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+            }
+
+            .site-footer ul li {
+                margin-bottom: 0.5rem;
+                padding-left: 0;
+            }
+
+            .site-footer ul li a {
+                color: #ccc;
+                text-decoration: none;
+                transition: color 0.3s;
+            }
+
+            .site-footer ul li a:hover,
+            .site-footer ul li a:focus {
+                color: var(--primary-color);
+            }
+
+            .social-links a {
+                font-size: 1.5rem;
+                margin-right: 1rem;
+                color: #ccc;
+            }
+
+            .social-links a:hover,
+            .social-links a:focus {
+                color: var(--primary-color);
+            }
+
+            .copyright {
+                font-size: 0.9rem;
+                border-top: 1px solid #444;
+                padding-top: 1.5rem;
+                margin-top: 1.5rem;
+            }
+
+            @media (max-width: 768px) {
+                .site-header nav {
+                    display: none;
+                    position: absolute;
+                    top: 100%;
+                    left: 0;
+                    width: 100%;
+                    background: var(--text-light);
+                    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+                    right: 0;
+                }
+
+                .site-header nav.active { display: block; }
+
+                .site-header nav ul {
+                    flex-direction: column;
+                    align-items: center;
+                    padding: 1rem 0;
+                }
+
+                .site-header nav ul li {
+                    margin: 0.5rem 0;
+                    width: 100%;
+                    text-align: center;
+                }
+
+                .site-header nav ul li a {
+                    color: var(--text-dark);
+                    padding: 1rem 0;
+                    display: block;
+                    width: 100%;
+                }
+
+                .site-header nav ul li a:hover,
+                .site-header nav ul li a:focus {
+                    background: var(--secondary-color);
+                    color: var(--primary-color);
+                    border-bottom: none;
+                }
+
+                .menu-toggle { display: block; }
+
+                .footer-content {
+                    grid-template-columns: 1fr;
+                    text-align: center;
+                }
+
+                .footer-content div { margin-bottom: 1.5rem; }
+            }
+
+            .local-grid { display: flex; flex-direction: column; gap: 1.5rem; }
+
+            .local-info {
+                background: var(--text-light);
+                padding: 1.5rem;
+                border-radius: 8px;
+                box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+            }
+
+            .local-info h2 {
+                margin-top: 0;
+                margin-bottom: 1rem;
+                font-size: 1.6rem;
+            }
+
+            .local-item { display: flex; gap: 0.75rem; align-items: flex-start; }
+
+            .local-item svg { width: 28px; height: 28px; flex: 0 0 28px; color: var(--primary-color); }
+
+            .local-cta svg { width: 20px; height: 20px; color: var(--text-light); }
+
+            .local-item h3 { margin: 0 0 0.25rem 0; font-size: 1rem; }
+
+            .local-item p { margin: 0; color: var(--text-gray); }
+
+            .local-cta {
+                display: inline-flex;
+                align-items: center;
+                gap: 0.75rem;
+                margin-top: 1rem;
+                padding: 0 1.25rem;
+                height: 48px;
+                min-height: 48px;
+                background: var(--primary-color);
+                color: var(--text-light);
+                border-radius: 999px;
+                text-decoration: none;
+                font-weight: 700;
+                box-shadow: none;
+                border: 2px solid var(--primary-color);
+            }
+
+            .local-cta img,
+            .local-cta svg {
+                width: 18px;
+                height: 18px;
+                flex: 0 0 18px;
+                color: inherit;
+                fill: currentColor;
+            }
+
+            .local-cta { transition: background 0.2s, transform 0.12s; }
+
+            .local-cta:hover,
+            .local-cta:focus { background: #d13232; border-color: #d13232; transform: translateY(-2px); }
+
+            .local-map { border-radius: 8px; overflow: hidden; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08); }
+
+            .local-map > div { position: relative; width: 100%; padding-bottom: 56.25%; height: 0; overflow: hidden; }
+
+            .local-map iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+
+            @media (min-width: 769px) {
+                .local-grid { flex-direction: row; align-items: stretch; }
+
+                .local-info,
+                .local-map { flex: 1 1 50%; }
+
+                .local-info { padding: 2rem; }
+
+                .local-map { display: flex; }
+
+                .local-map > div { padding-bottom: 0; height: 100%; }
+
+                .local-map iframe { position: absolute; inset: 0; width: 100%; height: 100%; }
+            }
+
+            .about-grid { display: flex; flex-direction: column; gap: 2rem; align-items: center; }
+
+            .about-img img { width: 100%; height: auto; border-radius: 8px; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08); display: block; }
+
+            .about-text h2 { margin-top: 0; margin-bottom: 1rem; font-size: 1.9rem; color: var(--text-dark); }
+
+            .about-text p { margin-bottom: 1rem; color: var(--text-gray); }
+
+            @media (min-width: 769px) {
+                .about-grid { flex-direction: row; align-items: center; }
+
+                .about-img,
+                .about-text { flex: 1 1 50%; }
+
+                .about-img { max-width: 560px; }
+            }
+
+            #duvidas details summary svg { transition: transform 0.25s ease; color: var(--primary-color); }
+
+            #duvidas details[open] summary svg { transform: rotate(180deg); }
+        </style>
+    </head>
+    <body>
+        <header class="site-header" id="site-header">
+            <a href="#inicio" class="logo-text" aria-label="Ir para o início da página">Psicóloga Juliédina</a>
+            <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menu de navegação" aria-expanded="false" aria-controls="main-nav">☰</button>
+            <nav id="main-nav" aria-label="Navegação principal">
+                <ul>
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#servicos">Serviços</a></li>
+                    <li><a href="#avaliacoes">Avaliações</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#local">Local</a></li>
+                    <li><a href="#duvidas">Dúvidas?</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section id="inicio" class="hero">
+                <div class="hero-content">
+                    <h1>Sua psicóloga em qualquer lugar.</h1>
+                    <p>Atendimento para adolescentes, jovens, adultos e idosos.</p>
+                    <div style="margin-top:2rem;display:flex;gap:1rem;flex-wrap:wrap;">
+                        <a href="https://wa.me/5519988452408" class="btn" aria-label="Agendar sessão de psicoterapia via WhatsApp">
+                            <span style="display:inline-flex;align-items:center;justify-content:center;width:36px;height:36px;border-radius:50%;overflow:hidden;background:transparent;color:inherit;">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="20" height="20" aria-hidden="true" focusable="false" style="display:block;fill:currentColor;color:inherit;">
+                                    <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
+                                </svg>
+                            </span>
+                            <span>WhatsApp</span>
+                        </a>
+                        <a href="tel:+5519988452508" class="btn-phone" aria-label="Ligar agora">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                            </svg>
+                            <span>Ligar agora</span>
+                        </a>
+                    </div>
                 </div>
-            </div>
-        </section>
+            </section>
         <section id="info" class="container">
             <h2>Por que escolher a Psicóloga Juliédina?</h2>
             <div class="cards-container">
@@ -272,7 +740,12 @@
                         <li style="display:flex;align-items:flex-start;gap:.75rem;margin-bottom:.5rem;"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex:0 0 20px;margin-top:3px;color:#fff;"><polyline points="20 6 9 17 4 12"></polyline></svg>Conflitos familiares</li>
                         <li style="display:flex;align-items:flex-start;gap:.75rem;margin-bottom:.5rem;"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex:0 0 20px;margin-top:3px;color:#fff;"><polyline points="20 6 9 17 4 12"></polyline></svg>Traumas</li>
                     </ul>
-                    <a href="https://wa.me/5519988452408" class="btn" style="background:#fff;color:var(--primary-color);border:none;padding:0.75rem 1.25rem;border-radius:8px;">Agendar sessão</a>
+                                        <a href="https://wa.me/5519988452408" class="btn" style="background:#fff;color:var(--primary-color);border:none;padding:0.75rem 1.25rem;border-radius:8px;">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="18" height="18" aria-hidden="true" focusable="false" style="margin-right:.5rem;vertical-align:middle;fill:currentColor;color:inherit;">
+    <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
+</svg>
+                                                <span>Agendar sessão</span>
+                                        </a>
                 </article>
                 <article class="card" style="background:linear-gradient(135deg,#0f1724,#111827);padding:2rem;border-radius:12px;color:#fff;">
                     <h3 style="font-size:1.5rem;margin-bottom:1rem;color:inherit;">Avaliação Psicológica</h3>
@@ -285,7 +758,12 @@
                         <li style="display:flex;align-items:flex-start;gap:.75rem;margin-bottom:.5rem;"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex:0 0 20px;margin-top:3px;color:#fff;"><polyline points="20 6 9 17 4 12"></polyline></svg>Doação de gametas para reprodução assistida</li>
                         <li style="display:flex;align-items:flex-start;gap:.75rem;margin-bottom:.5rem;"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex:0 0 20px;margin-top:3px;color:#fff;"><polyline points="20 6 9 17 4 12"></polyline></svg>Doação de órgãos entre vivos</li>
                     </ul>
-                    <a href="https://wa.me/5519988452408" class="btn" style="background:#fff;color:#0b1220;border:none;padding:0.75rem 1.25rem;border-radius:8px;">Solicitar avaliação</a>
+                                        <a href="https://wa.me/5519988452408" class="btn" style="background:#fff;color:#0b1220;border:none;padding:0.75rem 1.25rem;border-radius:8px;">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="18" height="18" aria-hidden="true" focusable="false" style="margin-right:.5rem;vertical-align:middle;fill:currentColor;color:inherit;">
+    <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
+</svg>
+                                                <span>Solicitar avaliação</span>
+                                        </a>
                 </article>
             </div>
         </section>
@@ -394,10 +872,10 @@
                     <p>Psicóloga clínica com experiência em ajudar pacientes a conquistarem mais qualidade de vida e equilíbrio emocional.</p>
                     <p>No campo da Psicologia, tenho experiência organizacional e clínica, desde 2020 me dedico exclusivamente ao consultório, realizando avaliações e atendimentos, auxiliando pessoas a lidarem com suas questões emocionais e comportamentais.</p>
                     <p>Ofereço um atendimento clínico ético, personalizado, acolhedor e profissional.</p>
-                    <a href="https://cadastro.cfp.org.br/visualizar.html?profissional=qRVh%2B581Y%2B%2FlDLotNCVoZ%2BPdKOc0k%2F8UcTuS0WFOyKI%3D" target="_blank" rel="noopener noreferrer" class="btn" aria-label="Verificar registro CRP de Juliédina">Verificar CRP
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="18" height="18" aria-hidden="true" focusable="false" style="margin-left:0.5rem;vertical-align:middle;fill:currentColor;">
-                            <path d="M 40.960938 4.9804688 A 2.0002 2.0002 0 0 0 40.740234 5 L 28 5 A 2.0002 2.0002 0 1 0 28 9 L 36.171875 9 L 22.585938 22.585938 A 2.0002 2.0002 0 1 0 25.414062 25.414062 L 39 11.828125 L 39 20 A 2.0002 2.0002 0 1 0 43 20 L 43 7.2460938 A 2.0002 2.0002 0 0 0 40.960938 4.9804688 z M 12.5 8 C 8.3826878 8 5 11.382688 5 15.5 L 5 35.5 C 5 39.617312 8.3826878 43 12.5 43 L 32.5 43 C 36.617312 43 40 39.617312 40 35.5 L 40 26 A 2.0002 2.0002 0 1 0 36 26 L 36 35.5 C 36 37.446688 34.446688 39 32.5 39 L 12.5 39 C 10.553312 39 9 37.446688 9 35.5 L 9 15.5 C 9 13.553312 10.553312 12 12.5 12 L 22 12 A 2.0002 2.0002 0 1 0 22 8 L 12.5 8 z"></path>
-                        </svg>
+                    <a href="https://cadastro.cfp.org.br/visualizar.html?profissional=qRVh%2B581Y%2B%2FlDLotNCVoZ%2BPdKOc0k%2F8UcTuS0WFOyKI%3D" target="_blank" rel="noopener noreferrer" class="btn" aria-label="Verificar registro CRP de Juliédina">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" width="18" height="18" aria-hidden="true" focusable="false" style="margin-left:0.5rem;vertical-align:middle;fill:currentColor;">
+                            <path d="M32 160C32 124.7 60.7 96 96 96L544 96C579.3 96 608 124.7 608 160L32 160zM32 208L608 208L608 480C608 515.3 579.3 544 544 544L96 544C60.7 544 32 515.3 32 480L32 208zM279.3 480C299.5 480 314.6 460.6 301.7 445C287 427.3 264.8 416 240 416L176 416C151.2 416 129 427.3 114.3 445C101.4 460.6 116.5 480 136.7 480L279.2 480zM208 376C238.9 376 264 350.9 264 320C264 289.1 238.9 264 208 264C177.1 264 152 289.1 152 320C152 350.9 177.1 376 208 376zM392 272C378.7 272 368 282.7 368 296C368 309.3 378.7 320 392 320L504 320C517.3 320 528 309.3 528 296C528 282.7 517.3 272 504 272L392 272zM392 368C378.7 368 368 378.7 368 392C368 405.3 378.7 416 392 416L504 416C517.3 416 528 405.3 528 392C528 378.7 517.3 368 504 368L392 368z"/>
+                        </svg> Verificar CRP 06/153209
                     </a>
                 </div>
             </div>
@@ -424,7 +902,7 @@
                         </div>
                     </div>
                     <a href="https://www.google.com/maps/place/Psic%C3%B3loga+Juli%C3%A9dina+Lopes+Ramos+-+Leme,+SP/@-22.1858624,-47.3848429,17z/data=!3m1!4b1!4m6!3m5!1s0x94c80d05ec80e81d:0xdd6681cf41620c3c!8m2!3d-22.1858624!4d-47.382268!16s%2Fg%2F11sx7v4q1w" class="local-cta" target="_blank" rel="noopener" aria-label="Como chegar no Google Maps">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="1 6 1 22 8 18 16 22 23 18 23 2 16 6 8 2 1 6"></polygon><line x1="8" y1="2" x2="8" y2="18"></line><line x1="16" y1="6" x2="16" y2="22"></line></svg> Como chegar
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16" aria-hidden="true" style="margin-right:0.5rem;vertical-align:middle;color:var(--text-light);"><path d="M9.05.435c-.58-.58-1.52-.58-2.1 0L.436 6.95c-.58.58-.58 1.519 0 2.098l6.516 6.516c.58.58 1.519.58 2.098 0l6.516-6.516c.58-.58.58-1.519 0-2.098zM9 8.466V7H7.5A1.5 1.5 0 0 0 6 8.5V11H5V8.5A2.5 2.5 0 0 1 7.5 6H9V4.534a.25.25 0 0 1 .41-.192l2.36 1.966c.12.1.12.284 0 .384L9.41 8.658A.25.25 0 0 1 9 8.466"/></svg> Como chegar
                     </a>
                 </div>
                 <div class="local-map">
@@ -491,9 +969,11 @@
                 <h2 style="color:var(--text-light);font-size:2rem;margin-bottom:1rem;">Pronto para começar sua jornada de transformação?</h2>
                 <p style="font-size:1.1rem;margin-bottom:1.5rem;max-width:600px;margin-left:auto;margin-right:auto;">Agende sua consulta hoje mesmo e dê o primeiro passo rumo ao seu bem-estar emocional.</p>
                 <div style="display:flex;justify-content:center;gap:1rem;flex-wrap:wrap;">
-                    <a href="https://wa.me/5519988452408" class="btn btn-outline" style="background:var(--text-light);color:var(--primary-color);border-color:var(--text-light);font-size:1.1rem;display:inline-flex;align-items:center;gap:.5rem;padding:0.5rem 1rem;height:48px;" aria-label="WhatsApp">
-                        <span style="display:inline-flex;align-items:center;justify-content:center;width:36px;height:36px;border-radius:50%;overflow:hidden;background:var(--primary-color);">
-                            <img src="assets/img/icon-whatsapp-white-o.svg" alt="WhatsApp" width="20" height="20" style="display:block;">
+                    <a href="https://wa.me/5519988452408" class="btn btn-cta-dark" style="font-size:1.1rem;" aria-label="WhatsApp">
+                        <span style="display:inline-flex;align-items:center;justify-content:center;width:36px;height:36px;border-radius:50%;overflow:hidden;background:transparent;color:inherit;">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="20" height="20" aria-hidden="true" focusable="false" style="display:block;fill:currentColor;color:inherit;">
+  <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
+</svg>
                         </span>
                         <span>WhatsApp</span>
                     </a>
@@ -521,15 +1001,23 @@
             <div>
                 <h4>Redes Sociais</h4>
                 <div class="social-links">
-                    <a href="https://www.facebook.com/psi.juliedina" target="_blank" aria-label="Facebook">FB</a>
-                    <a href="https://www.instagram.com/psi.juliedina" target="_blank" aria-label="Instagram">IG</a>
-                    <a href="https://www.linkedin.com/in/juli%C3%A9dina-lopes-ramos-868933276" target="_blank" aria-label="LinkedIn">IN</a>
+                    <a href="https://www.facebook.com/psi.juliedina" target="_blank" rel="noopener" aria-label="Facebook" style="margin-right:1rem;color:#ccc;display:inline-flex;align-items:center;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16" aria-hidden="true"><path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/></svg>
+                    </a>
+                    <a href="https://www.instagram.com/psi.juliedina" target="_blank" rel="noopener" aria-label="Instagram" style="margin-right:1rem;color:#ccc;display:inline-flex;align-items:center;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/></svg>
+                    </a>
+                    <a href="https://www.linkedin.com/in/juli%C3%A9dina-lopes-ramos-868933276" target="_blank" rel="noopener" aria-label="LinkedIn" style="color:#ccc;display:inline-flex;align-items:center;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16" aria-hidden="true"><path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/></svg>
+                    </a>
                 </div>
             </div>
             <div>
                 <h4>Links Úteis</h4>
                 <ul>
-                    <li><a href="https://cadastro.cfp.org.br/" target="_blank" rel="noopener">Conselho Federal de Psicologia</a></li>
+                    <li><a href="https://www.crpsp.org/" class="hover:text-[var(--primary-color)] transition" target="_blank">CRP-SP</a></li>
+                    <li><a href="https://site.cfp.org.br/" class="hover:text-[var(--primary-color)] transition" target="_blank">Conselho Federal de Psicologia</a></li>
+                    <li><a href="https://cvv.org.br/" class="hover:text-[var(--primary-color)] transition" target="_blank">Centro de Valorização da Vida</a></li>
                 </ul>
             </div>
         </div>
@@ -538,36 +1026,43 @@
         </div>
     </footer>
     <script>
-        // Header efeito scroll
-        const header = document.getElementById('site-header');
-        window.addEventListener('scroll', function() {
-            if (window.scrollY > 50) {
-                header.classList.add('scrolled');
-            } else {
-                header.classList.remove('scrolled');
+        (function () {
+            // Header: efeito scroll
+            const header = document.getElementById('site-header');
+            const onScroll = () => {
+                if (!header) return;
+                header.classList.toggle('scrolled', window.scrollY > 50);
+            };
+            window.addEventListener('scroll', onScroll);
+
+            // Menu mobile
+            const menuToggle = document.getElementById('menu-toggle');
+            const mainNav = document.getElementById('main-nav');
+
+            if (menuToggle && mainNav) {
+                menuToggle.addEventListener('click', () => {
+                    const isExpanded = menuToggle.getAttribute('aria-expanded') === 'true';
+                    menuToggle.setAttribute('aria-expanded', String(!isExpanded));
+                    mainNav.classList.toggle('active');
+                    menuToggle.classList.toggle('open');
+                    menuToggle.textContent = mainNav.classList.contains('active') ? '✕' : '☰';
+                });
+
+                // Fechar menu ao clicar em um link e restaurar ícone
+                mainNav.querySelectorAll('a').forEach(link => {
+                    link.addEventListener('click', () => {
+                        mainNav.classList.remove('active');
+                        menuToggle.setAttribute('aria-expanded', 'false');
+                        menuToggle.classList.remove('open');
+                        menuToggle.textContent = '☰';
+                    });
+                });
             }
-        });
-        // Menu mobile
-        const menuToggle = document.getElementById('menu-toggle');
-        const mainNav = document.getElementById('main-nav');
-        menuToggle.addEventListener('click', function() {
-            const isExpanded = menuToggle.getAttribute('aria-expanded') === 'true';
-            menuToggle.setAttribute('aria-expanded', !isExpanded);
-            mainNav.classList.toggle('active');
-            menuToggle.classList.toggle('open');
-            menuToggle.textContent = mainNav.classList.contains('active') ? '✕' : '☰';
-        });
-        // Fechar menu ao clicar em um link e restaurar ícone
-        mainNav.querySelectorAll('a').forEach(link => {
-            link.addEventListener('click', () => {
-                mainNav.classList.remove('active');
-                menuToggle.setAttribute('aria-expanded', false);
-                menuToggle.classList.remove('open');
-                menuToggle.textContent = '☰';
-            });
-        });
-        // Atualizar ano no rodapé
-        document.getElementById('current-year').textContent = new Date().getFullYear();
+
+            // Atualizar ano no rodapé
+            const currentYearEl = document.getElementById('current-year');
+            if (currentYearEl) currentYearEl.textContent = String(new Date().getFullYear());
+        })();
     </script>
 </body>
 </html>
