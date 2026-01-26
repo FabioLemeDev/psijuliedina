@@ -9,6 +9,7 @@
         <title>Psicóloga Juliédina - Atendimento psicológico em Leme e online</title>
         <link rel="icon" href="favicon.ico" type="image/x-icon">
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <link rel="preload" as="image" href="https://psijuliedina.com/assets/img/profile.webp" imagesrcset="https://psijuliedina.com/assets/img/profile.webp 1200w, https://psijuliedina.com/assets/img/profile_mobile.webp 600w" imagesizes="100vw">
         <style>
             :root {
                 --primary-color: #c62828;
@@ -194,6 +195,10 @@
                 position: relative;
                 z-index: 2;
             }
+
+            /* LCP helper: hero background image as an HTML image (detectável pelo PageSpeed) */
+            .hero .hero-bg-wrapper { position: absolute; inset: 0; z-index: 0; }
+            .hero .hero-bg { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; display: block; }
 
             @media (min-width: 769px) {
                 .hero {
@@ -678,6 +683,11 @@
         </header>
         <main>
             <section id="inicio" class="hero">
+                <picture class="hero-bg-wrapper" aria-hidden="true">
+                    <source media="(max-width:768px)" srcset="https://psijuliedina.com/assets/img/profile_mobile.webp">
+                    <img class="hero-bg" src="https://psijuliedina.com/assets/img/profile.webp" alt="" loading="eager" fetchpriority="high" decoding="async" importance="high">
+                </picture>
+
                 <div class="hero-content">
                     <h1>Sua psicóloga em qualquer lugar.</h1>
                     <p>Atendimento para adolescentes, jovens, adultos e idosos.</p>
