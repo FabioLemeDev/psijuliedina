@@ -2,51 +2,26 @@
 <html lang="pt-BR">
 
 <head>
-    <!-- Google Analytics/Tag Manager (carregamento adiado para reduzir JS não utilizado) -->
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GBQQC4S2VZ"></script>
     <script>
-        (function(){
-            var loadAnalytics = function(){
-                if(window.__analyticsLoaded) return; window.__analyticsLoaded = true;
-                // gtag
-                var s1 = document.createElement('script');
-                s1.src = 'https://www.googletagmanager.com/gtag/js?id=G-GBQQC4S2VZ';
-                s1.async = true;
-                document.head.appendChild(s1);
-                s1.onload = function(){
-                    window.dataLayer = window.dataLayer || [];
-                    function gtag(){ dataLayer.push(arguments); }
-                    window.gtag = gtag;
-                    gtag('js', new Date());
-                    gtag('config', 'G-GBQQC4S2VZ');
-                };
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
-                // GTM
-                var s2 = document.createElement('script');
-                s2.src = 'https://www.googletagmanager.com/gtm.js?id=GTM-562Z96J4';
-                s2.async = true;
-                document.head.appendChild(s2);
-            };
-
-            var schedule = function(){
-                if('requestIdleCallback' in window){
-                    requestIdleCallback(loadAnalytics, {timeout: 2000});
-                } else {
-                    setTimeout(loadAnalytics, 2000);
-                }
-            };
-
-            var events = ['scroll','keydown','mousemove','touchstart','click'];
-            var onUser = function(){
-                events.forEach(function(e){ window.removeEventListener(e, onUser); });
-                loadAnalytics();
-            };
-            events.forEach(function(e){ window.addEventListener(e, onUser, {once:true, passive:true}); });
-
-            window.addEventListener('load', schedule);
-            // Fallback: garantir carregamento após alguns segundos
-            setTimeout(schedule, 4000);
-        })();
+        gtag('config', 'G-GBQQC4S2VZ');
     </script>
+
+    <!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-562Z96J4');</script>
+    <!-- End Google Tag Manager -->
 
     <meta name="msapplication-TileImage" content="assets/img/favicon-32x32.png" />
     <meta name="viewport" content="user-scalable=yes, width=device-width, initial-scale=1">
@@ -179,12 +154,62 @@
     <style>
         :root {
             --primary-color: #e84545;
+            --primary-rgb: 232,69,69;
             --secondary-color: #f4f4f4;
             --text-dark: #333;
             --text-light: #fff;
             --text-gray: #555;
             --font-main: Arial, Helvetica, sans-serif;
             --spacing-unit: 1rem;
+        }
+
+        /* Acessibilidade: criar variantes com leve fundo/tintura e sombra
+           para melhorar contraste sem alterar a cor principal */
+        .accent-bg {
+            background-color: rgba(var(--primary-rgb), 0.08);
+            padding: 0.125rem 0.375rem;
+            border-radius: 6px;
+            display: inline-block;
+        }
+
+        .accent-shadow {
+            box-shadow: 0 6px 16px rgba(var(--primary-rgb), 0.08);
+        }
+
+        /* Estilo para links/elementos que usam a cor primária sobre fundo claro */
+        a[style*="var(--primary-color)"],
+        span[style*="var(--primary-color)"],
+        .btn[style*="var(--primary-color)"] {
+            background-color: rgba(var(--primary-rgb), 0.06);
+            padding: 0.12rem 0.36rem;
+            border-radius: 6px;
+            box-shadow: 0 6px 14px rgba(var(--primary-rgb), 0.06);
+            text-decoration: none !important;
+        }
+
+        /* Classe reutilizável para botões com fundo branco e borda/acento primário */
+        .btn-outline-primary {
+            background: #fff;
+            color: var(--primary-color);
+            border: none;
+            padding: 0.75rem 1.25rem;
+            border-radius: 8px;
+            display: inline-flex;
+            align-items: center;
+            gap: .5rem;
+            box-shadow: 0 6px 18px rgba(var(--primary-rgb), 0.06);
+        }
+
+        /* Tornar CTAs mais legíveis com sombra no texto (melhora percepção sem trocar cor)
+           e leve outline para foco acessível */
+        .cta-final,
+        .cta-final * {
+            text-shadow: 0 1px 2px rgba(0,0,0,0.18);
+        }
+
+        .btn-outline-primary:focus {
+            outline: 3px solid rgba(var(--primary-rgb),0.14);
+            outline-offset: 2px;
         }
 
         html,
