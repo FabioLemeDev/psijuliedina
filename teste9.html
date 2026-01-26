@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Psicóloga Juliedina - Atendimento psicológico presencial e online para adolescentes, jovens, adultos e idosos. Agende sua consulta.">
+    <meta name="description" content="Psicóloga Juliédina - Atendimento psicológico presencial e online para adolescentes, jovens, adultos e idosos. Agende sua consulta.">
     <meta name="keywords" content="psicólogo, psicoterapia, terapia, saúde mental, ansiedade, depressão, avaliação psicológica, Leme">
-    <meta name="author" content="Psicóloga Juliedina Lopes Ramos">
-    <title>Psicóloga Juliedina - Atendimento psicológico em Leme e online</title>
+    <meta name="author" content="Psicóloga Juliédina Lopes Ramos">
+    <title>Psicóloga Juliédina - Atendimento psicológico em Leme e online</title>
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
     <style>
@@ -97,6 +97,19 @@
             position: relative;
             background-size: cover;
             background-repeat: no-repeat;
+            overflow: hidden;
+        }
+        .hero::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: rgba(0,0,0,0.55); /* camada escura sobre a imagem */
+            pointer-events: none;
+            z-index: 1;
+        }
+        .hero .hero-content {
+            position: relative;
+            z-index: 2;
         }
         @media (min-width: 769px) {
             .hero { background-image: url('https://psijuliedina.com/assets/img/profile.webp'); background-position: center 100%; }
@@ -116,6 +129,9 @@
         .card { background: var(--text-light); padding: 1.5rem; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.08); transition: transform 0.3s, box-shadow 0.3s; }
         .card:hover { transform: translateY(-5px); box-shadow: 0 6px 20px rgba(0,0,0,0.12); }
         .card h3 { color: var(--primary-color); margin-bottom: 1rem; }
+        /* Seção de informações: inverter cor entre ícone (SVG) e título H3 */
+        #info .card h3 { color: var(--text-dark); }
+        #info .card .icon-svg { color: var(--primary-color); width:48px; height:48px; flex:0 0 48px; }
         .card p { color: var(--text-gray); font-size: 0.95rem; }
         .btn { display: inline-block; padding: 0.75rem 1.5rem; background: var(--primary-color); color: var(--text-light); text-decoration: none; border-radius: 5px; font-weight: bold; text-align: center; transition: background 0.3s, transform 0.2s; border: 2px solid var(--primary-color); min-width: 44px; min-height: 44px; line-height: normal; cursor: pointer; }
         .btn:hover, .btn:focus { background: #d13232; border-color: #d13232; transform: translateY(-2px); color: var(--text-light); }
@@ -148,7 +164,7 @@
 </head>
 <body>
     <header class="site-header" id="site-header">
-        <a href="#inicio" class="logo-text" aria-label="Ir para o início da página">Psicologa Juliedina</a>
+        <a href="#inicio" class="logo-text" aria-label="Ir para o início da página">Psicóloga Juliédina</a>
         <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menu de navegação" aria-expanded="false" aria-controls="main-nav">☰</button>
         <nav id="main-nav" aria-label="Navegação principal">
             <ul>
@@ -167,63 +183,94 @@
                 <h1>Sua psicóloga em qualquer lugar.</h1>
                 <p>Atendimento para adolescentes, jovens, adultos e idosos.</p>
                 <div style="margin-top:2rem;display:flex;gap:1rem;flex-wrap:wrap;">
-                    <a href="https://wa.me/5519988452408" class="btn" aria-label="Agendar sessão de psicoterapia via WhatsApp">WhatsApp</a>
+                    <a href="https://wa.me/5519988452408" class="btn" aria-label="Agendar sessão de psicoterapia via WhatsApp" style="display:inline-flex;align-items:center;gap:.5rem;padding:0.5rem 1rem;height:48px;">
+                        <span style="display:inline-flex;align-items:center;justify-content:center;width:36px;height:36px;border-radius:50%;overflow:hidden;background:var(--primary-color);">
+                            <img src="assets/img/icon-whatsapp-white-o.svg" alt="WhatsApp" width="20" height="20" style="display:block;">
+                        </span>
+                        <span>WhatsApp</span>
+                    </a>
                     <a href="tel:+5519988452508" class="btn btn-outline" aria-label="Ligar agora">Ligar agora</a>
                 </div>
             </div>
         </section>
-        <section id="informacao" class="container">
-            <h2>Por que escolher a Psicóloga Juliedina?</h2>
+        <section id="info" class="container">
+            <h2>Por que escolher a Psicóloga Juliédina?</h2>
             <div class="cards-container">
                 <article class="card">
-                    <h3>Flexibilidade de Horários</h3>
+                    <div style="display:flex;align-items:center;gap:1rem;">
+                        <svg class="icon-svg" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                        <h3>Flexibilidade de Horários</h3>
+                    </div>
                     <p>Agendamentos flexíveis para se adequar à sua rotina, incluindo opções de atendimento online e presencial.</p>
                 </article>
                 <article class="card">
-                    <h3>Profissional Qualificada</h3>
+                    <div style="display:flex;align-items:center;gap:1rem;">
+                        <svg class="icon-svg" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="7"></circle><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline></svg>
+                        <h3>Profissional Qualificada</h3>
+                    </div>
                     <p>Formação sólida e constante atualização para oferecer o melhor suporte terapêutico baseado em evidências.</p>
                 </article>
                 <article class="card">
-                    <h3>Experiente</h3>
+                    <div style="display:flex;align-items:center;gap:1rem;">
+                        <svg class="icon-svg" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                        <h3>Experiente</h3>
+                    </div>
                     <p>Há mais de 5 anos prestando atendimento clínico, com reconhecimento e satisfação dos pacientes.</p>
                 </article>
             </div>
         </section>
         <section id="servicos" class="container">
-            <h2>Serviços Oferecidos</h2>
-            <div class="cards-container">
-                <article class="card">
-                    <h3>Psicoterapia Individual</h3>
-                    <p>Atendimento personalizado para adolescentes, jovens, adultos e idosos, focado em promover autoconhecimento, desenvolvimento pessoal e bem-estar emocional. Ofereço tratamento para: Depressão, Ansiedade, Problemas no relacionamento, Dificuldade financeira, Conflitos familiares, Traumas.</p>
-                    <a href="https://wa.me/5519988452408?text=Olá,%20gostaria%20de%20agendar%20uma%20sessão%20de%20psicoterapia." target="_blank" class="btn" aria-label="Agendar sessão de psicoterapia via WhatsApp">Agendar Psicoterapia</a>
-                </article>
-                <article class="card">
-                    <h3>Avaliação Psicológica</h3>
-                    <p>Serviço destinado ao público jovem, adulto e idoso para procedimentos médicos para certificar a ausência de transtornos mentais relacionados, como: Cirurgia bariátrica, Cirurgia plástica, Laqueadura ou Vasectomia, Doação de gametas para reprodução assistida, Doação de órgãos entre vivos.</p>
-                    <a href="https://wa.me/5519988452408?text=Olá,%20gostaria%20de%20solicitar%20uma%20avaliação%20psicológica." target="_blank" class="btn" aria-label="Solicitar avaliação psicológica via WhatsApp">Solicitar Avaliação</a>
-                </article>
+            <h2 style="text-align:center;margin-bottom:1.5rem;">Serviços</h2>
+            <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:1.5rem;align-items:start;">
+                <div style="background:linear-gradient(135deg,var(--primary-color),#d13232);padding:2rem;border-radius:12px;color:#fff;">
+                    <h3 style="font-size:1.5rem;margin-bottom:1rem;">Psicoterapia Individual</h3>
+                    <p style="margin-bottom:1rem;">Atendimento personalizado para adolescentes, jovens, adultos e idosos, focado em promover autoconhecimento, desenvolvimento pessoal e bem-estar emocional.</p>
+                    <p style="font-weight:600;margin-bottom:1rem;">Ofereço tratamento para:</p>
+                    <ul style="margin:0 0 1.25rem 0;padding:0;list-style:none;">
+                        <li style="display:flex;align-items:flex-start;gap:.75rem;margin-bottom:.5rem;"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex:0 0 20px;margin-top:3px;color:#fff;"><polyline points="20 6 9 17 4 12"></polyline></svg>Depressão</li>
+                        <li style="display:flex;align-items:flex-start;gap:.75rem;margin-bottom:.5rem;"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex:0 0 20px;margin-top:3px;color:#fff;"><polyline points="20 6 9 17 4 12"></polyline></svg>Ansiedade</li>
+                        <li style="display:flex;align-items:flex-start;gap:.75rem;margin-bottom:.5rem;"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex:0 0 20px;margin-top:3px;color:#fff;"><polyline points="20 6 9 17 4 12"></polyline></svg>Problemas no relacionamento</li>
+                        <li style="display:flex;align-items:flex-start;gap:.75rem;margin-bottom:.5rem;"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex:0 0 20px;margin-top:3px;color:#fff;"><polyline points="20 6 9 17 4 12"></polyline></svg>Dificuldade financeira</li>
+                        <li style="display:flex;align-items:flex-start;gap:.75rem;margin-bottom:.5rem;"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex:0 0 20px;margin-top:3px;color:#fff;"><polyline points="20 6 9 17 4 12"></polyline></svg>Conflitos familiares</li>
+                        <li style="display:flex;align-items:flex-start;gap:.75rem;margin-bottom:.5rem;"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex:0 0 20px;margin-top:3px;color:#fff;"><polyline points="20 6 9 17 4 12"></polyline></svg>Traumas</li>
+                    </ul>
+                    <a href="https://wa.me/5519988452408" class="btn" style="background:#fff;color:var(--primary-color);border:none;padding:0.75rem 1.25rem;border-radius:8px;">Agendar sessão</a>
+                </div>
+                <div style="background:linear-gradient(135deg,#0f1724,#111827);padding:2rem;border-radius:12px;color:#fff;">
+                    <h3 style="font-size:1.5rem;margin-bottom:1rem;">Avaliação Psicológica</h3>
+                    <p style="margin-bottom:1rem;">Serviço destinado ao público jovem, adulto e idoso para procedimentos médicos para certificar a ausência de transtornos mentais relacionados.</p>
+                    <p style="font-weight:600;margin-bottom:1rem;">Indicado para:</p>
+                    <ul style="margin:0 0 1.25rem 0;padding:0;list-style:none;">
+                        <li style="display:flex;align-items:flex-start;gap:.75rem;margin-bottom:.5rem;"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex:0 0 20px;margin-top:3px;color:#fff;"><polyline points="20 6 9 17 4 12"></polyline></svg>Cirurgia bariátrica</li>
+                        <li style="display:flex;align-items:flex-start;gap:.75rem;margin-bottom:.5rem;"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex:0 0 20px;margin-top:3px;color:#fff;"><polyline points="20 6 9 17 4 12"></polyline></svg>Cirurgia plástica</li>
+                        <li style="display:flex;align-items:flex-start;gap:.75rem;margin-bottom:.5rem;"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex:0 0 20px;margin-top:3px;color:#fff;"><polyline points="20 6 9 17 4 12"></polyline></svg>Laqueadura ou Vasectomia</li>
+                        <li style="display:flex;align-items:flex-start;gap:.75rem;margin-bottom:.5rem;"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex:0 0 20px;margin-top:3px;color:#fff;"><polyline points="20 6 9 17 4 12"></polyline></svg>Doação de gametas para reprodução assistida</li>
+                        <li style="display:flex;align-items:flex-start;gap:.75rem;margin-bottom:.5rem;"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex:0 0 20px;margin-top:3px;color:#fff;"><polyline points="20 6 9 17 4 12"></polyline></svg>Doação de órgãos entre vivos</li>
+                    </ul>
+                    <a href="https://wa.me/5519988452408" class="btn" style="background:#fff;color:#0b1220;border:none;padding:0.75rem 1.25rem;border-radius:8px;">Solicitar avaliação</a>
+                </div>
             </div>
         </section>
         <section id="avaliacoes" class="container">
             <h2>Avaliações de Pacientes</h2>
             <div class="cards-container">
                 <article class="card">
-                    <p>"A terapia com a Juliedina mudou minha vida. Finalmente consegui lidar com minha ansiedade e hoje me sinto muito mais confiante."</p>
+                    <p>"A terapia com a Juliédina mudou minha vida. Finalmente consegui lidar com minha ansiedade e hoje me sinto muito mais confiante."</p>
                 </article>
                 <article class="card">
                     <p>"Excelente profissional! Me ajudou a superar um período difícil após a perda do meu emprego. Recomendo muito!"</p>
                 </article>
                 <article class="card">
-                    <p>"Atendimento online superou minhas expectativas. A Juliedina é muito atenciosa e me fez sentir confortável desde a primeira sessão."</p>
+                    <p>"Atendimento online superou minhas expectativas. A Juliédina é muito atenciosa e me fez sentir confortável desde a primeira sessão."</p>
                 </article>
                 <article class="card">
                     <p>"Fiz a avaliação psicológica para cirurgia bariátrica e foi uma experiência muito tranquila. Profissional extremamente competente."</p>
                 </article>
                 <article class="card">
-                    <p>"Minha filha adolescente está fazendo terapia e já notamos uma grande melhora no comportamento dela. A Juliedina tem uma abordagem excelente com jovens."</p>
+                    <p>"Minha filha adolescente está fazendo terapia e já notamos uma grande melhora no comportamento dela. A Juliédina tem uma abordagem excelente com jovens."</p>
                 </article>
                 <article class="card">
-                    <p>"Como idoso, estava relutante em procurar terapia, mas a Juliedina me fez sentir acolhido e respeitado. Hoje recomendo a todos meus amigos."</p>
+                    <p>"Como idoso, estava relutante em procurar terapia, mas a Juliédina me fez sentir acolhido e respeitado. Hoje recomendo a todos meus amigos."</p>
                 </article>
             </div>
         </section>
@@ -234,17 +281,17 @@
                     <p>Psicóloga clínica com experiência em ajudar pacientes a conquistarem mais qualidade de vida e equilíbrio emocional.</p>
                     <p>No campo da Psicologia, tenho experiência organizacional e clínica, desde 2020 me dedico exclusivamente ao consultório, realizando avaliações e atendimentos, auxiliando pessoas a lidarem com suas questões emocionais e comportamentais.</p>
                     <p>Ofereço um atendimento clínico ético, personalizado, acolhedor e profissional.</p>
-                    <a href="https://cadastro.cfp.org.br/visualizar.html?profissional=qRVh%2B581Y%2B%2FlDLotNCVoZ%2BPdKOc0k%2F8UcTuS0WFOyKI%3D" target="_blank" rel="noopener noreferrer" class="btn" aria-label="Verificar registro CRP de Juliedina">Verificar CRP</a>
+                    <a href="https://cadastro.cfp.org.br/visualizar.html?profissional=qRVh%2B581Y%2B%2FlDLotNCVoZ%2BPdKOc0k%2F8UcTuS0WFOyKI%3D" target="_blank" rel="noopener noreferrer" class="btn" aria-label="Verificar registro CRP de Juliédina">Verificar CRP</a>
                 </div>
                 <div>
-                    <img src="https://psijuliedina.com/assets/img/about.webp" alt="Foto da Psicóloga Juliedina em seu consultório" loading="lazy" width="400" height="400">
+                    <img src="https://psijuliedina.com/assets/img/about.webp" alt="Foto da Psicóloga Juliédina em seu consultório" loading="lazy" width="400" height="400">
                 </div>
             </div>
         </section>
         <section id="local" class="container">
             <h2>Localização e Horários</h2>
             <div class="card" style="max-width:600px;margin:0 auto 2rem auto;">
-                <p><strong>Endereço:</strong> Rua Professor Domingos Cambiaghi, 110, Centro - Leme/SP</p>
+                <p><strong>Endereço:</strong> Rua Albano Viêira Sardinha, 264, Jardim Amália - Leme/SP</p>
                 <p><strong>Horário de Atendimento:</strong></p>
                 <p>Segunda a Sexta: 8h às 20h</p>
                 <p>Sábado: 8h às 12h</p>
@@ -269,7 +316,12 @@
                 <h2 style="color:var(--text-light);font-size:2rem;margin-bottom:1rem;">Pronto para começar sua jornada de transformação?</h2>
                 <p style="font-size:1.1rem;margin-bottom:1.5rem;max-width:600px;margin-left:auto;margin-right:auto;">Agende sua consulta hoje mesmo e dê o primeiro passo rumo ao seu bem-estar emocional.</p>
                 <div style="display:flex;justify-content:center;gap:1rem;flex-wrap:wrap;">
-                    <a href="https://wa.me/5519988452408" class="btn btn-outline" style="background:var(--text-light);color:var(--primary-color);border-color:var(--text-light);font-size:1.1rem;" aria-label="WhatsApp">WhatsApp</a>
+                    <a href="https://wa.me/5519988452408" class="btn btn-outline" style="background:var(--text-light);color:var(--primary-color);border-color:var(--text-light);font-size:1.1rem;display:inline-flex;align-items:center;gap:.5rem;padding:0.5rem 1rem;height:48px;" aria-label="WhatsApp">
+                        <span style="display:inline-flex;align-items:center;justify-content:center;width:36px;height:36px;border-radius:50%;overflow:hidden;background:var(--primary-color);">
+                            <img src="assets/img/icon-whatsapp-white-o.svg" alt="WhatsApp" width="20" height="20" style="display:block;">
+                        </span>
+                        <span>WhatsApp</span>
+                    </a>
                     <a href="tel:+5519988452508" class="btn btn-outline" style="background:var(--text-light);color:var(--primary-color);border-color:var(--text-light);font-size:1.1rem;" aria-label="Ligar agora">Ligar agora</a>
                 </div>
             </div>
@@ -304,7 +356,7 @@
             </div>
         </div>
         <div class="container copyright">
-            <p>&copy; <span id="current-year"></span> Psicologa Juliedina Lopes Ramos. Todos os direitos reservados.</p>
+            <p>&copy; <span id="current-year"></span> Psicóloga Juliédina Lopes Ramos. Todos os direitos reservados.</p>
         </div>
     </footer>
     <script>
