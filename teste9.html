@@ -103,7 +103,7 @@
             content: "";
             position: absolute;
             inset: 0;
-            background: rgba(0,0,0,0.55); /* camada escura sobre a imagem */
+            background: rgba(0,0,0,0.40); /* camada escura sobre a imagem */
             pointer-events: none;
             z-index: 1;
         }
@@ -135,6 +135,9 @@
         .card p { color: var(--text-gray); font-size: 0.95rem; }
         .btn { display: inline-block; padding: 0.75rem 1.5rem; background: var(--primary-color); color: var(--text-light); text-decoration: none; border-radius: 5px; font-weight: bold; text-align: center; transition: background 0.3s, transform 0.2s; border: 2px solid var(--primary-color); min-width: 44px; min-height: 44px; line-height: normal; cursor: pointer; }
         .btn:hover, .btn:focus { background: #d13232; border-color: #d13232; transform: translateY(-2px); color: var(--text-light); }
+        .btn-phone { background:#fff; color:#0b1220; border:none; display:inline-flex; align-items:center; gap:0.5rem; padding:0.5rem 1rem; height:48px; border-radius:10px; text-decoration:none; font-weight:bold; cursor:pointer; }
+        .btn-phone svg { width:20px; height:20px; flex:0 0 20px; color:inherit; }
+        .btn-phone:hover, .btn-phone:focus { background:#f4f4f4; }
         .btn-outline { background: transparent; color: var(--primary-color); border: 2px solid var(--primary-color); }
         .btn-outline:hover, .btn-outline:focus { background: var(--primary-color); color: var(--text-light); }
         .site-footer { background: #2b2b2b; color: #ccc; padding: 2.5rem 0; text-align: center; }
@@ -189,7 +192,10 @@
                         </span>
                         <span>WhatsApp</span>
                     </a>
-                    <a href="tel:+5519988452508" class="btn btn-outline" aria-label="Ligar agora">Ligar agora</a>
+                    <a href="tel:+5519988452508" class="btn-phone" aria-label="Ligar agora">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                        <span>Ligar agora</span>
+                    </a>
                 </div>
             </div>
         </section>
@@ -221,12 +227,12 @@
         </section>
         <section id="servicos" class="container">
             <h2 style="text-align:center;margin-bottom:1.5rem;">Serviços</h2>
-            <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:1.5rem;align-items:start;">
-                <div style="background:linear-gradient(135deg,var(--primary-color),#d13232);padding:2rem;border-radius:12px;color:#fff;">
-                    <h3 style="font-size:1.5rem;margin-bottom:1rem;">Psicoterapia Individual</h3>
-                    <p style="margin-bottom:1rem;">Atendimento personalizado para adolescentes, jovens, adultos e idosos, focado em promover autoconhecimento, desenvolvimento pessoal e bem-estar emocional.</p>
-                    <p style="font-weight:600;margin-bottom:1rem;">Ofereço tratamento para:</p>
-                    <ul style="margin:0 0 1.25rem 0;padding:0;list-style:none;">
+            <div class="cards-container">
+                <article class="card" style="background:linear-gradient(135deg,var(--primary-color),#d13232);padding:2rem;border-radius:12px;color:#fff;">
+                    <h3 style="font-size:1.5rem;margin-bottom:1rem;color:inherit;">Psicoterapia Individual</h3>
+                    <p style="margin-bottom:1rem;color:rgba(255,255,255,0.95);">Atendimento personalizado para adolescentes, jovens, adultos e idosos, focado em promover autoconhecimento, desenvolvimento pessoal e bem-estar emocional.</p>
+                    <p style="font-weight:600;margin-bottom:1rem;color:rgba(255,255,255,0.95);">Ofereço tratamento para:</p>
+                    <ul style="margin:0 0 1.25rem 0;padding:0;list-style:none;color:rgba(255,255,255,0.95);">
                         <li style="display:flex;align-items:flex-start;gap:.75rem;margin-bottom:.5rem;"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex:0 0 20px;margin-top:3px;color:#fff;"><polyline points="20 6 9 17 4 12"></polyline></svg>Depressão</li>
                         <li style="display:flex;align-items:flex-start;gap:.75rem;margin-bottom:.5rem;"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex:0 0 20px;margin-top:3px;color:#fff;"><polyline points="20 6 9 17 4 12"></polyline></svg>Ansiedade</li>
                         <li style="display:flex;align-items:flex-start;gap:.75rem;margin-bottom:.5rem;"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex:0 0 20px;margin-top:3px;color:#fff;"><polyline points="20 6 9 17 4 12"></polyline></svg>Problemas no relacionamento</li>
@@ -235,12 +241,12 @@
                         <li style="display:flex;align-items:flex-start;gap:.75rem;margin-bottom:.5rem;"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex:0 0 20px;margin-top:3px;color:#fff;"><polyline points="20 6 9 17 4 12"></polyline></svg>Traumas</li>
                     </ul>
                     <a href="https://wa.me/5519988452408" class="btn" style="background:#fff;color:var(--primary-color);border:none;padding:0.75rem 1.25rem;border-radius:8px;">Agendar sessão</a>
-                </div>
-                <div style="background:linear-gradient(135deg,#0f1724,#111827);padding:2rem;border-radius:12px;color:#fff;">
-                    <h3 style="font-size:1.5rem;margin-bottom:1rem;">Avaliação Psicológica</h3>
-                    <p style="margin-bottom:1rem;">Serviço destinado ao público jovem, adulto e idoso para procedimentos médicos para certificar a ausência de transtornos mentais relacionados.</p>
-                    <p style="font-weight:600;margin-bottom:1rem;">Indicado para:</p>
-                    <ul style="margin:0 0 1.25rem 0;padding:0;list-style:none;">
+                </article>
+                <article class="card" style="background:linear-gradient(135deg,#0f1724,#111827);padding:2rem;border-radius:12px;color:#fff;">
+                    <h3 style="font-size:1.5rem;margin-bottom:1rem;color:inherit;">Avaliação Psicológica</h3>
+                    <p style="margin-bottom:1rem;color:rgba(255,255,255,0.95);">Serviço destinado ao público jovem, adulto e idoso para procedimentos médicos para certificar a ausência de transtornos mentais relacionados.</p>
+                    <p style="font-weight:600;margin-bottom:1rem;color:rgba(255,255,255,0.95);">Indicado para:</p>
+                    <ul style="margin:0 0 1.25rem 0;padding:0;list-style:none;color:rgba(255,255,255,0.95);">
                         <li style="display:flex;align-items:flex-start;gap:.75rem;margin-bottom:.5rem;"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex:0 0 20px;margin-top:3px;color:#fff;"><polyline points="20 6 9 17 4 12"></polyline></svg>Cirurgia bariátrica</li>
                         <li style="display:flex;align-items:flex-start;gap:.75rem;margin-bottom:.5rem;"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex:0 0 20px;margin-top:3px;color:#fff;"><polyline points="20 6 9 17 4 12"></polyline></svg>Cirurgia plástica</li>
                         <li style="display:flex;align-items:flex-start;gap:.75rem;margin-bottom:.5rem;"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex:0 0 20px;margin-top:3px;color:#fff;"><polyline points="20 6 9 17 4 12"></polyline></svg>Laqueadura ou Vasectomia</li>
@@ -248,7 +254,7 @@
                         <li style="display:flex;align-items:flex-start;gap:.75rem;margin-bottom:.5rem;"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex:0 0 20px;margin-top:3px;color:#fff;"><polyline points="20 6 9 17 4 12"></polyline></svg>Doação de órgãos entre vivos</li>
                     </ul>
                     <a href="https://wa.me/5519988452408" class="btn" style="background:#fff;color:#0b1220;border:none;padding:0.75rem 1.25rem;border-radius:8px;">Solicitar avaliação</a>
-                </div>
+                </article>
             </div>
         </section>
         <section id="avaliacoes" class="container">
@@ -322,7 +328,10 @@
                         </span>
                         <span>WhatsApp</span>
                     </a>
-                    <a href="tel:+5519988452508" class="btn btn-outline" style="background:var(--text-light);color:var(--primary-color);border-color:var(--text-light);font-size:1.1rem;" aria-label="Ligar agora">Ligar agora</a>
+                    <a href="tel:+5519988452508" class="btn-phone" style="font-size:1.1rem;" aria-label="Ligar agora">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                        <span>Ligar agora</span>
+                    </a>
                 </div>
             </div>
         </section>
