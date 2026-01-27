@@ -542,34 +542,9 @@
             transform: translateY(-2px);
         }
 
-        #servicos .btn,
-        #servicos .btn-outline,
-        #servicos .btn-phone {
-            transition: none !important;
-        }
 
-        #servicos .btn:hover,
-        #servicos .btn:focus,
-        #servicos .btn-outline:hover,
-        #servicos .btn-outline:focus,
-        #servicos .btn-phone:hover,
-        #servicos .btn-phone:focus {
-            transform: none !important;
-        }
 
-        #servicos .card a.btn,
-        #servicos .card a.btn-outline,
-        #servicos .card a.btn-phone {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            margin: 0 auto;
-            height: 48px !important;
-            min-height: 48px !important;
-            padding: 0 1.25rem !important;
-            gap: 0.5rem;
-            transition: none !important;
-        }
+
 
         .btn-outline {
             display: inline-flex;
@@ -1030,16 +1005,37 @@
             background: #fff;
             color: var(--primary-color);
             border: none;
-            padding: 0.75rem 1.25rem;
-            border-radius: 8px;
+        }
+
+        .btn-service-white:hover {
+            background: #f8f9fa;
+            color: var(--primary-color);
         }
         
-        .btn-service-white-dark {
+        .service-card-outline {
              background: #fff;
-             color: #0b1220;
+             color: var(--primary-color);
+             padding: 2rem;
+             border-radius: 12px;
+             border: 2px solid var(--primary-color);
+        }
+        
+        .service-card-outline .service-text, 
+        .service-card-outline .service-card-title,
+        .service-card-outline .service-list,
+        .service-card-outline .service-icon {
+            color: var(--primary-color) !important;
+        }
+
+        .btn-service-outline {
+             background: var(--primary-color);
+             color: #fff;
              border: none;
-             padding: 0.75rem 1.25rem;
-             border-radius: 8px;
+        }
+
+        .btn-service-outline:hover {
+             background: #00695c;
+             color: #fff;
         }
 
         .cta-section {
@@ -1129,9 +1125,13 @@
                 </div>
             </div>
         </section>
-        <section id="info" style="background: rgb(185, 218, 214);">
+        <section id="info" style="background: rgb(185, 218, 214); padding-top: 0;">
+            <div style="background-color: #00796b; color: white; padding: 3rem 0; text-align: center; margin-bottom: 2rem; width: 100%;">
+                <div class="container" style="padding: 0;">
+                    <h2 style="color: white; margin: 0; font-size: 2rem;">Por que escolher a psicóloga Juliédina?</h2>
+                </div>
+            </div>
             <div class="container">
-                <h2>Por que escolher a Psicóloga Juliédina?</h2>
                 <div class="cards-container">
                     <article class="card">
                         <div style="display:flex;align-items:center;gap:1rem;">
@@ -1257,7 +1257,7 @@
                         <span>Agendar sessão</span>
                     </a>
                 </article>
-                <article class="card service-card-dark">
+                <article class="card service-card-outline">
                     <h3 class="service-card-title">Avaliação Psicológica</h3>
                     <p class="service-text">Serviço destinado ao público jovem,
                         adulto e idoso para procedimentos médicos para certificar a ausência de transtornos mentais
@@ -1300,8 +1300,7 @@
                                 <polyline points="20 6 9 17 4 12"></polyline>
                             </svg>Doação de órgãos entre vivos</li>
                     </ul>
-                    <a href="https://wa.me/5519988452408" class="btn"
-                        class="btn btn-service-white-dark">
+                    <a href="https://wa.me/5519988452408" class="btn btn-service-outline">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="18" height="18"
                             aria-hidden="true" focusable="false"
                             style="margin-right:.5rem;vertical-align:middle;fill:currentColor;color:inherit;">
@@ -1313,8 +1312,13 @@
                 </article>
             </div>
         </section>
-        <section id="avaliacoes" class="container">
-            <h2 style="text-align:center;margin-bottom:1.5rem;">Avaliações dos Pacientes</h2>
+        <section id="avaliacoes" style="background: #b9dad6; padding-top: 0;">
+            <div style="background-color: #00796b; color: white; padding: 3rem 0; text-align: center; margin-bottom: 2rem; width: 100%;">
+                <div class="container" style="padding: 0;">
+                    <h2 style="color: white; margin: 0; font-size: 2rem;">Avaliações dos Pacientes</h2>
+                </div>
+            </div>
+            <div class="container">
             <div class="cards-container">
                 <article class="card">
                     <div style="display:flex;align-items:center;gap:0.5rem;margin-bottom:0.75rem;">
@@ -1431,6 +1435,7 @@
                     <a href="https://g.co/kgs/EkhzmEz" class="review-link" target="_blank" rel="noopener">Ver avaliação
                         no Google</a>
                 </article>
+            </div>
             </div>
         </section>
 
