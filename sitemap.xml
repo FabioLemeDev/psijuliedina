@@ -1,13 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://psijuliedina.com/</loc>
-    <lastmod>2025-03-19T15:00:00+00:00</lastmod>
+    <lastmod>2026-01-27</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://psijuliedina.com/assets/img/profile.webp</image:loc>
+      <image:title>Psicóloga Juliédina Lopes Ramos</image:title>
+      <image:caption>Psicóloga Juliédina Lopes Ramos, especialista em terapia cognitivo-comportamental em Leme, SP</image:caption>
+      <image:geo_location>Leme, SP, Brasil</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://psijuliedina.com/assets/img/about.webp</image:loc>
+      <image:title>Juliédina Lopes Ramos - Psicóloga Clínica</image:title>
+      <image:caption>Retrato da psicóloga Juliédina Lopes Ramos em seu consultório</image:caption>
+      <image:geo_location>Leme, SP, Brasil</image:geo_location>
+    </image:image>
   </url>
 </urlset>

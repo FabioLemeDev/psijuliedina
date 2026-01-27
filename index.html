@@ -81,75 +81,104 @@
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "WebPage",
-      "@id": "https://psijuliedina.com/",
-      "url": "https://psijuliedina.com/",
-      "name": "Psicóloga Juliédina | Sua psicóloga em Leme - SP",
-      "description": "Psicóloga em Leme SP. Atendimento especializado para ansiedade, depressão e conflitos. Terapia online e presencial para adultos e adolescentes. Agende agora!",
-      "datePublished": "2024-03-16T15:00:00+00:00",
-      "dateModified": "2024-03-16T15:30:00+00:00",
-      "inLanguage": "pt-BR",
-      "isPartOf": {
+      "@graph": [
+        {
+          "@type": "Psychologist",
+          "@id": "https://psijuliedina.com/#localbusiness",
+          "name": "Psicóloga Juliédina Lopes Ramos",
+          "image": "https://psijuliedina.com/assets/img/profile.webp",
+          "url": "https://psijuliedina.com/",
+          "telephone": "+5519988452408",
+          "email": "juliedinalopes@gmail.com",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Rua Albano Viêira Sardinha, 264",
+            "addressLocality": "Leme",
+            "addressRegion": "SP",
+            "addressCountry": "BR",
+            "postalCode": "13610-300"
+          },
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": -22.1858624,
+            "longitude": -47.3848429
+          },
+          "openingHoursSpecification": [
+            {
+              "@type": "OpeningHoursSpecification",
+              "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+              "opens": "08:00",
+              "closes": "20:00"
+            },
+            {
+              "@type": "OpeningHoursSpecification",
+              "dayOfWeek": "Saturday",
+              "opens": "08:00",
+              "closes": "12:00"
+            }
+          ],
+          "sameAs": [
+            "https://www.facebook.com/psi.juliedina",
+            "https://www.instagram.com/psi.juliedina",
+            "https://www.linkedin.com/in/juli%C3%A9dina-lopes-ramos-868933276"
+          ],
+          "priceRange": "$$"
+        },
+        {
           "@type": "WebSite",
           "@id": "https://psijuliedina.com/#website",
           "url": "https://psijuliedina.com/",
           "name": "Psicóloga Juliédina | Sua psicóloga em Leme - SP",
-          "inLanguage": "pt-BR"
-      },
-      "about": {
-          "@type": "Person",
-          "name": "Juliédina Lopes Ramos",
-          "jobTitle": "Psicóloga Clínica",
-          "email": "juliedinalopes@gmail.com",
-          "telephone": "+55(19) 98845-2408",
-          "address": {
-              "@type": "PostalAddress",
-              "streetAddress": "Rua Albano Viêira Sardinha, 264",
-              "addressLocality": "Leme",
-              "addressRegion": "SP",
-              "addressCountry": "BR",
-              "postalCode": "13610-300"
-          },
-          "sameAs": [
-              "https://www.facebook.com/psi.juliedina",
-              "https://www.instagram.com/psi.juliedina",
-              "https://www.linkedin.com/in/juli%C3%A9dina-lopes-ramos-868933276"
-          ]
-      },
-      "primaryImageOfPage": {
-          "@type": "ImageObject",
-          "@id": "https://psijuliedina.com/#primaryimage",
-          "url": "https://psijuliedina.com/assets/img/profile.webp",
-          "contentUrl": "https://psijuliedina.com/assets/img/profile.webp",
+          "description": "Psicóloga em Leme SP. Atendimento especializado para ansiedade, depressão e conflitos. Terapia online e presencial para adultos e adolescentes. Agende agora!",
           "inLanguage": "pt-BR",
-          "width": 1920,
-          "height": 1080
-      },
-      "image": [
-          {
-              "@type": "ImageObject",
-              "@id": "https://psijuliedina.com/#secondaryimage",
-              "url": "https://psijuliedina.com/assets/img/about.webp",
-              "contentUrl": "https://psijuliedina.com/assets/img/about.webp",
-              "inLanguage": "pt-BR",
-              "width": 800,
-              "height": 600
-          }
-      ],
-      "breadcrumb": {
-          "@type": "BreadcrumbList",
-          "@id": "https://psijuliedina.com/#breadcrumb",
-          "itemListElement": [
+          "publisher": { "@id": "https://psijuliedina.com/#localbusiness" }
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://psijuliedina.com/",
+          "url": "https://psijuliedina.com/",
+          "name": "Psicóloga Juliédina | Sua psicóloga em Leme - SP",
+          "description": "Psicóloga em Leme SP. Atendimento especializado para ansiedade, depressão e conflitos. Terapia online e presencial para adultos e adolescentes. Agende agora!",
+          "datePublished": "2024-03-16T15:00:00+00:00",
+          "dateModified": "2026-01-27T09:00:00+00:00",
+          "inLanguage": "pt-BR",
+          "isPartOf": { "@id": "https://psijuliedina.com/#website" },
+          "about": { "@id": "https://psijuliedina.com/#localbusiness" },
+          "primaryImageOfPage": {
+            "@type": "ImageObject",
+            "@id": "https://psijuliedina.com/#primaryimage",
+            "url": "https://psijuliedina.com/assets/img/profile.webp",
+            "contentUrl": "https://psijuliedina.com/assets/img/profile.webp",
+            "inLanguage": "pt-BR",
+            "width": 1920,
+            "height": 1080
+          },
+          "image": [
+            {
+                "@type": "ImageObject",
+                "@id": "https://psijuliedina.com/#secondaryimage",
+                "url": "https://psijuliedina.com/assets/img/about.webp",
+                "contentUrl": "https://psijuliedina.com/assets/img/about.webp",
+                "inLanguage": "pt-BR",
+                "width": 800,
+                "height": 600
+            }
+          ],
+          "breadcrumb": {
+            "@type": "BreadcrumbList",
+            "@id": "https://psijuliedina.com/#breadcrumb",
+            "itemListElement": [
               {
-                  "@type": "ListItem",
-                  "position": 1,
-                  "name": "Início",
-                  "item": "https://psijuliedina.com/"
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Início",
+                "item": "https://psijuliedina.com/"
               }
-          ]
-      }
-  }
-  
+            ]
+          }
+        }
+      ]
+    }
 </script>
 
     <style>
