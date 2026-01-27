@@ -26,11 +26,11 @@
     <meta name="msapplication-TileImage" content="assets/img/favicon-32x32.png" />
     <meta name="viewport" content="user-scalable=yes, width=device-width, initial-scale=1">
     <meta http-equiv="content-Type" content="text/html; charset=UTF-8">
-    <title>Psicóloga Juliédina - Atendimento psicológico em Leme e online</title>
+    <title>Psicóloga Juliédina | Sua psicóloga em Leme – SP</title>
     <link rel="alternate" hreflang="pt-br" href="https://psijuliedina.com/" />
     <link rel="canonical" href="https://psijuliedina.com/" />
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="icon" href="assets/img/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" href="assets/img/android-chrome-192x192.png" sizes="192x192" />
     <link rel="preload" as="image" href="https://psijuliedina.com/assets/img/profile.webp"
         imagesrcset="https://psijuliedina.com/assets/img/profile.webp 1200w, https://psijuliedina.com/assets/img/profile_mobile.webp 600w"
         imagesizes="100vw">
@@ -83,7 +83,7 @@
       "@type": "WebPage",
       "@id": "https://psijuliedina.com/",
       "url": "https://psijuliedina.com/",
-      "name": "Psicóloga Juliédina - Atendimento Clínico",
+      "name": "Psicóloga Juliédina | Sua psicóloga em Leme – SP",
       "description": "Psicóloga experiente no tratamento da ansiedade, depressão, conflitos e mais. Cuide da sua saúde mental. Agende sua terapia online ou presencial agora mesmo!",
       "datePublished": "2024-03-16T15:00:00+00:00",
       "dateModified": "2024-03-16T15:30:00+00:00",
@@ -92,7 +92,7 @@
           "@type": "WebSite",
           "@id": "https://psijuliedina.com/#website",
           "url": "https://psijuliedina.com/",
-          "name": "Psicóloga Juliédina",
+          "name": "Psicóloga Juliédina | Sua psicóloga em Leme – SP",
           "inLanguage": "pt-BR"
       },
       "about": {
@@ -154,7 +154,7 @@
     <style>
         :root {
             --primary-color: #d93333;
-            --primary-rgb: 217,51,51;
+            --primary-rgb: 217, 51, 51;
             --secondary-color: #f4f4f4;
             --text-dark: #333;
             --text-light: #fff;
@@ -163,8 +163,6 @@
             --spacing-unit: 1rem;
         }
 
-        /* Acessibilidade: criar variantes com leve fundo/tintura e sombra
-           para melhorar contraste sem alterar a cor principal */
         .accent-bg {
             background-color: rgba(var(--primary-rgb), 0.08);
             padding: 0.125rem 0.375rem;
@@ -176,7 +174,6 @@
             box-shadow: 0 6px 16px rgba(var(--primary-rgb), 0.08);
         }
 
-        /* Estilo para links/elementos que usam a cor primária sobre fundo claro */
         a[style*="var(--primary-color)"],
         span[style*="var(--primary-color)"],
         .btn[style*="var(--primary-color)"] {
@@ -187,7 +184,6 @@
             text-decoration: none !important;
         }
 
-        /* Classe reutilizável para botões com fundo branco e borda/acento primário */
         .btn-outline-primary {
             background: #fff;
             color: var(--primary-color);
@@ -200,15 +196,13 @@
             box-shadow: 0 6px 18px rgba(var(--primary-rgb), 0.06);
         }
 
-        /* Tornar CTAs mais legíveis com sombra no texto (melhora percepção sem trocar cor)
-           e leve outline para foco acessível */
         .cta-final,
         .cta-final * {
-            text-shadow: 0 1px 2px rgba(0,0,0,0.18);
+            text-shadow: 0 1px 2px rgba(0, 0, 0, 0.18);
         }
 
         .btn-outline-primary:focus {
-            outline: 3px solid rgba(var(--primary-rgb),0.14);
+            outline: 3px solid rgba(var(--primary-rgb), 0.14);
             outline-offset: 2px;
         }
 
@@ -387,7 +381,6 @@
             z-index: 2;
         }
 
-        /* LCP helper: hero background image as an HTML image (detectável pelo PageSpeed) */
         .hero .hero-bg-wrapper {
             position: absolute;
             inset: 0;
@@ -449,7 +442,6 @@
             margin-bottom: 1rem;
         }
 
-        /* Seção de informações: inverter cor entre ícone (SVG) e título H3 */
         #info .card h3 {
             color: var(--text-dark);
         }
@@ -547,7 +539,6 @@
             transform: translateY(-2px);
         }
 
-        /* Seção serviços: desativar transições/efeitos nos botões para que não animem ao passar o mouse */
         #servicos .btn,
         #servicos .btn-outline,
         #servicos .btn-phone {
@@ -961,6 +952,9 @@
         #duvidas details summary svg {
             transition: transform 0.25s ease;
             color: var(--primary-color);
+            flex-shrink: 0;
+            width: 24px;
+            height: 24px;
         }
 
         #duvidas details[open] summary svg {
@@ -994,8 +988,9 @@
         <section id="inicio" class="hero">
             <picture class="hero-bg-wrapper" aria-hidden="true">
                 <source media="(max-width:768px)" srcset="https://psijuliedina.com/assets/img/profile_mobile.webp">
-                <img class="hero-bg" src="https://psijuliedina.com/assets/img/profile.webp" alt="Foto da Psicóloga Juliédina" loading="eager"
-                    fetchpriority="high" decoding="async" importance="high">
+                <img class="hero-bg" src="https://psijuliedina.com/assets/img/profile.webp"
+                    alt="Foto da Psicóloga Juliédina" loading="eager" fetchpriority="high" decoding="async"
+                    importance="high">
             </picture>
 
             <div class="hero-content">
@@ -1239,7 +1234,8 @@
                         agradecida por isso, pois foi meu primeiro contato e tive uma experiência muito boa. Super
                         indico ❤️✨"</p>
                     <p style="margin-top:1rem;font-weight:700;">Maytte Araujo</p>
-                    <a href="https://g.co/kgs/2HHPzqq" class="review-link" target="_blank" rel="noopener">Ver avaliação no Google</a>
+                    <a href="https://g.co/kgs/2HHPzqq" class="review-link" target="_blank" rel="noopener">Ver avaliação
+                        no Google</a>
                 </article>
                 <article class="card">
                     <div style="display:flex;align-items:center;gap:0.5rem;margin-bottom:0.75rem;">
@@ -1258,7 +1254,8 @@
                         sinto uma enorme evolução. Só tenho a parabenizar e agradecer pelo trabalho dela. Indico a
                         todos, seu único arrependimento vai ser não ter conhecido ela antes rs ❤️"</p>
                     <p style="margin-top:1rem;font-weight:700;">Jucicleide Silva</p>
-                    <a href="https://g.co/kgs/Uc31Qnh" class="review-link" target="_blank" rel="noopener">Ver avaliação no Google</a>
+                    <a href="https://g.co/kgs/Uc31Qnh" class="review-link" target="_blank" rel="noopener">Ver avaliação
+                        no Google</a>
                 </article>
                 <article class="card">
                     <div style="display:flex;align-items:center;gap:0.5rem;margin-bottom:0.75rem;">
@@ -1275,7 +1272,8 @@
                     <p>"A melhor profissional que eu pudesse escolher. Uma pessoa incrível. Não tenho arrependimento
                         algum!!!"</p>
                     <p style="margin-top:1rem;font-weight:700;">Ingrid Orlandini</p>
-                    <a href="https://g.co/kgs/oGkaZo5" class="review-link" target="_blank" rel="noopener">Ver avaliação no Google</a>
+                    <a href="https://g.co/kgs/oGkaZo5" class="review-link" target="_blank" rel="noopener">Ver avaliação
+                        no Google</a>
                 </article>
                 <article class="card">
                     <div style="display:flex;align-items:center;gap:0.5rem;margin-bottom:0.75rem;">
@@ -1292,7 +1290,8 @@
                     <p>"Ótima profissional...pontual e prestativa, nos faz refletir e nos ajuda nos momentos de
                         angústia. 5 estrelas para Juliédina."</p>
                     <p style="margin-top:1rem;font-weight:700;">Miriam Bergamasco</p>
-                    <a href="https://g.co/kgs/8rybA1L" class="review-link" target="_blank" rel="noopener">Ver avaliação no Google</a>
+                    <a href="https://g.co/kgs/8rybA1L" class="review-link" target="_blank" rel="noopener">Ver avaliação
+                        no Google</a>
                 </article>
                 <article class="card">
                     <div style="display:flex;align-items:center;gap:0.5rem;margin-bottom:0.75rem;">
@@ -1308,7 +1307,8 @@
                     </div>
                     <p>"Estou muito satisfeito. Altamente profissional, competente, discreta, pontual e capacitada"</p>
                     <p style="margin-top:1rem;font-weight:700;">Alessandro Santos</p>
-                    <a href="https://g.co/kgs/ssGTKa5" class="review-link" target="_blank" rel="noopener">Ver avaliação no Google</a>
+                    <a href="https://g.co/kgs/ssGTKa5" class="review-link" target="_blank" rel="noopener">Ver avaliação
+                        no Google</a>
                 </article>
                 <article class="card">
                     <div style="display:flex;align-items:center;gap:0.5rem;margin-bottom:0.75rem;">
@@ -1324,7 +1324,8 @@
                     </div>
                     <p>"Super recomendo! Faz toda a diferença na minha vida!!"</p>
                     <p style="margin-top:1rem;font-weight:700;">Maria Gabriela Longo</p>
-                    <a href="https://g.co/kgs/EkhzmEz" class="review-link" target="_blank" rel="noopener">Ver avaliação no Google</a>
+                    <a href="https://g.co/kgs/EkhzmEz" class="review-link" target="_blank" rel="noopener">Ver avaliação
+                        no Google</a>
                 </article>
             </div>
         </section>
@@ -1407,119 +1408,116 @@
                 </div>
             </div>
         </section>
-        <section id="duvidas" class="py-20">
-            <div class="container mx-auto px-6" style="max-width:1100px;">
-                <h2 style="text-align:center;font-size:1.8rem;margin-bottom:1.5rem;">Dúvidas Frequentes</h2>
-                <div style="display:flex;flex-direction:column;gap:1rem;">
-                    <details class="card"
-                        style="background:var(--text-light);padding:1.25rem;border-radius:8px;box-shadow:0 6px 18px rgba(0,0,0,0.06);">
-                        <summary
-                            style="display:flex;justify-content:space-between;align-items:center;cursor:pointer;list-style:none;">
-                            <h3 style="margin:0;font-size:1.05rem;font-weight:700;color:var(--text-dark);">Como funciona
-                                a psicoterapia online?</h3>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round" aria-hidden="true">
-                                <polyline points="6 9 12 15 18 9"></polyline>
-                            </svg>
-                        </summary>
-                        <div style="padding-top:0.75rem;color:var(--text-gray);">
-                            <p>A psicoterapia online segue as mesmas diretrizes da modalidade presencial, onde são
-                                aplicados os mesmos métodos e técnicas psicológicas para atender as necessidades do
-                                paciente. Devido aos avanços tecnológicos, as pessoas podem desfrutar dos benefícios do
-                                tratamento psicológico sem saírem de casa. No Brasil, os atendimentos à distância foram
-                                efetivamente regulamentados pelo Conselho Federal de Psicologia, através da <a
-                                    href="https://e-psi.cfp.org.br/resolucao-cfp-no-11-2018/" target="_blank"
-                                    rel="noopener"
-                                    style="color:var(--primary-color);text-decoration:underline;">Resolução CFP Nº
-                                    11/2018</a>.</p>
-                        </div>
-                    </details>
-                    <details class="card"
-                        style="background:var(--text-light);padding:1.25rem;border-radius:8px;box-shadow:0 6px 18px rgba(0,0,0,0.06);">
-                        <summary
-                            style="display:flex;justify-content:space-between;align-items:center;cursor:pointer;list-style:none;">
-                            <h3 style="margin:0;font-size:1.05rem;font-weight:700;color:var(--text-dark);">Qual a
-                                frequência das sessões?</h3>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round" aria-hidden="true">
-                                <polyline points="6 9 12 15 18 9"></polyline>
-                            </svg>
-                        </summary>
-                        <div style="padding-top:0.75rem;color:var(--text-gray);">
-                            <p>Normalmente, a psicoterapia é iniciada com sessões semanais, mas dependendo do caso do
-                                paciente, à medida que houver melhora dos sintomas, é possível que as sessões passem a
-                                ser quinzenais.</p>
-                        </div>
-                    </details>
-                    <details class="card"
-                        style="background:var(--text-light);padding:1.25rem;border-radius:8px;box-shadow:0 6px 18px rgba(0,0,0,0.06);">
-                        <summary
-                            style="display:flex;justify-content:space-between;align-items:center;cursor:pointer;list-style:none;">
-                            <h3 style="margin:0;font-size:1.05rem;font-weight:700;color:var(--text-dark);">É possível
-                                conseguir reembolso das sessões pelo plano de saúde ou convênio médico?</h3>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round" aria-hidden="true">
-                                <polyline points="6 9 12 15 18 9"></polyline>
-                            </svg>
-                        </summary>
-                        <div style="padding-top:0.75rem;color:var(--text-gray);">
-                            <p>Sim, algumas categorias de contratos de plano de saúde e convênios médicos permitem a
-                                livre escolha de profissionais, como psicólogos, que não fazem parte da rede
-                                credenciada. Para saber se você tem este direito, entre em contato com a operadora de
-                                seu plano e verifique se seu contrato permite acesso a serviços de livre escolha de
-                                prestadores que não pertençam à rede credenciada e quais condições e procedimentos. As
-                                regras de valor e prazo para reembolso variam de acordo com a operadora e contrato.
-                                Nesta modalidade, o paciente faz o pagamento diretamente ao prestador, que emite o
-                                recibo e o paciente solicita seu reembolso ao plano de saúde. É comum que seja
-                                solicitado um encaminhamento ou pedido feito pelo médico assistente, que deve conter o
-                                CID (Classificação Internacional de Doenças) para liberação das sessões.</p>
-                        </div>
-                    </details>
-                    <details class="card"
-                        style="background:var(--text-light);padding:1.25rem;border-radius:8px;box-shadow:0 6px 18px rgba(0,0,0,0.06);">
-                        <summary
-                            style="display:flex;justify-content:space-between;align-items:center;cursor:pointer;list-style:none;">
-                            <h3 style="margin:0;font-size:1.05rem;font-weight:700;color:var(--text-dark);">É preciso de
-                                autorização para atendimento psicológico de adolescentes?</h3>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round" aria-hidden="true">
-                                <polyline points="6 9 12 15 18 9"></polyline>
-                            </svg>
-                        </summary>
-                        <div style="padding-top:0.75rem;color:var(--text-gray);">
-                            <p>Sim, os pacientes menores de 18 anos devem obter autorização por escrito de, ao menos, um
-                                dos responsáveis legais, conforme Artigo 12, item I da <a
-                                    href="https://www.in.gov.br/en/web/dou/-/resolucao-n-13-de-15-de-junho-de-2022-408911936"
-                                    target="_blank" rel="noopener"
-                                    style="color:var(--primary-color);text-decoration:underline;">Resolução CFP Nº
-                                    13/2022</a>.</p>
-                        </div>
-                    </details>
-                    <details class="card"
-                        style="background:var(--text-light);padding:1.25rem;border-radius:8px;box-shadow:0 6px 18px rgba(0,0,0,0.06);">
-                        <summary
-                            style="display:flex;justify-content:space-between;align-items:center;cursor:pointer;list-style:none;">
-                            <h3 style="margin:0;font-size:1.05rem;font-weight:700;color:var(--text-dark);">Como posso
-                                consultar se o CRP do profissional está ativo?</h3>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round" aria-hidden="true">
-                                <polyline points="6 9 12 15 18 9"></polyline>
-                            </svg>
-                        </summary>
-                        <div style="padding-top:0.75rem;color:var(--text-gray);">
-                            <p>O Conselho Federal de Psicologia (CFP) fornece em seu site uma área para consulta de
-                                profissionais e você pode acessar minha inscrição pelo link <a
-                                    href="https://cadastro.cfp.org.br/visualizar.html?profissional=qRVh%2B581Y%2B%2FlDLotNCVoZ%2BPdKOc0k%2F8UcTuS0WFOyKI%3D"
-                                    target="_blank" rel="noopener"
-                                    style="color:var(--primary-color);text-decoration:underline;">CRP 06/153209</a>.</p>
-                        </div>
-                    </details>
-                </div>
+        <section id="duvidas" class="container">
+            <h2 style="text-align:center;font-size:1.8rem;margin-bottom:1.5rem;">Dúvidas Frequentes</h2>
+            <div style="display:flex;flex-direction:column;gap:1rem;">
+                <details class="card"
+                    style="background:var(--text-light);padding:1.25rem;border-radius:8px;box-shadow:0 6px 18px rgba(0,0,0,0.06);">
+                    <summary
+                        style="display:flex;justify-content:space-between;align-items:center;cursor:pointer;list-style:none;">
+                        <h3 style="margin:0;font-size:1.05rem;font-weight:700;color:var(--text-dark);">Como funciona
+                            a psicoterapia online?</h3>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            aria-hidden="true">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg>
+                    </summary>
+                    <div style="padding-top:0.75rem;color:var(--text-gray);">
+                        <p>A psicoterapia online segue as mesmas diretrizes da modalidade presencial, onde são
+                            aplicados os mesmos métodos e técnicas psicológicas para atender as necessidades do
+                            paciente. Devido aos avanços tecnológicos, as pessoas podem desfrutar dos benefícios do
+                            tratamento psicológico sem saírem de casa. No Brasil, os atendimentos à distância foram
+                            efetivamente regulamentados pelo Conselho Federal de Psicologia, através da <a
+                                href="https://e-psi.cfp.org.br/resolucao-cfp-no-11-2018/" target="_blank" rel="noopener"
+                                style="color:var(--primary-color);text-decoration:underline;">Resolução CFP Nº
+                                11/2018</a>.</p>
+                    </div>
+                </details>
+                <details class="card"
+                    style="background:var(--text-light);padding:1.25rem;border-radius:8px;box-shadow:0 6px 18px rgba(0,0,0,0.06);">
+                    <summary
+                        style="display:flex;justify-content:space-between;align-items:center;cursor:pointer;list-style:none;">
+                        <h3 style="margin:0;font-size:1.05rem;font-weight:700;color:var(--text-dark);">Qual a
+                            frequência das sessões?</h3>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            aria-hidden="true">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg>
+                    </summary>
+                    <div style="padding-top:0.75rem;color:var(--text-gray);">
+                        <p>Normalmente, a psicoterapia é iniciada com sessões semanais, mas dependendo do caso do
+                            paciente, à medida que houver melhora dos sintomas, é possível que as sessões passem a
+                            ser quinzenais.</p>
+                    </div>
+                </details>
+                <details class="card"
+                    style="background:var(--text-light);padding:1.25rem;border-radius:8px;box-shadow:0 6px 18px rgba(0,0,0,0.06);">
+                    <summary
+                        style="display:flex;justify-content:space-between;align-items:center;cursor:pointer;list-style:none;">
+                        <h3 style="margin:0;font-size:1.05rem;font-weight:700;color:var(--text-dark);">É possível
+                            conseguir reembolso das sessões pelo plano de saúde ou convênio médico?</h3>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            aria-hidden="true">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg>
+                    </summary>
+                    <div style="padding-top:0.75rem;color:var(--text-gray);">
+                        <p>Sim, algumas categorias de contratos de plano de saúde e convênios médicos permitem a
+                            livre escolha de profissionais, como psicólogos, que não fazem parte da rede
+                            credenciada. Para saber se você tem este direito, entre em contato com a operadora de
+                            seu plano e verifique se seu contrato permite acesso a serviços de livre escolha de
+                            prestadores que não pertençam à rede credenciada e quais condições e procedimentos. As
+                            regras de valor e prazo para reembolso variam de acordo com a operadora e contrato.
+                            Nesta modalidade, o paciente faz o pagamento diretamente ao prestador, que emite o
+                            recibo e o paciente solicita seu reembolso ao plano de saúde. É comum que seja
+                            solicitado um encaminhamento ou pedido feito pelo médico assistente, que deve conter o
+                            CID (Classificação Internacional de Doenças) para liberação das sessões.</p>
+                    </div>
+                </details>
+                <details class="card"
+                    style="background:var(--text-light);padding:1.25rem;border-radius:8px;box-shadow:0 6px 18px rgba(0,0,0,0.06);">
+                    <summary
+                        style="display:flex;justify-content:space-between;align-items:center;cursor:pointer;list-style:none;">
+                        <h3 style="margin:0;font-size:1.05rem;font-weight:700;color:var(--text-dark);">É preciso de
+                            autorização para atendimento psicológico de adolescentes?</h3>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            aria-hidden="true">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg>
+                    </summary>
+                    <div style="padding-top:0.75rem;color:var(--text-gray);">
+                        <p>Sim, os pacientes menores de 18 anos devem obter autorização por escrito de, ao menos, um
+                            dos responsáveis legais, conforme Artigo 12, item I da <a
+                                href="https://www.in.gov.br/en/web/dou/-/resolucao-n-13-de-15-de-junho-de-2022-408911936"
+                                target="_blank" rel="noopener"
+                                style="color:var(--primary-color);text-decoration:underline;">Resolução CFP Nº
+                                13/2022</a>.</p>
+                    </div>
+                </details>
+                <details class="card"
+                    style="background:var(--text-light);padding:1.25rem;border-radius:8px;box-shadow:0 6px 18px rgba(0,0,0,0.06);">
+                    <summary
+                        style="display:flex;justify-content:space-between;align-items:center;cursor:pointer;list-style:none;">
+                        <h3 style="margin:0;font-size:1.05rem;font-weight:700;color:var(--text-dark);">Como posso
+                            consultar se o CRP do profissional está ativo?</h3>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            aria-hidden="true">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg>
+                    </summary>
+                    <div style="padding-top:0.75rem;color:var(--text-gray);">
+                        <p>O Conselho Federal de Psicologia (CFP) fornece em seu site uma área para consulta de
+                            profissionais e você pode acessar minha inscrição pelo link <a
+                                href="https://cadastro.cfp.org.br/visualizar.html?profissional=qRVh%2B581Y%2B%2FlDLotNCVoZ%2BPdKOc0k%2F8UcTuS0WFOyKI%3D"
+                                target="_blank" rel="noopener"
+                                style="color:var(--primary-color);text-decoration:underline;">CRP 06/153209</a>.</p>
+                    </div>
+                </details>
             </div>
         </section>
         <section id="cta" class="cta-final text-center"
@@ -1618,7 +1616,6 @@
     </footer>
     <script>
         (function () {
-            // Header: efeito scroll
             const header = document.getElementById('site-header');
             const onScroll = () => {
                 if (!header) return;
@@ -1626,7 +1623,6 @@
             };
             window.addEventListener('scroll', onScroll);
 
-            // Menu mobile
             const menuToggle = document.getElementById('menu-toggle');
             const mainNav = document.getElementById('main-nav');
 
@@ -1639,7 +1635,6 @@
                     menuToggle.textContent = mainNav.classList.contains('active') ? '✕' : '☰';
                 });
 
-                // Fechar menu ao clicar em um link e restaurar ícone
                 mainNav.querySelectorAll('a').forEach(link => {
                     link.addEventListener('click', () => {
                         mainNav.classList.remove('active');
@@ -1650,7 +1645,6 @@
                 });
             }
 
-            // Atualizar ano no rodapé
             const currentYearEl = document.getElementById('current-year');
             if (currentYearEl) currentYearEl.textContent = String(new Date().getFullYear());
         })();
