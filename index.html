@@ -979,6 +979,99 @@
             white-space: nowrap;
             border-width: 0;
         }
+
+        /* Novas classes utilitárias e componentes para refatoração */
+        .service-card-primary {
+            background: linear-gradient(135deg, var(--primary-color), #00695c);
+            color: #fff;
+            padding: 2rem;
+            border-radius: 12px;
+        }
+
+        .service-card-dark {
+            background: linear-gradient(135deg, #0f1724, #111827);
+            color: #fff;
+            padding: 2rem;
+            border-radius: 12px;
+        }
+
+        .service-card-title {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: #fff !important;
+        }
+
+        .service-text {
+            margin-bottom: 1rem;
+            color: rgba(255, 255, 255, 0.95) !important;
+        }
+
+        .service-list {
+            margin: 0 0 1.25rem 0;
+            padding: 0;
+            list-style: none;
+            color: rgba(255, 255, 255, 0.95);
+        }
+
+        .service-list-item {
+            display: flex;
+            align-items: flex-start;
+            gap: .75rem;
+            margin-bottom: .5rem;
+        }
+
+        .service-icon {
+            flex: 0 0 20px;
+            margin-top: 3px;
+            color: #fff;
+        }
+
+        .btn-service-white {
+            background: #fff;
+            color: var(--primary-color);
+            border: none;
+            padding: 0.75rem 1.25rem;
+            border-radius: 8px;
+        }
+        
+        .btn-service-white-dark {
+             background: #fff;
+             color: #0b1220;
+             border: none;
+             padding: 0.75rem 1.25rem;
+             border-radius: 8px;
+        }
+
+        .cta-section {
+            background: var(--primary-color);
+            color: var(--text-light);
+            padding: 3rem 0;
+        }
+
+        .cta-title {
+            color: var(--text-light);
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .cta-description {
+            font-size: 1.1rem;
+            margin-bottom: 1.5rem;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .cta-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .btn-cta-lg {
+            font-size: 1.1rem;
+        }
     </style>
 </head>
 
@@ -1103,60 +1196,58 @@
         <section id="servicos" class="container">
             <h2 style="text-align:center;margin-bottom:1.5rem;">Serviços de Psicologia</h2>
             <div class="cards-container">
-                <article class="card"
-                    style="background:linear-gradient(135deg,var(--primary-color),#00695c);padding:2rem;border-radius:12px;color:#fff;">
-                    <h3 style="font-size:1.5rem;margin-bottom:1rem;color:inherit;">Psicoterapia Individual</h3>
-                    <p style="margin-bottom:1rem;color:rgba(255,255,255,0.95);">Atendimento personalizado para
+                <article class="card service-card-primary">
+                    <h3 class="service-card-title">Psicoterapia Individual</h3>
+                    <p class="service-text">Atendimento personalizado para
                         adolescentes, jovens, adultos e idosos, focado em promover autoconhecimento, desenvolvimento
                         pessoal e bem-estar emocional.</p>
-                    <p style="font-weight:600;margin-bottom:1rem;color:rgba(255,255,255,0.95);">Tratamento para:
+                    <p class="service-text" style="font-weight:600;">Tratamento para:
                     </p>
-                    <ul style="margin:0 0 1.25rem 0;padding:0;list-style:none;color:rgba(255,255,255,0.95);">
-                        <li style="display:flex;align-items:flex-start;gap:.75rem;margin-bottom:.5rem;"><svg
+                    <ul class="service-list">
+                        <li class="service-list-item"><svg
                                 xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
                                 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                                 stroke-linejoin="round" aria-hidden="true"
-                                style="flex:0 0 20px;margin-top:3px;color:#fff;">
+                                class="service-icon">
                                 <polyline points="20 6 9 17 4 12"></polyline>
                             </svg>Depressão</li>
-                        <li style="display:flex;align-items:flex-start;gap:.75rem;margin-bottom:.5rem;"><svg
+                        <li class="service-list-item"><svg
                                 xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
                                 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                                 stroke-linejoin="round" aria-hidden="true"
-                                style="flex:0 0 20px;margin-top:3px;color:#fff;">
+                                class="service-icon">
                                 <polyline points="20 6 9 17 4 12"></polyline>
                             </svg>Ansiedade</li>
-                        <li style="display:flex;align-items:flex-start;gap:.75rem;margin-bottom:.5rem;"><svg
+                        <li class="service-list-item"><svg
                                 xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
                                 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                                 stroke-linejoin="round" aria-hidden="true"
-                                style="flex:0 0 20px;margin-top:3px;color:#fff;">
+                                class="service-icon">
                                 <polyline points="20 6 9 17 4 12"></polyline>
                             </svg>Problemas no relacionamento</li>
-                        <li style="display:flex;align-items:flex-start;gap:.75rem;margin-bottom:.5rem;"><svg
+                        <li class="service-list-item"><svg
                                 xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
                                 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                                 stroke-linejoin="round" aria-hidden="true"
-                                style="flex:0 0 20px;margin-top:3px;color:#fff;">
+                                class="service-icon">
                                 <polyline points="20 6 9 17 4 12"></polyline>
                             </svg>TDAH</li>
-                        <li style="display:flex;align-items:flex-start;gap:.75rem;margin-bottom:.5rem;"><svg
+                        <li class="service-list-item"><svg
                                 xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
                                 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                                 stroke-linejoin="round" aria-hidden="true"
-                                style="flex:0 0 20px;margin-top:3px;color:#fff;">
+                                class="service-icon">
                                 <polyline points="20 6 9 17 4 12"></polyline>
                             </svg>Conflitos familiares</li>
-                        <li style="display:flex;align-items:flex-start;gap:.75rem;margin-bottom:.5rem;"><svg
+                        <li class="service-list-item"><svg
                                 xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
                                 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                                 stroke-linejoin="round" aria-hidden="true"
-                                style="flex:0 0 20px;margin-top:3px;color:#fff;">
+                                class="service-icon">
                                 <polyline points="20 6 9 17 4 12"></polyline>
                             </svg>Traumas</li>
                     </ul>
-                    <a href="https://wa.me/5519988452408" class="btn"
-                        style="background:#fff;color:var(--primary-color);border:none;padding:0.75rem 1.25rem;border-radius:8px;">
+                    <a href="https://wa.me/5519988452408" class="btn btn-service-white">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="18" height="18"
                             aria-hidden="true" focusable="false"
                             style="margin-right:.5rem;vertical-align:middle;fill:currentColor;color:inherit;">
@@ -1166,52 +1257,51 @@
                         <span>Agendar sessão</span>
                     </a>
                 </article>
-                <article class="card"
-                    style="background:linear-gradient(135deg,#0f1724,#111827);padding:2rem;border-radius:12px;color:#fff;">
-                    <h3 style="font-size:1.5rem;margin-bottom:1rem;color:inherit;">Avaliação Psicológica</h3>
-                    <p style="margin-bottom:1rem;color:rgba(255,255,255,0.95);">Serviço destinado ao público jovem,
+                <article class="card service-card-dark">
+                    <h3 class="service-card-title">Avaliação Psicológica</h3>
+                    <p class="service-text">Serviço destinado ao público jovem,
                         adulto e idoso para procedimentos médicos para certificar a ausência de transtornos mentais
                         relacionados.</p>
-                    <p style="font-weight:600;margin-bottom:1rem;color:rgba(255,255,255,0.95);">Indicado para:</p>
-                    <ul style="margin:0 0 1.25rem 0;padding:0;list-style:none;color:rgba(255,255,255,0.95);">
-                        <li style="display:flex;align-items:flex-start;gap:.75rem;margin-bottom:.5rem;"><svg
+                    <p class="service-text" style="font-weight:600;">Indicado para:</p>
+                    <ul class="service-list">
+                        <li class="service-list-item"><svg
                                 xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
                                 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                                 stroke-linejoin="round" aria-hidden="true"
-                                style="flex:0 0 20px;margin-top:3px;color:#fff;">
+                                class="service-icon">
                                 <polyline points="20 6 9 17 4 12"></polyline>
                             </svg>Cirurgia bariátrica</li>
-                        <li style="display:flex;align-items:flex-start;gap:.75rem;margin-bottom:.5rem;"><svg
+                        <li class="service-list-item"><svg
                                 xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
                                 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                                 stroke-linejoin="round" aria-hidden="true"
-                                style="flex:0 0 20px;margin-top:3px;color:#fff;">
+                                class="service-icon">
                                 <polyline points="20 6 9 17 4 12"></polyline>
                             </svg>Cirurgia plástica</li>
-                        <li style="display:flex;align-items:flex-start;gap:.75rem;margin-bottom:.5rem;"><svg
+                        <li class="service-list-item"><svg
                                 xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
                                 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                                 stroke-linejoin="round" aria-hidden="true"
-                                style="flex:0 0 20px;margin-top:3px;color:#fff;">
+                                class="service-icon">
                                 <polyline points="20 6 9 17 4 12"></polyline>
                             </svg>Laqueadura ou Vasectomia</li>
-                        <li style="display:flex;align-items:flex-start;gap:.75rem;margin-bottom:.5rem;"><svg
+                        <li class="service-list-item"><svg
                                 xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
                                 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                                 stroke-linejoin="round" aria-hidden="true"
-                                style="flex:0 0 20px;margin-top:3px;color:#fff;">
+                                class="service-icon">
                                 <polyline points="20 6 9 17 4 12"></polyline>
                             </svg>Doação de gametas para reprodução assistida</li>
-                        <li style="display:flex;align-items:flex-start;gap:.75rem;margin-bottom:.5rem;"><svg
+                        <li class="service-list-item"><svg
                                 xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
                                 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                                 stroke-linejoin="round" aria-hidden="true"
-                                style="flex:0 0 20px;margin-top:3px;color:#fff;">
+                                class="service-icon">
                                 <polyline points="20 6 9 17 4 12"></polyline>
                             </svg>Doação de órgãos entre vivos</li>
                     </ul>
                     <a href="https://wa.me/5519988452408" class="btn"
-                        style="background:#fff;color:#0b1220;border:none;padding:0.75rem 1.25rem;border-radius:8px;">
+                        class="btn btn-service-white-dark">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="18" height="18"
                             aria-hidden="true" focusable="false"
                             style="margin-right:.5rem;vertical-align:middle;fill:currentColor;color:inherit;">
@@ -1584,15 +1674,14 @@
                 </details>
             </div>
         </section>
-        <section id="cta" class="cta-final text-center"
-            style="background:var(--primary-color);color:var(--text-light);padding:3rem 0;">
+        <section id="cta" class="cta-final text-center cta-section">
             <div class="container">
-                <h2 style="color:var(--text-light);font-size:2rem;margin-bottom:1rem;">Pronto para começar sua jornada
+                <h2 class="cta-title">Pronto para começar sua jornada
                     de transformação?</h2>
-                <p style="font-size:1.1rem;margin-bottom:1.5rem;max-width:600px;margin-left:auto;margin-right:auto;">
+                <p class="cta-description">
                     Agende sua consulta hoje mesmo e dê o primeiro passo rumo ao seu bem-estar emocional.</p>
-                <div style="display:flex;justify-content:center;gap:1rem;flex-wrap:wrap;">
-                    <a href="https://wa.me/5519988452408" class="btn btn-cta-dark" style="font-size:1.1rem;"
+                <div class="cta-buttons">
+                    <a href="https://wa.me/5519988452408" class="btn btn-cta-dark btn-cta-lg"
                         aria-label="WhatsApp">
                         <span
                             style="display:inline-flex;align-items:center;justify-content:center;width:36px;height:36px;border-radius:50%;overflow:hidden;background:transparent;color:inherit;">
@@ -1605,7 +1694,7 @@
                         </span>
                         <span>WhatsApp</span>
                     </a>
-                    <a href="tel:+5519988452508" class="btn-phone" style="font-size:1.1rem;" aria-label="Ligar agora">
+                    <a href="tel:+5519988452508" class="btn-phone btn-cta-lg" aria-label="Ligar agora">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                             stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                             <path
