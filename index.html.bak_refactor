@@ -1,0 +1,1721 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GBQQC4S2VZ"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-GBQQC4S2VZ');
+    </script>
+
+    <!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-562Z96J4');</script>
+    <!-- End Google Tag Manager -->
+
+    <meta name="msapplication-TileImage" content="assets/img/favicon-32x32.png" />
+    <meta name="viewport" content="user-scalable=yes, width=device-width, initial-scale=1">
+    <meta http-equiv="content-Type" content="text/html; charset=UTF-8">
+    <title>Psicóloga Juliédina | Sua psicóloga em Leme - SP</title>
+    <link rel="alternate" hreflang="pt-br" href="https://psijuliedina.com/" />
+    <link rel="canonical" href="https://psijuliedina.com/" />
+    <link rel="icon" href="assets/img/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" href="assets/img/android-chrome-192x192.png" sizes="192x192" />
+    <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+    <link rel="preload" as="image" href="https://psijuliedina.com/assets/img/profile.webp"
+        imagesrcset="https://psijuliedina.com/assets/img/profile.webp 1200w, https://psijuliedina.com/assets/img/profile_mobile.webp 600w"
+        imagesizes="100vw">
+
+    <link rel="dns-prefetch" href="//google-analytics.com">
+    <link rel="dns-prefetch" href="//www.google-analytics.com">
+    <link rel="dns-prefetch" href="//ssl.google-analytics.com">
+    <link rel="dns-prefetch" href="//www.googletagmanager.com">
+    <link rel="dns-prefetch" href="//googletagmanager.com">
+
+    <!-- SEO META TAGS -->
+    <meta name="description"
+        content="Psicóloga em Leme SP. Atendimento especializado para ansiedade, depressão e conflitos. Terapia online e presencial para adultos e adolescentes. Agende agora!" />
+    <meta name="author" content="Psicóloga Juliédina" />
+    <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+
+    <!-- Configuração Open Graph (OG) para Facebook e outras redes sociais -->
+    <meta property="og:locale" content="pt_BR" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Psicóloga Juliédina Lopes Ramos" />
+    <meta property="og:description"
+        content="Psicóloga em Leme SP. Atendimento especializado para ansiedade, depressão e conflitos. Terapia online e presencial para adultos e adolescentes. Agende agora!" />
+    <meta property="og:url" content="https://psijuliedina.com/" />
+    <meta property="og:site_name" content="Psicóloga Juliédina Lopes Ramos" />
+    <meta property="article:modified_time" content="2024-03-16T15:30:00+00:00" />
+
+    <!-- Imagem para Open Graph -->
+    <meta property="og:image:secure_url" content="https://psijuliedina.com/assets/img/profile.webp" />
+    <meta property="og:image:alt" content="Foto da Psicóloga Juliédina Lopes Ramos" />
+    <meta property="og:image:width" content="1920" />
+    <meta property="og:image:height" content="1080" />
+    <meta property="og:image:type" content="image/webp" />
+
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Psicóloga Juliédina Lopes Ramos" />
+    <meta name="twitter:description"
+        content="Psicóloga em Leme SP. Atendimento especializado para ansiedade, depressão e conflitos. Terapia online e presencial para adultos e adolescentes. Agende agora!" />
+    <meta name="twitter:image" content="https://psijuliedina.com/assets/img/profile.webp" />
+    <meta name="twitter:site" content="@psi.juliedina" />
+
+    <!-- MARKETING: search console do google -->
+    <meta name="google-site-verification" content="301bxRcfrz4Oo9YPdCYgLTEzeMSN3hRs3QXkvopNYYY" />
+    <meta name="google" content="notranslate">
+    <meta name="facebook-domain-verification" content="" />
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "@id": "https://psijuliedina.com/",
+      "url": "https://psijuliedina.com/",
+      "name": "Psicóloga Juliédina | Sua psicóloga em Leme - SP",
+      "description": "Psicóloga em Leme SP. Atendimento especializado para ansiedade, depressão e conflitos. Terapia online e presencial para adultos e adolescentes. Agende agora!",
+      "datePublished": "2024-03-16T15:00:00+00:00",
+      "dateModified": "2024-03-16T15:30:00+00:00",
+      "inLanguage": "pt-BR",
+      "isPartOf": {
+          "@type": "WebSite",
+          "@id": "https://psijuliedina.com/#website",
+          "url": "https://psijuliedina.com/",
+          "name": "Psicóloga Juliédina | Sua psicóloga em Leme - SP",
+          "inLanguage": "pt-BR"
+      },
+      "about": {
+          "@type": "Person",
+          "name": "Juliédina Lopes Ramos",
+          "jobTitle": "Psicóloga Clínica",
+          "email": "juliedinalopes@gmail.com",
+          "telephone": "+55(19) 98845-2408",
+          "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Rua Albano Viêira Sardinha, 264",
+              "addressLocality": "Leme",
+              "addressRegion": "SP",
+              "addressCountry": "BR",
+              "postalCode": "13610-300"
+          },
+          "sameAs": [
+              "https://www.facebook.com/psi.juliedina",
+              "https://www.instagram.com/psi.juliedina",
+              "https://www.linkedin.com/in/juli%C3%A9dina-lopes-ramos-868933276"
+          ]
+      },
+      "primaryImageOfPage": {
+          "@type": "ImageObject",
+          "@id": "https://psijuliedina.com/#primaryimage",
+          "url": "https://psijuliedina.com/assets/img/profile.webp",
+          "contentUrl": "https://psijuliedina.com/assets/img/profile.webp",
+          "inLanguage": "pt-BR",
+          "width": 1920,
+          "height": 1080
+      },
+      "image": [
+          {
+              "@type": "ImageObject",
+              "@id": "https://psijuliedina.com/#secondaryimage",
+              "url": "https://psijuliedina.com/assets/img/about.webp",
+              "contentUrl": "https://psijuliedina.com/assets/img/about.webp",
+              "inLanguage": "pt-BR",
+              "width": 800,
+              "height": 600
+          }
+      ],
+      "breadcrumb": {
+          "@type": "BreadcrumbList",
+          "@id": "https://psijuliedina.com/#breadcrumb",
+          "itemListElement": [
+              {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Início",
+                  "item": "https://psijuliedina.com/"
+              }
+          ]
+      }
+  }
+  
+</script>
+
+    <style>
+        :root {
+            /* Ajustado para Teal (#00796b) para atender contraste WCAG AA */
+            --primary-color: #00796b;
+            --primary-rgb: 0, 121, 107;
+            --secondary-color: #f4f4f4;
+            --text-dark: #333;
+            --text-light: #fff;
+            --text-gray: #555;
+            --font-main: Arial, Helvetica, sans-serif;
+            --spacing-unit: 1rem;
+        }
+
+        .accent-bg {
+            background-color: rgba(var(--primary-rgb), 0.08);
+            padding: 0.125rem 0.375rem;
+            border-radius: 6px;
+            display: inline-block;
+        }
+
+        .accent-shadow {
+            box-shadow: 0 6px 16px rgba(var(--primary-rgb), 0.08);
+        }
+
+        a[style*="var(--primary-color)"],
+        span[style*="var(--primary-color)"],
+        .btn[style*="var(--primary-color)"] {
+            background-color: rgba(var(--primary-rgb), 0.06);
+            padding: 0.12rem 0.36rem;
+            border-radius: 6px;
+            box-shadow: 0 6px 14px rgba(var(--primary-rgb), 0.06);
+            text-decoration: none !important;
+        }
+
+        .btn-outline-primary {
+            background: #fff;
+            color: var(--primary-color);
+            border: none;
+            padding: 0.75rem 1.25rem;
+            border-radius: 8px;
+            display: inline-flex;
+            align-items: center;
+            gap: .5rem;
+            box-shadow: 0 6px 18px rgba(var(--primary-rgb), 0.06);
+        }
+
+        .cta-final,
+        .cta-final * {
+            text-shadow: 0 1px 2px rgba(0, 0, 0, 0.18);
+        }
+
+        .btn-outline-primary:focus {
+            outline: 3px solid rgba(var(--primary-rgb), 0.14);
+            outline-offset: 2px;
+        }
+
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: var(--font-main);
+            color: var(--text-dark);
+            background: var(--text-light);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            margin-bottom: 0.75rem;
+            line-height: 1.3;
+        }
+
+        h1 {
+            font-size: 2.2rem;
+        }
+
+        h2 {
+            font-size: 1.8rem;
+            color: #00796b;
+        }
+
+        h3 {
+            font-size: 1.5rem;
+        }
+
+        p {
+            margin-bottom: 1rem;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 2rem 0;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        .primary-text {
+            color: var(--primary-color);
+        }
+
+        .site-header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            height: 72px;
+            padding: 1rem 0.5rem;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            background: transparent !important;
+            color: var(--text-light);
+            transition: background 0.3s, color 0.3s, box-shadow 0.3s;
+            box-sizing: border-box;
+        }
+
+        main {
+            padding-top: 0;
+        }
+
+        .site-header.scrolled {
+            background: var(--text-light) !important;
+            color: var(--text-dark);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .site-header .logo-text {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: inherit;
+            text-decoration: none;
+        }
+
+        .site-header nav {
+            display: flex;
+            align-items: center;
+        }
+
+        .site-header nav ul {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .site-header nav ul li {
+            margin-left: 1.5rem;
+        }
+
+        .site-header nav ul li a {
+            text-decoration: none;
+            font-weight: bold;
+            color: inherit;
+            transition: color 0.3s;
+            padding-bottom: 5px;
+        }
+
+        .site-header nav ul li a:hover,
+        .site-header nav ul li a:focus {
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--primary-color);
+        }
+
+        .menu-toggle {
+            display: none;
+            font-size: 1.8rem;
+            background: none;
+            border: none;
+            color: inherit;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+
+        .menu-toggle.open {
+            transform: rotate(90deg);
+        }
+
+        .hero {
+            min-height: calc(100vh - 72px);
+            display: flex;
+            align-items: flex-end;
+            justify-content: flex-start;
+            padding: 3rem 2rem 2rem 2rem;
+            color: var(--text-light);
+            position: relative;
+            background-size: cover;
+            background-repeat: no-repeat;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.4);
+            pointer-events: none;
+            z-index: 1;
+        }
+
+        .hero .hero-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero .hero-bg-wrapper {
+            position: absolute;
+            inset: 0;
+            z-index: 0;
+        }
+
+        .hero .hero-bg {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        @media (min-width: 769px) {
+            .hero {
+                background-image: url('https://psijuliedina.com/assets/img/profile.webp');
+                background-position: center 100%;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .hero {
+                min-height: calc(100vh - 64px);
+                padding: 2rem 1rem 1.5rem 1rem;
+                align-items: flex-end;
+                background-image: url('https://psijuliedina.com/assets/img/profile_mobile.webp');
+                background-position: center;
+                background-size: cover;
+            }
+        }
+
+        section {
+            padding: 3rem 0;
+        }
+
+        .cards-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .card {
+            background: var(--text-light);
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+        }
+
+        .card h3 {
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+
+        #info .card h3 {
+            color: var(--text-dark);
+        }
+
+        #info .card .icon-svg {
+            color: var(--primary-color);
+            width: 48px;
+            height: 48px;
+            flex: 0 0 48px;
+        }
+
+        .card p {
+            color: var(--text-gray);
+            font-size: 0.95rem;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.75rem;
+            padding: 0 1.25rem;
+            height: 48px;
+            min-height: 48px;
+            background: var(--primary-color);
+            color: var(--text-light);
+            text-decoration: none;
+            border-radius: 999px;
+            font-weight: 700;
+            transition: background 0.2s, transform 0.12s;
+            border: 2px solid var(--primary-color);
+            line-height: normal;
+            cursor: pointer;
+        }
+
+        .btn:hover,
+        .btn:focus {
+            background: #00695c;
+            border-color: #00695c;
+            transform: translateY(-2px);
+            color: var(--text-light);
+        }
+
+        .btn svg {
+            width: 18px;
+            height: 18px;
+            flex: 0 0 18px;
+            color: inherit;
+            fill: currentColor;
+        }
+
+        .btn-phone {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.75rem;
+            padding: 0 1.25rem;
+            height: 48px;
+            min-height: 48px;
+            border-radius: 999px;
+            background: #fff;
+            color: #0b1220;
+            border: 2px solid transparent;
+            text-decoration: none;
+            font-weight: 700;
+            cursor: pointer;
+        }
+
+        .btn-phone svg {
+            width: 18px;
+            height: 18px;
+            flex: 0 0 18px;
+            color: inherit;
+            fill: currentColor;
+        }
+
+        .btn-phone:hover,
+        .btn-phone:focus {
+            background: #f4f4f4;
+        }
+
+        #cta .btn-phone {
+            transition: background 0.2s, transform 0.12s;
+        }
+
+        #cta .btn-phone:hover,
+        #cta .btn-phone:focus {
+            transform: translateY(-2px);
+        }
+
+        .hero .btn-phone {
+            transition: background 0.2s, transform 0.12s;
+        }
+
+        .hero .btn-phone:hover,
+        .hero .btn-phone:focus {
+            transform: translateY(-2px);
+        }
+
+        #servicos .btn,
+        #servicos .btn-outline,
+        #servicos .btn-phone {
+            transition: none !important;
+        }
+
+        #servicos .btn:hover,
+        #servicos .btn:focus,
+        #servicos .btn-outline:hover,
+        #servicos .btn-outline:focus,
+        #servicos .btn-phone:hover,
+        #servicos .btn-phone:focus {
+            transform: none !important;
+        }
+
+        #servicos .card a.btn,
+        #servicos .card a.btn-outline,
+        #servicos .card a.btn-phone {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto;
+            height: 48px !important;
+            min-height: 48px !important;
+            padding: 0 1.25rem !important;
+            gap: 0.5rem;
+            transition: none !important;
+        }
+
+        .btn-outline {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.75rem;
+            padding: 0 1.25rem;
+            height: 48px;
+            min-height: 48px;
+            border-radius: 999px;
+            background: transparent;
+            color: var(--primary-color);
+            border: 2px solid var(--primary-color);
+            font-weight: 700;
+            text-decoration: none;
+        }
+
+        .btn-outline:hover,
+        .btn-outline:focus {
+            background: var(--primary-color);
+            color: var(--text-light);
+        }
+
+        .btn-cta-white {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.75rem;
+            padding: 0 1.25rem;
+            height: 48px;
+            min-height: 48px;
+            border-radius: 999px;
+            background: transparent;
+            color: var(--text-light);
+            border: 2px solid var(--text-light);
+            font-weight: 700;
+            text-decoration: none;
+        }
+
+        .btn-cta-white svg {
+            width: 18px;
+            height: 18px;
+            flex: 0 0 18px;
+            color: inherit;
+            fill: currentColor;
+        }
+
+        .btn-cta-white:hover,
+        .btn-cta-white:focus {
+            background: transparent;
+            color: var(--text-light);
+            border-color: var(--text-light);
+            transform: none;
+        }
+
+        .btn-cta-dark {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.75rem;
+            padding: 0 1.25rem;
+            height: 48px;
+            min-height: 48px;
+            border-radius: 999px;
+            background: #32353a;
+            color: #ffffff;
+            border: 0;
+            font-weight: 700;
+            text-decoration: none;
+            transition: background 0.2s, transform 0.12s;
+        }
+
+        .btn-cta-dark svg {
+            width: 18px;
+            height: 18px;
+            flex: 0 0 18px;
+            color: inherit;
+            fill: currentColor;
+        }
+
+        .btn-cta-dark:hover,
+        .btn-cta-dark:focus {
+            background: #27292d;
+            transform: translateY(-2px);
+        }
+
+        .site-footer {
+            background: #2b2b2b;
+            color: #ccc;
+            padding: 2.5rem 0;
+            text-align: center;
+        }
+
+        .site-footer .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+            text-align: left;
+        }
+
+        .site-footer h3 {
+            color: var(--text-light);
+            margin-bottom: 1rem;
+            font-size: 1.2rem;
+        }
+
+        .site-footer ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .site-footer ul li {
+            margin-bottom: 0.5rem;
+            padding-left: 0;
+        }
+
+        .site-footer ul li a {
+            color: #ccc;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .site-footer ul li a:hover,
+        .site-footer ul li a:focus {
+            color: var(--text-light);
+        }
+
+        .social-links a {
+            font-size: 1.5rem;
+            margin-right: 1rem;
+            color: #ccc;
+        }
+
+        .social-links a:hover,
+        .social-links a:focus {
+            color: var(--text-light);
+        }
+
+        .copyright {
+            font-size: 0.9rem;
+            border-top: 1px solid #444;
+            padding-top: 1.5rem;
+            margin-top: 1.5rem;
+        }
+
+        @media (max-width: 768px) {
+            .site-header nav {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                background: var(--text-light);
+                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+                right: 0;
+            }
+
+            .site-header nav.active {
+                display: block;
+            }
+
+            .site-header nav ul {
+                flex-direction: column;
+                align-items: center;
+                padding: 1rem 0;
+            }
+
+            .site-header nav ul li {
+                margin: 0.5rem 0;
+                width: 100%;
+                text-align: center;
+            }
+
+            .site-header nav ul li a {
+                color: var(--text-dark);
+                padding: 1rem 0;
+                display: block;
+                width: 100%;
+            }
+
+            .site-header nav ul li a:hover,
+            .site-header nav ul li a:focus {
+                background: var(--secondary-color);
+                color: var(--primary-color);
+                border-bottom: none;
+            }
+
+            .menu-toggle {
+                display: block;
+            }
+
+            .footer-content {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+
+            .footer-content div {
+                margin-bottom: 1.5rem;
+            }
+        }
+
+        .local-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        .local-info {
+            background: var(--text-light);
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+        }
+
+        .local-info h2 {
+            margin-top: 0;
+            margin-bottom: 1rem;
+            font-size: 1.6rem;
+        }
+
+        .local-item {
+            display: flex;
+            gap: 0.75rem;
+            align-items: flex-start;
+        }
+
+        .local-item svg {
+            width: 28px;
+            height: 28px;
+            flex: 0 0 28px;
+            color: var(--primary-color);
+        }
+
+        .local-cta svg {
+            width: 20px;
+            height: 20px;
+            color: var(--text-light);
+        }
+
+        .local-item h3 {
+            margin: 0 0 0.25rem 0;
+            font-size: 1rem;
+        }
+
+        .local-item p {
+            margin: 0;
+            color: var(--text-gray);
+        }
+
+        .local-cta {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.75rem;
+            margin-top: 1rem;
+            padding: 0 1.25rem;
+            height: 48px;
+            min-height: 48px;
+            background: var(--primary-color);
+            color: var(--text-light);
+            border-radius: 999px;
+            text-decoration: none;
+            font-weight: 700;
+            box-shadow: none;
+            border: 2px solid var(--primary-color);
+        }
+
+        .local-cta img,
+        .local-cta svg {
+            width: 18px;
+            height: 18px;
+            flex: 0 0 18px;
+            color: inherit;
+            fill: currentColor;
+        }
+
+        .local-cta {
+            transition: background 0.2s, transform 0.12s;
+        }
+
+        .local-cta:hover,
+        .local-cta:focus {
+            background: #00695c;
+            border-color: #00695c;
+            transform: translateY(-2px);
+        }
+
+        .local-map {
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+        }
+
+        .local-map>div {
+            position: relative;
+            width: 100%;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+        }
+
+        .local-map iframe {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+
+        @media (min-width: 769px) {
+            .local-grid {
+                flex-direction: row;
+                align-items: stretch;
+            }
+
+            .local-info,
+            .local-map {
+                flex: 1 1 50%;
+            }
+
+            .local-info {
+                padding: 2rem;
+            }
+
+            .local-map {
+                display: flex;
+            }
+
+            .local-map>div {
+                padding-bottom: 0;
+                height: 100%;
+            }
+
+            .local-map iframe {
+                position: absolute;
+                inset: 0;
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        .about-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        .about-img img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+            display: block;
+        }
+
+        .about-text h2 {
+            margin-top: 0;
+            margin-bottom: 1rem;
+            font-size: 1.9rem;
+        }
+
+        .about-text p {
+            margin-bottom: 1rem;
+            color: var(--text-gray);
+        }
+
+        @media (min-width: 769px) {
+            .about-grid {
+                flex-direction: row;
+                align-items: center;
+            }
+
+            .about-img,
+            .about-text {
+                flex: 1 1 50%;
+            }
+
+            .about-img {
+                max-width: 560px;
+            }
+        }
+
+        #duvidas details summary svg {
+            transition: transform 0.25s ease;
+            color: var(--primary-color);
+            flex-shrink: 0;
+            width: 24px;
+            height: 24px;
+        }
+
+        #duvidas details[open] summary svg {
+            transform: rotate(180deg);
+        }
+
+        .review-link {
+            color: #00695c;
+            text-decoration: none;
+        }
+
+        .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border-width: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="site-header" id="site-header">
+        <a href="#inicio" class="logo-text" aria-label="Ir para o início da página">Psicóloga Juliédina</a>
+        <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menu de navegação" aria-expanded="false"
+            aria-controls="main-nav">☰</button>
+        <nav id="main-nav" aria-label="Navegação principal">
+            <ul>
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#avaliacoes">Avaliações</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#local">Local</a></li>
+                <li><a href="#duvidas">Dúvidas?</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="inicio" class="hero">
+            <picture class="hero-bg-wrapper" aria-hidden="true">
+                <source media="(max-width:768px)" srcset="https://psijuliedina.com/assets/img/profile_mobile.webp">
+                <img class="hero-bg" src="https://psijuliedina.com/assets/img/profile.webp"
+                    alt="Psicóloga Juliédina Lopes Ramos, especialista em terapia cognitivo-comportamental em Leme, SP"
+                    loading="eager" fetchpriority="high" decoding="async" importance="high">
+            </picture>
+
+            <div class="hero-content">
+                <h1>Sua psicóloga em Leme - SP</h1>
+                <p>Atendimento para adolescentes, jovens, adultos e idosos.</p>
+                <div style="margin-top:2rem;display:flex;gap:1rem;flex-wrap:wrap;">
+                    <a href="https://wa.me/5519988452408" class="btn"
+                        aria-label="Agendar sessão de psicoterapia via WhatsApp">
+                        <span
+                            style="display:inline-flex;align-items:center;justify-content:center;width:36px;height:36px;border-radius:50%;overflow:hidden;background:transparent;color:inherit;">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="20" height="20"
+                                aria-hidden="true" focusable="false"
+                                style="display:block;fill:currentColor;color:inherit;">
+                                <path
+                                    d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232" />
+                            </svg>
+                        </span>
+                        <span>WhatsApp</span>
+                    </a>
+                    <a href="tel:+5519988452508" class="btn-phone" aria-label="Ligar agora">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <path
+                                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                            </path>
+                        </svg>
+                        <span>Ligar agora</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section id="info" style="background: rgb(185, 218, 214);">
+            <div class="container">
+                <h2>Por que escolher a Psicóloga Juliédina?</h2>
+                <div class="cards-container">
+                    <article class="card">
+                        <div style="display:flex;align-items:center;gap:1rem;">
+                            <svg class="icon-svg" xmlns="http://www.w3.org/2000/svg" width="48" height="48"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <polyline points="12 6 12 12 16 14"></polyline>
+                            </svg>
+                            <h3>Flexibilidade de Horários</h3>
+                        </div>
+                        <p>Agendamentos flexíveis para se adequar à sua rotina, incluindo opções de atendimento online e
+                            presencial.</p>
+                    </article>
+                    <article class="card">
+                        <div style="display:flex;align-items:center;gap:1rem;">
+                            <svg class="icon-svg" xmlns="http://www.w3.org/2000/svg" width="48" height="48"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <circle cx="12" cy="8" r="7"></circle>
+                                <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+                            </svg>
+                            <h3>Profissional Qualificada</h3>
+                        </div>
+                        <p>Formação sólida e constante atualização para oferecer o melhor suporte terapêutico baseado em
+                            evidências. Pós-graduada em Terapia Cognitivo-Comportamental.</p>
+                    </article>
+                    <article class="card">
+                        <div style="display:flex;align-items:center;gap:1rem;">
+                            <svg class="icon-svg" xmlns="http://www.w3.org/2000/svg" width="48" height="48"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <polygon
+                                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                </polygon>
+                            </svg>
+                            <h3>Experiente</h3>
+                        </div>
+                        <p>Há mais de 5 anos prestando atendimento clínico, com reconhecimento e satisfação dos
+                            pacientes.
+                        </p>
+                    </article>
+                </div>
+        </section>
+
+        <!-- Divisor de Ondas -->
+        <div class="wave-divider" style="overflow:hidden;line-height:0;width:100%;margin-bottom:1rem;">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" preserveAspectRatio="none"
+                style="width:100%;height:120px;display:block;">
+                <path fill="rgba(0, 121, 107, 0.05)" fill-opacity="1"
+                    d="M0,192L48,197.3C96,203,192,213,288,229.3C384,245,480,267,576,250.7C672,235,768,181,864,181.3C960,181,1056,235,1152,234.7C1248,235,1344,181,1392,154.7L1440,128L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z">
+                </path>
+                <path fill="rgba(0, 121, 107, 0.1)" fill-opacity="1"
+                    d="M0,160L48,160C96,160,192,160,288,149.3C384,139,480,117,576,133.3C672,149,768,203,864,208C960,213,1056,171,1152,154.7C1248,139,1344,149,1392,154.7L1440,160L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z">
+                </path>
+                <path fill="rgba(0, 121, 107, 0.15)" fill-opacity="1"
+                    d="M0,128L48,117.3C96,107,192,85,288,96C384,107,480,149,576,170.7C672,192,768,192,864,181.3C960,171,1056,149,1152,128C1248,107,1344,85,1392,74.7L1440,64L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z">
+                </path>
+            </svg>
+        </div>
+
+        <section id="servicos" class="container">
+            <h2 style="text-align:center;margin-bottom:1.5rem;">Serviços de Psicologia</h2>
+            <div class="cards-container">
+                <article class="card"
+                    style="background:linear-gradient(135deg,var(--primary-color),#00695c);padding:2rem;border-radius:12px;color:#fff;">
+                    <h3 style="font-size:1.5rem;margin-bottom:1rem;color:inherit;">Psicoterapia Individual</h3>
+                    <p style="margin-bottom:1rem;color:rgba(255,255,255,0.95);">Atendimento personalizado para
+                        adolescentes, jovens, adultos e idosos, focado em promover autoconhecimento, desenvolvimento
+                        pessoal e bem-estar emocional.</p>
+                    <p style="font-weight:600;margin-bottom:1rem;color:rgba(255,255,255,0.95);">Tratamento para:
+                    </p>
+                    <ul style="margin:0 0 1.25rem 0;padding:0;list-style:none;color:rgba(255,255,255,0.95);">
+                        <li style="display:flex;align-items:flex-start;gap:.75rem;margin-bottom:.5rem;"><svg
+                                xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" aria-hidden="true"
+                                style="flex:0 0 20px;margin-top:3px;color:#fff;">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>Depressão</li>
+                        <li style="display:flex;align-items:flex-start;gap:.75rem;margin-bottom:.5rem;"><svg
+                                xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" aria-hidden="true"
+                                style="flex:0 0 20px;margin-top:3px;color:#fff;">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>Ansiedade</li>
+                        <li style="display:flex;align-items:flex-start;gap:.75rem;margin-bottom:.5rem;"><svg
+                                xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" aria-hidden="true"
+                                style="flex:0 0 20px;margin-top:3px;color:#fff;">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>Problemas no relacionamento</li>
+                        <li style="display:flex;align-items:flex-start;gap:.75rem;margin-bottom:.5rem;"><svg
+                                xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" aria-hidden="true"
+                                style="flex:0 0 20px;margin-top:3px;color:#fff;">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>TDAH</li>
+                        <li style="display:flex;align-items:flex-start;gap:.75rem;margin-bottom:.5rem;"><svg
+                                xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" aria-hidden="true"
+                                style="flex:0 0 20px;margin-top:3px;color:#fff;">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>Conflitos familiares</li>
+                        <li style="display:flex;align-items:flex-start;gap:.75rem;margin-bottom:.5rem;"><svg
+                                xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" aria-hidden="true"
+                                style="flex:0 0 20px;margin-top:3px;color:#fff;">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>Traumas</li>
+                    </ul>
+                    <a href="https://wa.me/5519988452408" class="btn"
+                        style="background:#fff;color:var(--primary-color);border:none;padding:0.75rem 1.25rem;border-radius:8px;">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="18" height="18"
+                            aria-hidden="true" focusable="false"
+                            style="margin-right:.5rem;vertical-align:middle;fill:currentColor;color:inherit;">
+                            <path
+                                d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232" />
+                        </svg>
+                        <span>Agendar sessão</span>
+                    </a>
+                </article>
+                <article class="card"
+                    style="background:linear-gradient(135deg,#0f1724,#111827);padding:2rem;border-radius:12px;color:#fff;">
+                    <h3 style="font-size:1.5rem;margin-bottom:1rem;color:inherit;">Avaliação Psicológica</h3>
+                    <p style="margin-bottom:1rem;color:rgba(255,255,255,0.95);">Serviço destinado ao público jovem,
+                        adulto e idoso para procedimentos médicos para certificar a ausência de transtornos mentais
+                        relacionados.</p>
+                    <p style="font-weight:600;margin-bottom:1rem;color:rgba(255,255,255,0.95);">Indicado para:</p>
+                    <ul style="margin:0 0 1.25rem 0;padding:0;list-style:none;color:rgba(255,255,255,0.95);">
+                        <li style="display:flex;align-items:flex-start;gap:.75rem;margin-bottom:.5rem;"><svg
+                                xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" aria-hidden="true"
+                                style="flex:0 0 20px;margin-top:3px;color:#fff;">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>Cirurgia bariátrica</li>
+                        <li style="display:flex;align-items:flex-start;gap:.75rem;margin-bottom:.5rem;"><svg
+                                xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" aria-hidden="true"
+                                style="flex:0 0 20px;margin-top:3px;color:#fff;">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>Cirurgia plástica</li>
+                        <li style="display:flex;align-items:flex-start;gap:.75rem;margin-bottom:.5rem;"><svg
+                                xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" aria-hidden="true"
+                                style="flex:0 0 20px;margin-top:3px;color:#fff;">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>Laqueadura ou Vasectomia</li>
+                        <li style="display:flex;align-items:flex-start;gap:.75rem;margin-bottom:.5rem;"><svg
+                                xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" aria-hidden="true"
+                                style="flex:0 0 20px;margin-top:3px;color:#fff;">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>Doação de gametas para reprodução assistida</li>
+                        <li style="display:flex;align-items:flex-start;gap:.75rem;margin-bottom:.5rem;"><svg
+                                xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" aria-hidden="true"
+                                style="flex:0 0 20px;margin-top:3px;color:#fff;">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>Doação de órgãos entre vivos</li>
+                    </ul>
+                    <a href="https://wa.me/5519988452408" class="btn"
+                        style="background:#fff;color:#0b1220;border:none;padding:0.75rem 1.25rem;border-radius:8px;">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="18" height="18"
+                            aria-hidden="true" focusable="false"
+                            style="margin-right:.5rem;vertical-align:middle;fill:currentColor;color:inherit;">
+                            <path
+                                d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232" />
+                        </svg>
+                        <span>Solicitar avaliação</span>
+                    </a>
+                </article>
+            </div>
+        </section>
+        <section id="avaliacoes" class="container">
+            <h2 style="text-align:center;margin-bottom:1.5rem;">Avaliações dos Pacientes</h2>
+            <div class="cards-container">
+                <article class="card">
+                    <div style="display:flex;align-items:center;gap:0.5rem;margin-bottom:0.75rem;">
+                        <img src="assets/img/icon-google-multicolor.svg" alt="Google"
+                            style="width:60px;height:auto;flex:0 0 60px;" width="60" height="60">
+                        <div style="display:flex;gap:4px;align-items:center;">
+                            <img src="assets/img/review-star.svg" alt="estrela" style="width:18px;height:18px;">
+                            <img src="assets/img/review-star.svg" alt="estrela" style="width:18px;height:18px;">
+                            <img src="assets/img/review-star.svg" alt="estrela" style="width:18px;height:18px;">
+                            <img src="assets/img/review-star.svg" alt="estrela" style="width:18px;height:18px;">
+                            <img src="assets/img/review-star.svg" alt="estrela" style="width:18px;height:18px;">
+                            &nbsp;5,0
+                        </div>
+                    </div>
+                    <p>"Fui muito bem acolhida e me senti muito confortável com o atendimento, sou eternamente
+                        agradecida por isso, pois foi meu primeiro contato e tive uma experiência muito boa. Super
+                        indico ❤️✨"</p>
+                    <p style="margin-top:1rem;font-weight:700;">Maytte Araujo</p>
+                    <a href="https://g.co/kgs/2HHPzqq" class="review-link" target="_blank" rel="noopener">Ver avaliação
+                        no Google</a>
+                </article>
+                <article class="card">
+                    <div style="display:flex;align-items:center;gap:0.5rem;margin-bottom:0.75rem;">
+                        <img src="assets/img/icon-google-multicolor.svg" alt="Google"
+                            style="width:60px;height:auto;flex:0 0 60px;" width="60" height="60">
+                        <div style="display:flex;gap:4px;align-items:center;">
+                            <img src="assets/img/review-star.svg" alt="estrela" style="width:18px;height:18px;">
+                            <img src="assets/img/review-star.svg" alt="estrela" style="width:18px;height:18px;">
+                            <img src="assets/img/review-star.svg" alt="estrela" style="width:18px;height:18px;">
+                            <img src="assets/img/review-star.svg" alt="estrela" style="width:18px;height:18px;">
+                            <img src="assets/img/review-star.svg" alt="estrela" style="width:18px;height:18px;">
+                            &nbsp;5,0
+                        </div>
+                    </div>
+                    <p>"Excelente profissional! Desde a primeira sessão, me senti muito à vontade e acolhida. A Ju é
+                        sempre atenciosa e me ajuda muito a enxergar as coisas de diferentes formas. Em pouco tempo, já
+                        sinto uma enorme evolução. Só tenho a parabenizar e agradecer pelo trabalho dela. Indico a
+                        todos, seu único arrependimento vai ser não ter conhecido ela antes rs ❤️"</p>
+                    <p style="margin-top:1rem;font-weight:700;">Jucicleide Silva</p>
+                    <a href="https://g.co/kgs/Uc31Qnh" class="review-link" target="_blank" rel="noopener">Ver avaliação
+                        no Google</a>
+                </article>
+                <article class="card">
+                    <div style="display:flex;align-items:center;gap:0.5rem;margin-bottom:0.75rem;">
+                        <img src="assets/img/icon-google-multicolor.svg" alt="Google"
+                            style="width:60px;height:auto;flex:0 0 60px;" width="60" height="60">
+                        <div style="display:flex;gap:4px;align-items:center;">
+                            <img src="assets/img/review-star.svg" alt="estrela" style="width:18px;height:18px;">
+                            <img src="assets/img/review-star.svg" alt="estrela" style="width:18px;height:18px;">
+                            <img src="assets/img/review-star.svg" alt="estrela" style="width:18px;height:18px;">
+                            <img src="assets/img/review-star.svg" alt="estrela" style="width:18px;height:18px;">
+                            <img src="assets/img/review-star.svg" alt="estrela" style="width:18px;height:18px;">
+                            &nbsp;5,0
+                        </div>
+                    </div>
+                    <p>"A melhor profissional que eu pudesse escolher. Uma pessoa incrível. Não tenho arrependimento
+                        algum!!!"</p>
+                    <p style="margin-top:1rem;font-weight:700;">Ingrid Orlandini</p>
+                    <a href="https://g.co/kgs/oGkaZo5" class="review-link" target="_blank" rel="noopener">Ver avaliação
+                        no Google</a>
+                </article>
+                <article class="card">
+                    <div style="display:flex;align-items:center;gap:0.5rem;margin-bottom:0.75rem;">
+                        <img src="assets/img/icon-google-multicolor.svg" alt="Google"
+                            style="width:60px;height:auto;flex:0 0 60px;" width="60" height="60">
+                        <div style="display:flex;gap:4px;align-items:center;">
+                            <img src="assets/img/review-star.svg" alt="estrela" style="width:18px;height:18px;">
+                            <img src="assets/img/review-star.svg" alt="estrela" style="width:18px;height:18px;">
+                            <img src="assets/img/review-star.svg" alt="estrela" style="width:18px;height:18px;">
+                            <img src="assets/img/review-star.svg" alt="estrela" style="width:18px;height:18px;">
+                            <img src="assets/img/review-star.svg" alt="estrela" style="width:18px;height:18px;">
+                            &nbsp;5,0
+                        </div>
+                    </div>
+                    <p>"Ótima profissional...pontual e prestativa, nos faz refletir e nos ajuda nos momentos de
+                        angústia. 5 estrelas para Juliédina."</p>
+                    <p style="margin-top:1rem;font-weight:700;">Miriam Bergamasco</p>
+                    <a href="https://g.co/kgs/8rybA1L" class="review-link" target="_blank" rel="noopener">Ver avaliação
+                        no Google</a>
+                </article>
+                <article class="card">
+                    <div style="display:flex;align-items:center;gap:0.5rem;margin-bottom:0.75rem;">
+                        <img src="assets/img/icon-google-multicolor.svg" alt="Google"
+                            style="width:60px;height:auto;flex:0 0 60px;" width="60" height="60">
+                        <div style="display:flex;gap:4px;align-items:center;">
+                            <img src="assets/img/review-star.svg" alt="estrela" style="width:18px;height:18px;">
+                            <img src="assets/img/review-star.svg" alt="estrela" style="width:18px;height:18px;">
+                            <img src="assets/img/review-star.svg" alt="estrela" style="width:18px;height:18px;">
+                            <img src="assets/img/review-star.svg" alt="estrela" style="width:18px;height:18px;">
+                            <img src="assets/img/review-star.svg" alt="estrela" style="width:18px;height:18px;">
+                            &nbsp;5,0
+                        </div>
+                    </div>
+                    <p>"Estou muito satisfeito. Altamente profissional, competente, discreta, pontual e capacitada"</p>
+                    <p style="margin-top:1rem;font-weight:700;">Alessandro Santos</p>
+                    <a href="https://g.co/kgs/ssGTKa5" class="review-link" target="_blank" rel="noopener">Ver avaliação
+                        no Google</a>
+                </article>
+                <article class="card">
+                    <div style="display:flex;align-items:center;gap:0.5rem;margin-bottom:0.75rem;">
+                        <img src="assets/img/icon-google-multicolor.svg" alt="Google"
+                            style="width:60px;height:auto;flex:0 0 60px;" width="60" height="60">
+                        <div style="display:flex;gap:4px;align-items:center;">
+                            <img src="assets/img/review-star.svg" alt="estrela" style="width:18px;height:18px;">
+                            <img src="assets/img/review-star.svg" alt="estrela" style="width:18px;height:18px;">
+                            <img src="assets/img/review-star.svg" alt="estrela" style="width:18px;height:18px;">
+                            <img src="assets/img/review-star.svg" alt="estrela" style="width:18px;height:18px;">
+                            <img src="assets/img/review-star.svg" alt="estrela" style="width:18px;height:18px;">
+                            &nbsp;5,0
+                        </div>
+                    </div>
+                    <p>"Super recomendo! Faz toda a diferença na minha vida!!"</p>
+                    <p style="margin-top:1rem;font-weight:700;">Maria Gabriela Longo</p>
+                    <a href="https://g.co/kgs/EkhzmEz" class="review-link" target="_blank" rel="noopener">Ver avaliação
+                        no Google</a>
+                </article>
+            </div>
+        </section>
+
+        <!-- Divisor de Ondas -->
+        <div class="wave-divider" style="overflow:hidden;line-height:0;width:100%;margin-bottom:1rem;">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" preserveAspectRatio="none"
+                style="width:100%;height:120px;display:block;">
+                <path fill="rgba(0, 121, 107, 0.05)" fill-opacity="1"
+                    d="M0,192L48,197.3C96,203,192,213,288,229.3C384,245,480,267,576,250.7C672,235,768,181,864,181.3C960,181,1056,235,1152,234.7C1248,235,1344,181,1392,154.7L1440,128L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z">
+                </path>
+                <path fill="rgba(0, 121, 107, 0.1)" fill-opacity="1"
+                    d="M0,160L48,160C96,160,192,160,288,149.3C384,139,480,117,576,133.3C672,149,768,203,864,208C960,213,1056,171,1152,154.7C1248,139,1344,149,1392,154.7L1440,160L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z">
+                </path>
+                <path fill="rgba(0, 121, 107, 0.15)" fill-opacity="1"
+                    d="M0,128L48,117.3C96,107,192,85,288,96C384,107,480,149,576,170.7C672,192,768,192,864,181.3C960,171,1056,149,1152,128C1248,107,1344,85,1392,74.7L1440,64L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z">
+                </path>
+            </svg>
+        </div>
+
+        <section id="sobre" class="container">
+            <div class="about-grid">
+                <div class="about-img">
+                    <img src="https://psijuliedina.com/assets/img/about.webp"
+                        alt="Retrato da psicóloga Juliédina Lopes Ramos em seu consultório" loading="lazy" width="600"
+                        height="400">
+                </div>
+                <div class="about-text">
+                    <h2>Sobre a Psicóloga Juliédina</h2>
+                    <p>
+                        Sou <strong>psicóloga clínica em Leme - SP</strong>, inscrita no <strong>CRP 06/153209</strong>,
+                        com
+                        pós-graduação em <strong>Terapia Cognitivo-Comportamental (TCC)</strong>.
+                        Possuo experiência no tratamento de <strong>ansiedade, depressão, relacionamentos, conflitos
+                            familiares,
+                            Transtorno do Déficit de Atenção e Hiperatividade (TDAH) e traumas</strong>.
+                        Meu propósito profissional é ajudar pessoas a conquistarem mais <strong>qualidade de vida e
+                            equilíbrio emocional</strong>.
+                    </p>
+
+                    <p>
+                        Tenho experiência organizacional e, <strong>há mais de 5 anos</strong>,
+                        dedico-me exclusivamente ao atendimento em consultório psicológico, realizando
+                        <strong>avaliações psicológicas</strong> e <strong>psicoterapia</strong> para auxiliar pacientes
+                        a lidarem
+                        com questões emocionais e comportamentais.
+                    </p>
+
+                    <p>
+                        Ofereço <strong>atendimento psicológico particular em Leme - SP</strong> e
+                        <strong>atendimento psicológico online</strong> para <strong>adolescentes, jovens, adultos e
+                            idosos</strong>,
+                        sempre com <strong>ética profissional</strong>, <strong>sigilo garantido</strong> e em um
+                        <strong>ambiente seguro e acolhedor</strong>.
+                    </p>
+
+                    <a href="https://cadastro.cfp.org.br/visualizar.html?profissional=qRVh%2B581Y%2B%2FlDLotNCVoZ%2BPdKOc0k%2F8UcTuS0WFOyKI%3D"
+                        target="_blank" rel="noopener noreferrer" class="btn"
+                        aria-label="Verificar registro CRP de Juliédina">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" width="18" height="18"
+                            aria-hidden="true" focusable="false"
+                            style="margin-left:0.5rem;vertical-align:middle;fill:currentColor;">
+                            <path
+                                d="M32 160C32 124.7 60.7 96 96 96L544 96C579.3 96 608 124.7 608 160L32 160zM32 208L608 208L608 480C608 515.3 579.3 544 544 544L96 544C60.7 544 32 515.3 32 480L32 208zM279.3 480C299.5 480 314.6 460.6 301.7 445C287 427.3 264.8 416 240 416L176 416C151.2 416 129 427.3 114.3 445C101.4 460.6 116.5 480 136.7 480L279.2 480zM208 376C238.9 376 264 350.9 264 320C264 289.1 238.9 264 208 264C177.1 264 152 289.1 152 320C152 350.9 177.1 376 208 376zM392 272C378.7 272 368 282.7 368 296C368 309.3 378.7 320 392 320L504 320C517.3 320 528 309.3 528 296C528 282.7 517.3 272 504 272L392 272zM392 368C378.7 368 368 378.7 368 392C368 405.3 378.7 416 392 416L504 416C517.3 416 528 405.3 528 392C528 378.7 517.3 368 504 368L392 368z" />
+                        </svg> Verificar CRP 06/153209
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section id="local" class="container">
+            <div class="local-grid">
+                <div class="local-info">
+                    <h2>Localização do Consultório</h2>
+                    <div style="display:flex;flex-direction:column;gap:1rem;">
+                        <div class="local-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                aria-hidden="true">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                <circle cx="12" cy="10" r="3"></circle>
+                            </svg>
+                            <div>
+                                <h3>Endereço</h3>
+                                <p>Rua Albano Viêira Sardinha, 264, Jardim Amália, Leme - SP</p>
+                            </div>
+
+                        </div>
+                        <div class="local-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 95.77 122.88" aria-hidden="true"
+                                focusable="false" width="24" height="24" fill="currentColor">
+                                <g>
+                                    <path
+                                        d="M72.52,67.74c2.52,5.1,3.94,10.84,3.94,16.92c0,9.45-3.43,18.11-9.12,24.78l-8.64-8.64 c3.51-4.44,5.6-10.05,5.6-16.15c0-14.4-11.67-26.07-26.07-26.07c-6.1,0-11.71,2.09-16.15,5.6l-8.63-8.63 c5.32-4.54,11.91-7.64,19.16-8.71l-0.13-0.06l17.18-18.79l-10.48-6.47L27.05,33.07c-2.86,2.72-7.38,2.61-10.1-0.25 c-2.72-2.86-2.61-7.38,0.25-10.1L33.3,7.39l-0.01-0.01c2.56-2.44,6.48-2.61,9.22-0.56l22.63,13.96c0.3,0.19,0.59,0.39,0.86,0.62 l6.3,3.35c6.82,3.63,7.39,10,2.24,15.75L62.5,53.94l25.66-1.6v-0.01c3.94-0.25,7.34,2.76,7.59,6.7c0.01,0.15,0.02,0.31,0.02,0.46 c0,0.3-0.02,0.59-0.06,0.89l-2.68,37.96c-0.28,3.94-3.7,6.9-7.64,6.63c-3.94-0.28-6.91-3.7-6.63-7.64l2.13-30.21L72.52,67.74 L72.52,67.74L72.52,67.74z M79.5,0c6.68,0,12.1,5.41,12.1,12.1c0,6.68-5.42,12.1-12.1,12.1c-6.68,0-12.1-5.42-12.1-12.1 C67.4,5.41,72.82,0,79.5,0L79.5,0z M59.29,116.56c-6.04,3.99-13.28,6.32-21.06,6.32C17.11,122.88,0,105.77,0,84.65 c0-7.78,2.33-15.02,6.32-21.06l8.86,8.86c-1.93,3.64-3.03,7.79-3.03,12.2c0,14.4,11.67,26.07,26.07,26.07 c4.41,0,8.56-1.1,12.2-3.03L59.29,116.56L59.29,116.56L59.29,116.56z" />
+                                </g>
+                            </svg>
+                            <div>
+                                <h3>Acessibilidade</h3>
+                                <p>Acesso facilitado para pessoas com mobilidade reduzida</p>
+                            </div>
+                        </div>
+                        <div class="local-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                aria-hidden="true">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <polyline points="12 6 12 12 16 14"></polyline>
+                            </svg>
+                            <div>
+                                <h3>Horário de Funcionamento</h3>
+                                <p>Segunda a Sexta: 8h às 20h</p>
+                                <p>Sábado: 8h às 12h</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="https://www.google.com/maps/place/Psic%C3%B3loga+Juli%C3%A9dina+Lopes+Ramos+-+Leme,+SP/@-22.1858624,-47.3848429,17z/data=!3m1!4b1!4m6!3m5!1s0x94c80d05ec80e81d:0xdd6681cf41620c3c!8m2!3d-22.1858624!4d-47.382268!16s%2Fg%2F11sx7v4q1w"
+                        class="local-cta" target="_blank" rel="noopener" aria-label="Como chegar no Google Maps">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            viewBox="0 0 16 16" aria-hidden="true"
+                            style="margin-right:0.5rem;vertical-align:middle;color:var(--text-light);">
+                            <path
+                                d="M9.05.435c-.58-.58-1.52-.58-2.1 0L.436 6.95c-.58.58-.58 1.519 0 2.098l6.516 6.516c.58.58 1.519.58 2.098 0l6.516-6.516c.58-.58.58-1.519 0-2.098zM9 8.466V7H7.5A1.5 1.5 0 0 0 6 8.5V11H5V8.5A2.5 2.5 0 0 1 7.5 6H9V4.534a.25.25 0 0 1 .41-.192l2.36 1.966c.12.1.12.284 0 .384L9.41 8.658A.25.25 0 0 1 9 8.466" />
+                        </svg> Como chegar
+                    </a>
+                </div>
+                <div class="local-map">
+                    <div style="position:relative;height:100%;overflow:hidden;">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3694.427285548147!2d-47.384842885124925!3d-22.18586238538316!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c80d05ec80e81d%3A0xdd6681cf41620c3c!2sPsic%C3%B3loga%20Juli%C3%A9dina%20Lopes%20Ramos%20-%20Leme%2C%20SP!5e0!3m2!1spt-BR!2sbr!4v1651454269956!5m2!1spt-BR!2sbr"
+                            style="border:0;position:absolute;inset:0;width:100%;height:100%;" allowfullscreen=""
+                            loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                            title="Mapa do consultório da Psicóloga Juliedina"></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="duvidas" class="container">
+            <h2 style="text-align:center;font-size:1.8rem;margin-bottom:1.5rem;">Dúvidas Frequentes</h2>
+            <div style="display:flex;flex-direction:column;gap:1rem;">
+                <details class="card"
+                    style="background:var(--text-light);padding:1.25rem;border-radius:8px;box-shadow:0 6px 18px rgba(0,0,0,0.06);">
+                    <summary
+                        style="display:flex;justify-content:space-between;align-items:center;cursor:pointer;list-style:none;">
+                        <h3 style="margin:0;font-size:1.05rem;font-weight:700;color:var(--text-dark);">Como funciona
+                            a psicoterapia online?</h3>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            aria-hidden="true">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg>
+                    </summary>
+                    <div style="padding-top:0.75rem;color:var(--text-gray);">
+                        <p>A psicoterapia online segue as mesmas diretrizes da modalidade presencial, onde são
+                            aplicados os mesmos métodos e técnicas psicológicas para atender as necessidades do
+                            paciente. Devido aos avanços tecnológicos, as pessoas podem desfrutar dos benefícios do
+                            tratamento psicológico sem saírem de casa. No Brasil, os atendimentos à distância foram
+                            efetivamente regulamentados pelo Conselho Federal de Psicologia, através da <a
+                                href="https://e-psi.cfp.org.br/resolucao-cfp-no-11-2018/" target="_blank" rel="noopener"
+                                style="color:var(--primary-color);text-decoration:underline;">Resolução CFP Nº
+                                11/2018</a>.</p>
+                    </div>
+                </details>
+                <details class="card"
+                    style="background:var(--text-light);padding:1.25rem;border-radius:8px;box-shadow:0 6px 18px rgba(0,0,0,0.06);">
+                    <summary
+                        style="display:flex;justify-content:space-between;align-items:center;cursor:pointer;list-style:none;">
+                        <h3 style="margin:0;font-size:1.05rem;font-weight:700;color:var(--text-dark);">Qual a
+                            frequência das sessões?</h3>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            aria-hidden="true">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg>
+                    </summary>
+                    <div style="padding-top:0.75rem;color:var(--text-gray);">
+                        <p>Normalmente, a psicoterapia é iniciada com sessões semanais, mas dependendo do caso do
+                            paciente, à medida que houver melhora dos sintomas, é possível que as sessões passem a
+                            ser quinzenais.</p>
+                    </div>
+                </details>
+                <details class="card"
+                    style="background:var(--text-light);padding:1.25rem;border-radius:8px;box-shadow:0 6px 18px rgba(0,0,0,0.06);">
+                    <summary
+                        style="display:flex;justify-content:space-between;align-items:center;cursor:pointer;list-style:none;">
+                        <h3 style="margin:0;font-size:1.05rem;font-weight:700;color:var(--text-dark);">É possível
+                            conseguir reembolso das sessões pelo plano de saúde ou convênio médico?</h3>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            aria-hidden="true">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg>
+                    </summary>
+                    <div style="padding-top:0.75rem;color:var(--text-gray);">
+                        <p>Sim, algumas categorias de contratos de plano de saúde e convênios médicos permitem a
+                            livre escolha de profissionais, como psicólogos, que não fazem parte da rede
+                            credenciada. Para saber se você tem este direito, entre em contato com a operadora de
+                            seu plano e verifique se seu contrato permite acesso a serviços de livre escolha de
+                            prestadores que não pertençam à rede credenciada e quais condições e procedimentos. As
+                            regras de valor e prazo para reembolso variam de acordo com a operadora e contrato.
+                            Nesta modalidade, o paciente faz o pagamento diretamente ao prestador, que emite o
+                            recibo e o paciente solicita seu reembolso ao plano de saúde. É comum que seja
+                            solicitado um encaminhamento ou pedido feito pelo médico assistente, que deve conter o
+                            CID (Classificação Internacional de Doenças) para liberação das sessões.</p>
+                    </div>
+                </details>
+                <details class="card"
+                    style="background:var(--text-light);padding:1.25rem;border-radius:8px;box-shadow:0 6px 18px rgba(0,0,0,0.06);">
+                    <summary
+                        style="display:flex;justify-content:space-between;align-items:center;cursor:pointer;list-style:none;">
+                        <h3 style="margin:0;font-size:1.05rem;font-weight:700;color:var(--text-dark);">É preciso de
+                            autorização para atendimento psicológico de adolescentes?</h3>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            aria-hidden="true">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg>
+                    </summary>
+                    <div style="padding-top:0.75rem;color:var(--text-gray);">
+                        <p>Sim, os pacientes menores de 18 anos devem obter autorização por escrito de, ao menos, um
+                            dos responsáveis legais, conforme Artigo 12, item I da <a
+                                href="https://www.in.gov.br/en/web/dou/-/resolucao-n-13-de-15-de-junho-de-2022-408911936"
+                                target="_blank" rel="noopener"
+                                style="color:var(--primary-color);text-decoration:underline;">Resolução CFP Nº
+                                13/2022</a>.</p>
+                    </div>
+                </details>
+                <details class="card"
+                    style="background:var(--text-light);padding:1.25rem;border-radius:8px;box-shadow:0 6px 18px rgba(0,0,0,0.06);">
+                    <summary
+                        style="display:flex;justify-content:space-between;align-items:center;cursor:pointer;list-style:none;">
+                        <h3 style="margin:0;font-size:1.05rem;font-weight:700;color:var(--text-dark);">Como posso
+                            consultar se o CRP do profissional está ativo?</h3>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            aria-hidden="true">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg>
+                    </summary>
+                    <div style="padding-top:0.75rem;color:var(--text-gray);">
+                        <p>O Conselho Federal de Psicologia (CFP) fornece em seu site uma área para consulta de
+                            profissionais e você pode acessar minha inscrição pelo link <a
+                                href="https://cadastro.cfp.org.br/visualizar.html?profissional=qRVh%2B581Y%2B%2FlDLotNCVoZ%2BPdKOc0k%2F8UcTuS0WFOyKI%3D"
+                                target="_blank" rel="noopener"
+                                style="color:var(--primary-color);text-decoration:underline;">CRP 06/153209</a>.</p>
+                    </div>
+                </details>
+            </div>
+        </section>
+        <section id="cta" class="cta-final text-center"
+            style="background:var(--primary-color);color:var(--text-light);padding:3rem 0;">
+            <div class="container">
+                <h2 style="color:var(--text-light);font-size:2rem;margin-bottom:1rem;">Pronto para começar sua jornada
+                    de transformação?</h2>
+                <p style="font-size:1.1rem;margin-bottom:1.5rem;max-width:600px;margin-left:auto;margin-right:auto;">
+                    Agende sua consulta hoje mesmo e dê o primeiro passo rumo ao seu bem-estar emocional.</p>
+                <div style="display:flex;justify-content:center;gap:1rem;flex-wrap:wrap;">
+                    <a href="https://wa.me/5519988452408" class="btn btn-cta-dark" style="font-size:1.1rem;"
+                        aria-label="WhatsApp">
+                        <span
+                            style="display:inline-flex;align-items:center;justify-content:center;width:36px;height:36px;border-radius:50%;overflow:hidden;background:transparent;color:inherit;">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="20" height="20"
+                                aria-hidden="true" focusable="false"
+                                style="display:block;fill:currentColor;color:inherit;">
+                                <path
+                                    d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232" />
+                            </svg>
+                        </span>
+                        <span>WhatsApp</span>
+                    </a>
+                    <a href="tel:+5519988452508" class="btn-phone" style="font-size:1.1rem;" aria-label="Ligar agora">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <path
+                                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                            </path>
+                        </svg>
+                        <span>Ligar agora</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="site-footer">
+        <div class="container footer-content">
+            <div>
+                <h3>Mapa do Site</h3>
+                <ul>
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#servicos">Serviços</a></li>
+                    <li><a href="#avaliacoes">Avaliações</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#local">Local</a></li>
+                    <li><a href="#duvidas">Dúvidas?</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>Redes Sociais</h3>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/psi.juliedina" target="_blank" rel="noopener"
+                        aria-label="Facebook"
+                        style="margin-right:1rem;color:#ccc;display:inline-flex;align-items:center;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                            viewBox="0 0 16 16" aria-hidden="true">
+                            <path
+                                d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951" />
+                        </svg>
+                    </a>
+                    <a href="https://www.instagram.com/psi.juliedina" target="_blank" rel="noopener"
+                        aria-label="Instagram"
+                        style="margin-right:1rem;color:#ccc;display:inline-flex;align-items:center;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                            viewBox="0 0 16 16" aria-hidden="true">
+                            <path
+                                d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334" />
+                        </svg>
+                    </a>
+                    <a href="https://www.linkedin.com/in/juli%C3%A9dina-lopes-ramos-868933276" target="_blank"
+                        rel="noopener" aria-label="LinkedIn" style="color:#ccc;display:inline-flex;align-items:center;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                            viewBox="0 0 16 16" aria-hidden="true">
+                            <path
+                                d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div>
+                <h3>Links Úteis</h3>
+                <ul>
+                    <li><a href="https://www.crpsp.org/" class="hover:text-[var(--primary-color)] transition"
+                            target="_blank">CRP-SP</a></li>
+                    <li><a href="https://site.cfp.org.br/" class="hover:text-[var(--primary-color)] transition"
+                            target="_blank">Conselho Federal de Psicologia</a></li>
+                    <li><a href="https://cvv.org.br/" class="hover:text-[var(--primary-color)] transition"
+                            target="_blank">Centro de Valorização da Vida</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="container copyright">
+            <p>&copy; <span id="current-year"></span> Psicóloga Juliédina Lopes Ramos. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+    <script>
+        (function () {
+            const header = document.getElementById('site-header');
+            const onScroll = () => {
+                if (!header) return;
+                header.classList.toggle('scrolled', window.scrollY > 50);
+            };
+            window.addEventListener('scroll', onScroll);
+
+            const menuToggle = document.getElementById('menu-toggle');
+            const mainNav = document.getElementById('main-nav');
+
+            if (menuToggle && mainNav) {
+                menuToggle.addEventListener('click', () => {
+                    const isExpanded = menuToggle.getAttribute('aria-expanded') === 'true';
+                    menuToggle.setAttribute('aria-expanded', String(!isExpanded));
+                    mainNav.classList.toggle('active');
+                    menuToggle.classList.toggle('open');
+                    menuToggle.textContent = mainNav.classList.contains('active') ? '✕' : '☰';
+                });
+
+                mainNav.querySelectorAll('a').forEach(link => {
+                    link.addEventListener('click', () => {
+                        mainNav.classList.remove('active');
+                        menuToggle.setAttribute('aria-expanded', 'false');
+                        menuToggle.classList.remove('open');
+                        menuToggle.textContent = '☰';
+                    });
+                });
+            }
+
+            const currentYearEl = document.getElementById('current-year');
+            if (currentYearEl) currentYearEl.textContent = String(new Date().getFullYear());
+        })();
+    </script>
+</body>
+
+</html>
