@@ -458,6 +458,7 @@
             }
 
             .btn,
+            .btn-whatsapp,
             .btn-phone,
             .btn-outline,
             .btn-cta-white,
@@ -520,7 +521,8 @@
             font-size: 0.95rem;
         }
 
-        .btn {
+        .btn,
+        .btn-whatsapp {
             display: inline-flex;
             align-items: center;
             gap: 0.75rem;
@@ -539,14 +541,17 @@
         }
 
         .btn:hover,
-        .btn:focus {
+        .btn:focus,
+        .btn-whatsapp:hover,
+        .btn-whatsapp:focus {
             background: #00695c;
             border-color: #00695c;
             transform: translateY(-2px);
             color: var(--text-light);
         }
 
-        .btn svg {
+        .btn svg,
+        .btn-whatsapp svg {
             width: 18px;
             height: 18px;
             flex: 0 0 18px;
@@ -598,6 +603,41 @@
 
         .hero .btn-phone:hover,
         .hero .btn-phone:focus {
+            transform: translateY(-2px);
+        }
+
+        /* Preserve visual style when using btn together with hero-specific class */
+        .btn.btn-phone-hero,
+        .hero .btn.btn-phone-hero {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.75rem;
+            padding: 0 1.25rem;
+            height: 48px;
+            min-height: 48px;
+            border-radius: 999px;
+            background: #fff;
+            color: #0b1220;
+            border: 2px solid transparent;
+            text-decoration: none;
+            font-weight: 700;
+            cursor: pointer;
+            transition: background 0.2s, transform 0.12s;
+        }
+
+        .btn.btn-phone-hero svg {
+            width: 18px;
+            height: 18px;
+            flex: 0 0 18px;
+            color: inherit;
+            fill: currentColor;
+        }
+
+        .btn.btn-phone-hero:hover,
+        .btn.btn-phone-hero:focus,
+        .hero .btn.btn-phone-hero:hover,
+        .hero .btn.btn-phone-hero:focus {
+            background: #f4f4f4;
             transform: translateY(-2px);
         }
 
@@ -1159,7 +1199,7 @@
                 <h1>Sua psicóloga em Leme - SP</h1>
                 <p>Atendimento particular para adolescentes, jovens, adultos e idosos.</p>
                 <div class="hero-buttons">
-                    <a href="https://wa.me/5519988452408" target="_blank" class="btn"
+                    <a href="https://wa.me/5519988452408" target="_blank" class="btn-whatsapp btn-whatsapp-hero"
                         aria-label="Agendar sessão de psicoterapia via WhatsApp">
                         <span
                             style="display:inline-flex;align-items:center;justify-content:center;width:36px;height:36px;border-radius:50%;overflow:hidden;background:transparent;color:inherit;">
@@ -1295,7 +1335,7 @@
                                 <polyline points="20 6 9 17 4 12"></polyline>
                             </svg>Traumas</li>
                     </ul>
-                    <a href="https://wa.me/5519988452408" target="_blank" class="btn btn-service-white">
+                    <a href="https://wa.me/5519988452408" target="_blank" class="btn-whatsapp btn-service-white">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="18" height="18"
                             aria-hidden="true" focusable="false"
                             style="margin-right:.5rem;vertical-align:middle;fill:currentColor;color:inherit;">
@@ -1338,7 +1378,7 @@
                                 <polyline points="20 6 9 17 4 12"></polyline>
                             </svg>Doação de órgãos entre vivos</li>
                     </ul>
-                    <a href="https://wa.me/5519988452408" target="_blank" class="btn btn-service-outline">
+                    <a href="https://wa.me/5519988452408" target="_blank" class="btn-whatsapp btn-service-outline">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="18" height="18"
                             aria-hidden="true" focusable="false"
                             style="margin-right:.5rem;vertical-align:middle;fill:currentColor;color:inherit;">
@@ -1732,7 +1772,7 @@
                 <p class="cta-description">
                     Agende sua consulta hoje mesmo e dê o primeiro passo rumo ao seu bem-estar emocional.</p>
                 <div class="cta-buttons">
-                    <a href="https://wa.me/5519988452408" target="_blank" class="btn btn-cta-dark btn-cta-lg" aria-label="WhatsApp">
+                    <a href="https://wa.me/5519988452408" target="_blank" class="btn-whatsapp btn-cta-dark btn-cta-lg" aria-label="WhatsApp">
                         <span
                             style="display:inline-flex;align-items:center;justify-content:center;width:36px;height:36px;border-radius:50%;overflow:hidden;background:transparent;color:inherit;">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="20" height="20"
