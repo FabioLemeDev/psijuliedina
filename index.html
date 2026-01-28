@@ -428,6 +428,13 @@
             display: block;
         }
 
+        .hero .hero-buttons {
+            margin-top: 2rem;
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
         @media (min-width: 769px) {
             .hero {
                 background-image: url('https://psijuliedina.com/assets/img/profile.webp');
@@ -443,6 +450,18 @@
                 background-image: url('https://psijuliedina.com/assets/img/profile_mobile.webp');
                 background-position: center;
                 background-size: cover;
+            }
+
+            .hero .hero-buttons {
+                flex-direction: column;
+                width: 100%;
+            }
+
+            .hero .hero-buttons .btn,
+            .hero .hero-buttons .btn-phone {
+                width: 100%;
+                justify-content: center;
+                box-sizing: border-box;
             }
         }
 
@@ -1128,7 +1147,7 @@
             <div class="hero-content">
                 <h1>Sua psicóloga em Leme - SP</h1>
                 <p>Atendimento para adolescentes, jovens, adultos e idosos.</p>
-                <div style="margin-top:2rem;display:flex;gap:1rem;flex-wrap:wrap;">
+                <div class="hero-buttons">
                     <a href="https://wa.me/5519988452408" class="btn"
                         aria-label="Agendar sessão de psicoterapia via WhatsApp">
                         <span
