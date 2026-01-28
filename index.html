@@ -457,11 +457,23 @@
                 width: 100%;
             }
 
-            .hero .hero-buttons .btn,
-            .hero .hero-buttons .btn-phone {
-                width: 100%;
+            /* Centralizar e expandir todos os botões em telas pequenas */
+            .btn,
+            .btn-phone,
+            .btn-outline,
+            .btn-cta-white,
+            .btn-cta-dark,
+            .local-cta,
+            .btn-service-white,
+            .btn-service-outline {
+                width: 100% !important;
                 justify-content: center;
-                box-sizing: border-box;
+                box-sizing: border-box !important;
+                margin-bottom: 0.5rem;
+            }
+
+            h2 {
+                text-align: center;
             }
         }
 
