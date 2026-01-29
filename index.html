@@ -1162,6 +1162,46 @@
         .btn-cta-lg {
             font-size: 1.1rem;
         }
+
+        .fabs-container {
+            position: fixed;
+            right: 1.25rem;
+            bottom: 1.25rem;
+            z-index: 1000;
+        }
+
+        .fab {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 3.25rem;
+            height: 3.25rem;
+            border-radius: 50%;
+            background: #25d366;
+            box-shadow: 0 10px 24px rgba(0, 0, 0, 0.22);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .fab:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 12px 28px rgba(0, 0, 0, 0.28);
+        }
+
+        .fabm-whatsapp {
+            color: #fff;
+        }
+
+        @media (max-width: 640px) {
+            .fabs-container {
+                right: 1rem;
+                bottom: 1rem;
+            }
+
+            .fab {
+                width: 3rem;
+                height: 3rem;
+            }
+        }
     </style>
 </head>
 
@@ -1672,11 +1712,12 @@
                         <p>A psicoterapia online segue as mesmas diretrizes da modalidade presencial, onde são
                             aplicados os mesmos métodos e técnicas psicológicas para atender as necessidades do
                             paciente. Devido aos avanços tecnológicos, as pessoas podem desfrutar dos benefícios do
-                            tratamento psicológico sem saírem de casa. No Brasil, os atendimentos à distância foram
+                            tratamento psicológico sem saírem de casa. No Brasil, os atendimentos à distância estão
                             efetivamente regulamentados pelo Conselho Federal de Psicologia, através da <a
-                                href="https://e-psi.cfp.org.br/resolucao-cfp-no-11-2018/" target="_blank" rel="noopener"
+                                href="https://atosoficiais.com.br/cfp/resolucao-do-exercicio-profissional-n-9-2024-regulamenta-o-exercicio-profissional-da-psicologia-mediado-por-tecnologias-digitais-da-informacao-e-da-comunicacao-tdics-em-territorio-nacional-e-revoga-as-resolucao-cfp-no-11-de-11-de-maio-de-2018-e-resolucao-cfp-no-04-de-26-de-marco-de-2020"
+                                target="_blank" rel="noopener"
                                 style="color:var(--primary-color);text-decoration:underline;">Resolução CFP Nº
-                                11/2018</a>.</p>
+                                09/2024</a>.</p>
                     </div>
                 </details>
                 <details class="card"
@@ -1772,7 +1813,8 @@
                 <p class="cta-description">
                     Agende sua consulta hoje mesmo e dê o primeiro passo rumo ao seu bem-estar emocional.</p>
                 <div class="cta-buttons">
-                    <a href="https://wa.me/5519988452408" target="_blank" class="btn-whatsapp btn-cta-dark btn-cta-lg" aria-label="WhatsApp">
+                    <a href="https://wa.me/5519988452408" target="_blank" class="btn-whatsapp btn-cta-dark btn-cta-lg"
+                        aria-label="WhatsApp">
                         <span
                             style="display:inline-flex;align-items:center;justify-content:center;width:36px;height:36px;border-radius:50%;overflow:hidden;background:transparent;color:inherit;">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="20" height="20"
@@ -1857,6 +1899,13 @@
             <p>&copy; <span id="current-year"></span> Psicóloga Juliédina Lopes Ramos. Todos os direitos reservados.</p>
         </div>
     </footer>
+
+    <div class="fabs-container">
+        <a href="https://wa.me/5519988452408" target="_blank" class="fab fabm-whatsapp">
+            <img src="assets/img/icon-whatsapp-white-o.svg" width="28" height="28" alt="Botão para abrir WhatsApp">
+        </a>
+    </div>
+
     <script>
         (function () {
             const header = document.getElementById('site-header');
