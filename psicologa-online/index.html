@@ -2038,14 +2038,25 @@
             if (currentYearEl) currentYearEl.textContent = String(new Date().getFullYear());
 
             const fabs = document.querySelector('.fabs-container');
+            
+            let isTicking = false;
+
             const updateFabVisibility = () => {
                 if (!fabs) return;
                 const fold = window.innerHeight || document.documentElement.clientHeight;
                 fabs.classList.toggle('is-visible', window.scrollY > fold);
+                isTicking = false;
             };
 
-            window.addEventListener('scroll', updateFabVisibility);
-            window.addEventListener('resize', updateFabVisibility);
+            const onFabScroll = () => {
+                if (!isTicking) {
+                    window.requestAnimationFrame(updateFabVisibility);
+                    isTicking = true;
+                }
+            };
+
+            window.addEventListener('scroll', onFabScroll, { passive: true });
+            window.addEventListener('resize', onFabScroll, { passive: true });
             updateFabVisibility();
         })();
     </script>
