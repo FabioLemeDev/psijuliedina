@@ -36,11 +36,8 @@
         imagesrcset="https://psijuliedina.com/assets/img/profile.webp 1200w, https://psijuliedina.com/assets/img/profile_mobile.webp 600w"
         imagesizes="100vw">
 
-    <link rel="dns-prefetch" href="//google-analytics.com">
-    <link rel="dns-prefetch" href="//www.google-analytics.com">
-    <link rel="dns-prefetch" href="//ssl.google-analytics.com">
-    <link rel="dns-prefetch" href="//www.googletagmanager.com">
-    <link rel="dns-prefetch" href="//googletagmanager.com">
+    <link rel="preconnect" href="https://www.google-analytics.com">
+    <link rel="preconnect" href="https://www.googletagmanager.com">
 
     <!-- SEO META TAGS -->
     <meta name="description"
@@ -2041,7 +2038,7 @@
 
             const updateFabVisibility = () => {
                 if (!fabs) return;
-                const fold = window.innerHeight || document.documentElement.clientHeight;
+                const fold = window.innerHeight;
                 fabs.classList.toggle('is-visible', window.scrollY > fold);
                 isTicking = false;
             };
